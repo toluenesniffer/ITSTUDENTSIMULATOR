@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://dw2f25f71teqv"]
+
+[ext_resource type="Texture2D" uid="uid://c1c6qv63ddrgw" path="res://scenes/spst.jpg" id="1_lsu5y"]
+[ext_resource type="Texture2D" uid="uid://erc0a8jc5naj" path="res://buttons/newgame.png" id="2_3fdka"]
+[ext_resource type="Texture2D" uid="uid://cr0hdr2yhcs38" path="res://buttons/options.png" id="3_p474w"]
+[ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="4_w7agt"]
+
+[node name="Mainscreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Spst" type="Sprite2D" parent="."]
+position = Vector2(1056, 552)
+scale = Vector2(1.1671875, 1.2179166)
+texture = ExtResource("1_lsu5y")
+
+[node name="Button" type="Button" parent="Spst"]
+offset_left = -185.06023
+offset_top = -11.495041
+offset_right = 109.66542
+offset_bottom = 102.63426
+
+[node name="Newgame" type="Sprite2D" parent="Spst"]
+visible = false
+position = Vector2(-25.702831, 32.021877)
+scale = Vector2(0.33290276, 0.33513993)
+texture = ExtResource("2_3fdka")
+
+[node name="Button2" type="Button" parent="Spst"]
+offset_left = -185.06026
+offset_top = 129.72972
+offset_right = 107.95183
+offset_bottom = 248.78548
+
+[node name="Button2" type="Button" parent="Spst/Button2"]
+layout_mode = 0
+offset_left = -1.5258789e-05
+offset_top = 150.25658
+offset_right = 293.0121
+offset_bottom = 269.31232
+
+[node name="Options" type="Sprite2D" parent="Spst"]
+visible = false
+position = Vector2(-28.273098, 184.74171)
+scale = Vector2(0.43769467, 0.4499859)
+texture = ExtResource("3_p474w")
+
+[node name="Exit" type="Sprite2D" parent="Spst"]
+visible = false
+position = Vector2(-28.679235, 334.04654)
+scale = Vector2(0.43750378, 0.4412041)
+texture = ExtResource("4_w7agt")
