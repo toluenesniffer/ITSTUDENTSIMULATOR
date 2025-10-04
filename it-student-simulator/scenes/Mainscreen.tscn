@@ -1,9 +1,52 @@
-[gd_scene load_steps=5 format=3 uid="uid://dw2f25f71teqv"]
+[gd_scene load_steps=24 format=3 uid="uid://dw2f25f71teqv"]
 
 [ext_resource type="Texture2D" uid="uid://c1c6qv63ddrgw" path="res://scenes/spst.jpg" id="1_lsu5y"]
 [ext_resource type="Texture2D" uid="uid://erc0a8jc5naj" path="res://buttons/newgame.png" id="2_3fdka"]
+[ext_resource type="Texture2D" uid="uid://lp01c2qoruue" path="res://buttons/newgame_clicked.png" id="3_et1ur"]
 [ext_resource type="Texture2D" uid="uid://cr0hdr2yhcs38" path="res://buttons/options.png" id="3_p474w"]
+[ext_resource type="Texture2D" uid="uid://dujxlu1an2m1q" path="res://buttons/options_clicked.png" id="4_7s3bu"]
 [ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="4_w7agt"]
+[ext_resource type="Script" uid="uid://drdwl0jsblfcy" path="res://scenes/buttonExit.gd" id="5_3fdka"]
+[ext_resource type="Texture2D" uid="uid://dtb4ovu2bq1de" path="res://buttons/options_focus.png" id="5_nrmxw"]
+[ext_resource type="Texture2D" uid="uid://dcldq6s8buo3g" path="res://buttons/newgame_focus.png" id="5_p474w"]
+[ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="5_w7agt"]
+[ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="6_2au6h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lsu5y"]
+texture = ExtResource("2_3fdka")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_okyki"]
+texture = ExtResource("3_et1ur")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dpbdj"]
+texture = ExtResource("5_p474w")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cecy0"]
+texture = ExtResource("3_et1ur")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3fdka"]
+texture = ExtResource("3_p474w")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_et1ur"]
+texture = ExtResource("4_7s3bu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_opqb1"]
+texture = ExtResource("5_nrmxw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r002v"]
+texture = ExtResource("4_7s3bu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p474w"]
+texture = ExtResource("4_w7agt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7s3bu"]
+texture = ExtResource("5_w7agt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nrmxw"]
+texture = ExtResource("6_2au6h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2au6h"]
+texture = ExtResource("5_w7agt")
 
 [node name="Mainscreen" type="Control"]
 layout_mode = 3
@@ -13,46 +56,43 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Node2D" type="Node2D" parent="."]
-
 [node name="Spst" type="Sprite2D" parent="."]
-position = Vector2(1056, 552)
-scale = Vector2(1.1671875, 1.2179166)
+position = Vector2(965.00006, 541.5)
+scale = Vector2(1.0072917, 0.91416657)
 texture = ExtResource("1_lsu5y")
 
-[node name="Button" type="Button" parent="Spst"]
-offset_left = -185.06023
-offset_top = -11.495041
-offset_right = 109.66542
-offset_bottom = 102.63426
-
-[node name="Newgame" type="Sprite2D" parent="Spst"]
-visible = false
-position = Vector2(-25.702831, 32.021877)
-scale = Vector2(0.33290276, 0.33513993)
-texture = ExtResource("2_3fdka")
-
-[node name="Button2" type="Button" parent="Spst"]
-offset_left = -185.06026
-offset_top = 129.72972
-offset_right = 107.95183
-offset_bottom = 248.78548
-
-[node name="Button2" type="Button" parent="Spst/Button2"]
+[node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = -1.5258789e-05
-offset_top = 150.25658
-offset_right = 293.0121
-offset_bottom = 269.31232
+offset_left = 840.0
+offset_top = 538.0
+offset_right = 1134.7256
+offset_bottom = 652.1293
+theme_override_styles/normal = SubResource("StyleBoxTexture_lsu5y")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_okyki")
+theme_override_styles/hover = SubResource("StyleBoxTexture_dpbdj")
+theme_override_styles/focus = SubResource("StyleBoxTexture_cecy0")
 
-[node name="Options" type="Sprite2D" parent="Spst"]
-visible = false
-position = Vector2(-28.273098, 184.74171)
-scale = Vector2(0.43769467, 0.4499859)
-texture = ExtResource("3_p474w")
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 710.0
+offset_right = 1133.0121
+offset_bottom = 829.0558
+theme_override_styles/normal = SubResource("StyleBoxTexture_3fdka")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_et1ur")
+theme_override_styles/hover = SubResource("StyleBoxTexture_opqb1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_r002v")
 
-[node name="Exit" type="Sprite2D" parent="Spst"]
-visible = false
-position = Vector2(-28.679235, 334.04654)
-scale = Vector2(0.43750378, 0.4412041)
-texture = ExtResource("4_w7agt")
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 893.0
+offset_right = 1133.0121
+offset_bottom = 1012.0557
+theme_override_styles/normal = SubResource("StyleBoxTexture_p474w")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7s3bu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nrmxw")
+theme_override_styles/focus = SubResource("StyleBoxTexture_2au6h")
+script = ExtResource("5_3fdka")
+
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
