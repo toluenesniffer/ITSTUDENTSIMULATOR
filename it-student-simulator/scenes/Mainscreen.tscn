@@ -1,6 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://dw2f25f71teqv"]
+[gd_scene load_steps=25 format=3 uid="uid://dw2f25f71teqv"]
 
-[ext_resource type="Texture2D" uid="uid://c1c6qv63ddrgw" path="res://scenes/spst.jpg" id="1_lsu5y"]
+[ext_resource type="Texture2D" uid="uid://btkte2lwnw03d" path="res://scenes/mainbg.png" id="1_opqb1"]
 [ext_resource type="Texture2D" uid="uid://erc0a8jc5naj" path="res://buttons/newgame.png" id="2_3fdka"]
 [ext_resource type="Texture2D" uid="uid://lp01c2qoruue" path="res://buttons/newgame_clicked.png" id="3_et1ur"]
 [ext_resource type="Texture2D" uid="uid://cr0hdr2yhcs38" path="res://buttons/options.png" id="3_p474w"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="4_w7agt"]
 [ext_resource type="Script" uid="uid://drdwl0jsblfcy" path="res://scenes/buttonExit.gd" id="5_3fdka"]
 [ext_resource type="Texture2D" uid="uid://dtb4ovu2bq1de" path="res://buttons/options_focus.png" id="5_nrmxw"]
+[ext_resource type="Script" uid="uid://c3nldng1uogjd" path="res://scenes/button.gd" id="5_opqb1"]
 [ext_resource type="Texture2D" uid="uid://dcldq6s8buo3g" path="res://buttons/newgame_focus.png" id="5_p474w"]
 [ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="5_w7agt"]
 [ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="6_2au6h"]
@@ -56,28 +57,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Spst" type="Sprite2D" parent="."]
-position = Vector2(965.00006, 541.5)
-scale = Vector2(1.0072917, 0.91416657)
-texture = ExtResource("1_lsu5y")
+[node name="Mainbg" type="Sprite2D" parent="."]
+position = Vector2(957, 529)
+scale = Vector2(1.21375, 1.0675422)
+texture = ExtResource("1_opqb1")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 840.0
-offset_top = 538.0
-offset_right = 1134.7256
-offset_bottom = 652.1293
+offset_left = 807.0
+offset_top = 467.0
+offset_right = 1146.7256
+offset_bottom = 647.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_lsu5y")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_okyki")
 theme_override_styles/hover = SubResource("StyleBoxTexture_dpbdj")
 theme_override_styles/focus = SubResource("StyleBoxTexture_cecy0")
+script = ExtResource("5_opqb1")
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 840.0
-offset_top = 710.0
-offset_right = 1133.0121
-offset_bottom = 829.0558
+offset_left = 802.0
+offset_top = 606.0
+offset_right = 1156.0
+offset_bottom = 810.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_3fdka")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_et1ur")
 theme_override_styles/hover = SubResource("StyleBoxTexture_opqb1")
@@ -85,14 +87,15 @@ theme_override_styles/focus = SubResource("StyleBoxTexture_r002v")
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 840.0
-offset_top = 893.0
-offset_right = 1133.0121
-offset_bottom = 1012.0557
+offset_left = 800.0
+offset_top = 764.0
+offset_right = 1161.0
+offset_bottom = 975.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_p474w")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_7s3bu")
 theme_override_styles/hover = SubResource("StyleBoxTexture_nrmxw")
 theme_override_styles/focus = SubResource("StyleBoxTexture_2au6h")
 script = ExtResource("5_3fdka")
 
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

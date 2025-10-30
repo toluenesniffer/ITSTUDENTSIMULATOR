@@ -1,0 +1,96 @@
+[gd_scene load_steps=14 format=3 uid="uid://ck0wuywpvubbd"]
+
+[ext_resource type="Texture2D" uid="uid://l0ayn786bujt" path="res://buttons/stojicipepik.png" id="1_4jky4"]
+[ext_resource type="Texture2D" uid="uid://cr8ivsqwy1uay" path="res://scenes/chuze.png" id="2_5c1bn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipflx"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(960, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnttm"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(1120, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_emf5f"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(1280, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqrhv"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(1440, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfptk"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wstte"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf5hk"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(320, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwvs7"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmqi2"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(640, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klwha"]
+atlas = ExtResource("2_5c1bn")
+region = Rect2(800, 0, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rccy0"]
+animations = [{
+"frames": [{
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_ipflx")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_dnttm")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_emf5f")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_rqrhv")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_vfptk")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_wstte")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_xf5hk")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_nwvs7")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_gmqi2")
+}, {
+"duration": 1.21,
+"texture": SubResource("AtlasTexture_klwha")
+}],
+"loop": true,
+"name": &"chuze",
+"speed": 24.0
+}]
+
+[node name="pepik" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(976.00006, 528.00006)
+scale = Vector2(0.27305043, 0.27305043)
+texture = ExtResource("1_4jky4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(967, 505)
+scale = Vector2(2.5866163, 2.5866163)
+sprite_frames = SubResource("SpriteFrames_rccy0")
+animation = &"chuze"

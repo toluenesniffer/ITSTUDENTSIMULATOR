@@ -1,0 +1,10 @@
+join yapper1 (ondra) left
+yapper1: ahoj mam rad deti
+MÁM ZAVOLAT POLICII???
+- nn tyky je mam rad >:P
+	set {zavolat} = false
+- ANO??!!
+if {zavolat} == true:
+	volam
+else:
+	nevolam

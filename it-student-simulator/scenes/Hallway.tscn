@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://r57s7qxx43t4"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_6rib3"]
+[ext_resource type="Texture2D" uid="uid://dy6rrtkc5qdtk" path="res://scenes/chodbaBecko.png" id="2_nj85w"]
+[ext_resource type="Script" uid="uid://c5sqib8kq8j4u" path="res://scenes/dvere_do_tridy.gd" id="3_nj85w"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6rib3"]
+blend_mode = 1
+
+[node name="Hallway" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(968.5, 555.00006)
+scale = Vector2(1.0432291, 1.0722224)
+texture = ExtResource("1_6rib3")
+
+[node name="Chodba" type="Sprite2D" parent="."]
+position = Vector2(959.9999, 540.00006)
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("2_nj85w")
+
+[node name="dvereDoTridy" type="Button" parent="Chodba"]
+material = SubResource("CanvasItemMaterial_6rib3")
+custom_minimum_size = Vector2(50, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -447.91656
+offset_top = -710.41675
+offset_right = -182.6773
+offset_bottom = 609.281
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8381632, 0.28255257)
+text = "
+"
+script = ExtResource("3_nj85w")
+
+[connection signal="pressed" from="Chodba/dvereDoTridy" to="Chodba/dvereDoTridy" method="_on_pressed"]

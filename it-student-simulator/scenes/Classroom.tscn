@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://cr2rhncxj8vyp"]
+
+[ext_resource type="Script" uid="uid://bqw2kv4uci57v" path="res://scenes/classroom.gd" id="1_6h312"]
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="2_1tyx7"]
+[ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_rmcuf"]
+[ext_resource type="Texture2D" uid="uid://cnngrcu25mv84" path="res://scenes/tridaBecko_UP.png" id="5_jxxy8"]
+[ext_resource type="Script" uid="uid://bgjmueej63gqm" path="res://scenes/button_hallway.gd" id="5_rmcuf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xii5s"]
+texture = ExtResource("3_rmcuf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rmcuf"]
+texture = ExtResource("3_rmcuf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jxxy8"]
+texture = ExtResource("3_rmcuf")
+
+[node name="Classroom" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -270.0
+offset_top = -38.0
+offset_right = 439.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6h312")
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(1233, 573)
+texture = ExtResource("2_1tyx7")
+
+[node name="ButtonHallway" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1629.0
+offset_top = 97.0
+offset_right = 1812.0
+offset_bottom = 331.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_xii5s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_rmcuf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jxxy8")
+script = ExtResource("5_rmcuf")
+
+[node name="Container" type="Container" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -17.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Container"]
+position = Vector2(1219, 595)
+texture = ExtResource("5_jxxy8")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="ButtonHallway" to="ButtonHallway" method="_on_pressed"]
