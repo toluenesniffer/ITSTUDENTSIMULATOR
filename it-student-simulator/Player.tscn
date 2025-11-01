@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c2jxy6mq3r28u" path="res://Player.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://cr8ivsqwy1uay" path="res://scenes/chuze.png" id="1_xhfnw"]
-[ext_resource type="Texture2D" uid="uid://ia5leocc2yn3" path="res://scenes/stojicipepca.png" id="3_kne1u"]
+[ext_resource type="Texture2D" uid="uid://bi651vtlpl032" path="res://scenes/stojicipepca1.png" id="3_kne1u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ipflx"]
 atlas = ExtResource("1_xhfnw")
@@ -95,9 +95,9 @@ script = ExtResource("1_kpjcp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1415.5458, 531.6001)
-scale = Vector2(2.3306787, 2.279999)
+scale = Vector2(1.2846555, 1.1998992)
 sprite_frames = SubResource("SpriteFrames_kpjcp")
-animation = &"chuze"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(944, 503)

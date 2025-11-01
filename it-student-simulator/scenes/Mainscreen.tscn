@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dw2f25f71teqv"]
+[gd_scene load_steps=26 format=3 uid="uid://dw2f25f71teqv"]
 
 [ext_resource type="Texture2D" uid="uid://btkte2lwnw03d" path="res://scenes/mainbg.png" id="1_opqb1"]
 [ext_resource type="Texture2D" uid="uid://erc0a8jc5naj" path="res://buttons/newgame.png" id="2_3fdka"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dcldq6s8buo3g" path="res://buttons/newgame_focus.png" id="5_p474w"]
 [ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="5_w7agt"]
 [ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="6_2au6h"]
+[ext_resource type="Texture2D" uid="uid://hy2x6qmwrrgj" path="res://scenes/title.png" id="13_r002v"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lsu5y"]
 texture = ExtResource("2_3fdka")
@@ -58,7 +59,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Mainbg" type="Sprite2D" parent="."]
-position = Vector2(957, 529)
+position = Vector2(962, 541)
 scale = Vector2(1.21375, 1.0675422)
 texture = ExtResource("1_opqb1")
 
@@ -96,6 +97,11 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_7s3bu")
 theme_override_styles/hover = SubResource("StyleBoxTexture_nrmxw")
 theme_override_styles/focus = SubResource("StyleBoxTexture_2au6h")
 script = ExtResource("5_3fdka")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(977.0001, 205)
+scale = Vector2(2.5055554, 3.3828125)
+texture = ExtResource("13_r002v")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
