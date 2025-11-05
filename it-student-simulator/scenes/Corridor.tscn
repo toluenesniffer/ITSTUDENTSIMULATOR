@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpu6cci114l3x"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_b48a3"]
+[ext_resource type="Texture2D" uid="uid://vq142dmllwwh" path="res://scenes/corridor.png" id="2_7ycg3"]
+[ext_resource type="Script" uid="uid://dh3f6kvayp4ht" path="res://scenes/exit_right.gd" id="3_7ycg3"]
+[ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_cra4x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b48a3"]
+size = Vector2(144.58359, 1146.8423)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(956, 539)
+texture = ExtResource("1_b48a3")
+
+[node name="Corridor" type="Sprite2D" parent="."]
+position = Vector2(954.00006, 531.00006)
+scale = Vector2(0.96, 0.9499999)
+texture = ExtResource("2_7ycg3")
+
+[node name="ExitRight" type="Area2D" parent="."]
+position = Vector2(954.00006, 531.00006)
+scale = Vector2(0.96, 0.9499999)
+script = ExtResource("3_7ycg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
+position = Vector2(931.6669, 8.684204)
+scale = Vector2(1, 0.9999996)
+shape = SubResource("RectangleShape2D_b48a3")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("4_cra4x")]
+position = Vector2(85, 64)

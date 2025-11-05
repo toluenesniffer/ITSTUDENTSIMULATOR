@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://r57s7qxx43t4"]
+[gd_scene load_steps=8 format=3 uid="uid://r57s7qxx43t4"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_6rib3"]
 [ext_resource type="Texture2D" uid="uid://dy6rrtkc5qdtk" path="res://scenes/chodbaBecko.png" id="2_nj85w"]
 [ext_resource type="Script" uid="uid://c5sqib8kq8j4u" path="res://scenes/dvere_do_tridy.gd" id="3_nj85w"]
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_gbt8u"]
+[ext_resource type="Script" uid="uid://dcalrbn5i240r" path="res://scenes/exit_left.gd" id="5_3ttk3"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6rib3"]
 blend_mode = 1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbt8u"]
+size = Vector2(80, 1106)
 
 [node name="Hallway" type="Control"]
 layout_mode = 3
@@ -47,5 +51,12 @@ script = ExtResource("3_nj85w")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_gbt8u")]
 position = Vector2(259, 82)
+
+[node name="ExitLeft" type="Area2D" parent="."]
+script = ExtResource("5_3ttk3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
+position = Vector2(30, 543)
+shape = SubResource("RectangleShape2D_gbt8u")
 
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="Chodba/dvereDoTridy" method="_on_pressed"]

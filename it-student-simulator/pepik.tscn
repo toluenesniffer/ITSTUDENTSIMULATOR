@@ -1,6 +1,5 @@
-[gd_scene load_steps=14 format=3 uid="uid://ck0wuywpvubbd"]
+[gd_scene load_steps=13 format=3 uid="uid://ck0wuywpvubbd"]
 
-[ext_resource type="Texture2D" uid="uid://l0ayn786bujt" path="res://buttons/stojicipepik.png" id="1_4jky4"]
 [ext_resource type="Texture2D" uid="uid://cr8ivsqwy1uay" path="res://scenes/chuze.png" id="2_5c1bn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ipflx"]
@@ -87,7 +86,6 @@ animations = [{
 visible = false
 position = Vector2(976.00006, 528.00006)
 scale = Vector2(0.27305043, 0.27305043)
-texture = ExtResource("1_4jky4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(967, 505)
