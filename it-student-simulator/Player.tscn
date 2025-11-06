@@ -174,11 +174,9 @@ position = Vector2(2, -1)
 script = ExtResource("1_kpjcp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1933.0946, 1112.0404)
 scale = Vector2(1.069112, 1.039769)
 sprite_frames = SubResource("SpriteFrames_kpjcp")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1926, 1099)
 shape = SubResource("RectangleShape2D_kne1u")

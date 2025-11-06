@@ -10,7 +10,7 @@
 blend_mode = 1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbt8u"]
-size = Vector2(80, 1106)
+size = Vector2(66, 1106)
 
 [node name="Hallway" type="Control"]
 layout_mode = 3
@@ -49,14 +49,14 @@ text = "
 "
 script = ExtResource("3_nj85w")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_gbt8u")]
-position = Vector2(259, 82)
+[node name="CharacterBody2D" parent="." groups=["player"] instance=ExtResource("4_gbt8u")]
+position = Vector2(1384, 841)
 
 [node name="ExitLeft" type="Area2D" parent="."]
 script = ExtResource("5_3ttk3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
-position = Vector2(30, 543)
+position = Vector2(23, 543)
 shape = SubResource("RectangleShape2D_gbt8u")
 
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="Chodba/dvereDoTridy" method="_on_pressed"]
