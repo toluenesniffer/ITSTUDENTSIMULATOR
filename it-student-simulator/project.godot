@@ -23,14 +23,17 @@ GlobalScript="*res://global.gd"
 [dialogic]
 
 directories/dch_directory={
+"Ondra": "res://dialogicYap/yapperi/Ondra.dch",
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch"
 }
 directories/dtl_directory={
 "Intro": "res://dialogicYap/intro/Intro.dtl",
+"Ondrayap": "res://dialogicYap/intro/Ondrayap.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
 "introPlayed": false,
+"kamos": false,
 "zavolat": false
 }
 glossary/default_case_sensitive=true

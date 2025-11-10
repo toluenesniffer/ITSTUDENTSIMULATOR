@@ -1,12 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://cpu6cci114l3x"]
+[gd_scene load_steps=13 format=3 uid="uid://cpu6cci114l3x"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_b48a3"]
 [ext_resource type="Texture2D" uid="uid://vq142dmllwwh" path="res://scenes/corridor.png" id="2_7ycg3"]
 [ext_resource type="Script" uid="uid://dh3f6kvayp4ht" path="res://scenes/exit_right.gd" id="3_7ycg3"]
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_cra4x"]
+[ext_resource type="Script" uid="uid://c51lw8ye7xkaa" path="res://scenes/buttonondra.gd" id="5_yinb5"]
+[ext_resource type="Texture2D" uid="uid://dvp6v28y1ht3r" path="res://dialogicYap/yapperi/ondra.png" id="6_l1hri"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b48a3"]
 size = Vector2(144.58359, 1146.8423)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yinb5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l1hri"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jc8wr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nelxl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_51253"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -31,3 +43,23 @@ shape = SubResource("RectangleShape2D_b48a3")
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("4_cra4x")]
 position = Vector2(85, 64)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 641.0
+offset_top = 427.0
+offset_right = 828.0
+offset_bottom = 746.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yinb5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l1hri")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jc8wr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nelxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_51253")
+script = ExtResource("5_yinb5")
+
+[node name="Ondra" type="Sprite2D" parent="."]
+position = Vector2(733, 571)
+texture = ExtResource("6_l1hri")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Button" to="ExitRight" method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
