@@ -1,0 +1,65 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+&"default_portrait": "cestinarka",
+&"description": "",
+&"display_name": "cestinarka",
+&"mirror": false,
+&"nicknames": ["cestin"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"cestinarka": {
+"export_overrides": {
+"image": "\"res://dialogicYap/yapperi/cestinarka.png\""
+},
+"mirror": false,
+"offset": Vector2(14, 7),
+"scale": 1.0,
+"scene": ""
+},
+"ondra": {
+"export_overrides": {
+"image": "\"res://dialogicYap/yapperi/ondra.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"tridni": {
+"export_overrides": {
+"image": "\"res://dialogicYap/yapperi/tridni.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"tridni_UP": {
+"export_overrides": {
+"image": "\"res://dialogicYap/yapperi/tridni_UP.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"tridni_UP_FINALE": {
+"export_overrides": {
+"image": "\"res://dialogicYap/yapperi/tridni_UP_FINALE.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

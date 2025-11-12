@@ -1,0 +1,83 @@
+[gd_scene load_steps=17 format=3 uid="uid://s3xvrxu5lc6t"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_kxflt"]
+[ext_resource type="Texture2D" uid="uid://e3vmbk7no1mt" path="res://scenes/acko.png" id="2_tiwi6"]
+[ext_resource type="Texture2D" uid="uid://blr3s3gbw5io5" path="res://scenes/dvirka.png" id="3_0ri6e"]
+[ext_resource type="Script" uid="uid://rgvgbuo0x5r3" path="res://scenes/button_do_tridya_307.gd" id="4_wuf7x"]
+[ext_resource type="Script" uid="uid://liy84f71koh" path="res://scenes/button_do_tridya_306.gd" id="5_t0grk"]
+[ext_resource type="Script" uid="uid://ccksuclpkv1ex" path="res://scenes/exit_right2.gd" id="6_atj8w"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wuf7x"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t0grk"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_atj8w"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpaih"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ri6e"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j6rqc"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnr27"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hcnrd"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5u2i1"]
+texture = ExtResource("3_0ri6e")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0grk"]
+size = Vector2(113.5, 1106.5)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(970, 541)
+scale = Vector2(1.0197917, 1.0518519)
+texture = ExtResource("1_kxflt")
+
+[node name="Acko" type="Sprite2D" parent="."]
+position = Vector2(971, 531)
+texture = ExtResource("2_tiwi6")
+
+[node name="buttonDoTridya307" type="Button" parent="."]
+offset_left = 18.0
+offset_top = 217.0
+offset_right = 243.0
+offset_bottom = 596.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_wuf7x")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_t0grk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_atj8w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_jpaih")
+script = ExtResource("4_wuf7x")
+
+[node name="buttonDoTridya306" type="Button" parent="."]
+offset_left = 412.0
+offset_top = 217.0
+offset_right = 635.0
+offset_bottom = 596.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0ri6e")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_j6rqc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_dnr27")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_hcnrd")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_5u2i1")
+script = ExtResource("5_t0grk")
+
+[node name="ExitRight" type="Area2D" parent="."]
+script = ExtResource("6_atj8w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
+position = Vector2(1873.75, 538.75)
+shape = SubResource("RectangleShape2D_t0grk")
+
+[connection signal="pressed" from="buttonDoTridya307" to="buttonDoTridya307" method="_on_pressed"]
+[connection signal="pressed" from="buttonDoTridya306" to="buttonDoTridya306" method="_on_pressed"]
+[connection signal="ready" from="ExitRight" to="ExitRight" method="_on_ready"]
