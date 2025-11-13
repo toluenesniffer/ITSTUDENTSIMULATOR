@@ -1,0 +1,47 @@
+[gd_scene load_steps=10 format=3 uid="uid://bpw58hnthpa3g"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_srs50"]
+[ext_resource type="Texture2D" uid="uid://cert8js8khk15" path="res://scenes/pcroom.png" id="2_p5wm4"]
+[ext_resource type="Texture2D" uid="uid://blr3s3gbw5io5" path="res://scenes/dvirka.png" id="3_1a8qa"]
+[ext_resource type="Script" uid="uid://ckbqrljg7pnvq" path="res://scenes/buttonDoHallA.gd" id="4_r0gke"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r0gke"]
+texture = ExtResource("3_1a8qa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ec5hk"]
+texture = ExtResource("3_1a8qa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w5hie"]
+texture = ExtResource("3_1a8qa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0kik7"]
+texture = ExtResource("3_1a8qa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s3j1l"]
+texture = ExtResource("3_1a8qa")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(962, 542.5)
+scale = Vector2(1.0385417, 1.0583333)
+texture = ExtResource("1_srs50")
+
+[node name="Pcroom" type="Sprite2D" parent="."]
+position = Vector2(943.00006, 546)
+scale = Vector2(1.6374999, 1.0407407)
+texture = ExtResource("2_p5wm4")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1323.0
+offset_top = 41.0
+offset_right = 1504.0
+offset_bottom = 315.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0gke")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ec5hk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_w5hie")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_0kik7")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_s3j1l")
+script = ExtResource("4_r0gke")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

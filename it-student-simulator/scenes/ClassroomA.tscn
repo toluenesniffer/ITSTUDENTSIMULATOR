@@ -1,0 +1,45 @@
+[gd_scene load_steps=10 format=3 uid="uid://cwbfi7sv3jwv"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_8e3s2"]
+[ext_resource type="Texture2D" uid="uid://cnngrcu25mv84" path="res://scenes/tridaBecko_UP.png" id="2_wi1kb"]
+[ext_resource type="Texture2D" uid="uid://blr3s3gbw5io5" path="res://scenes/dvirka.png" id="3_223hw"]
+[ext_resource type="Script" uid="uid://ckbqrljg7pnvq" path="res://scenes/buttonDoHallA.gd" id="4_evejb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_evejb"]
+texture = ExtResource("3_223hw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u862q"]
+texture = ExtResource("3_223hw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e18md"]
+texture = ExtResource("3_223hw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t54mi"]
+texture = ExtResource("3_223hw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_03cfv"]
+texture = ExtResource("3_223hw")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(961.5, 534.5)
+scale = Vector2(1.0338541, 1.0601852)
+texture = ExtResource("1_8e3s2")
+
+[node name="TridaBeckoUp" type="Sprite2D" parent="."]
+position = Vector2(959, 547)
+scale = Vector2(1.5069444, 1.0601853)
+texture = ExtResource("2_wi1kb")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1290.0
+offset_top = 30.0
+offset_right = 1473.0
+offset_bottom = 313.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_evejb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_u862q")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e18md")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_t54mi")
+theme_override_styles/focus = SubResource("StyleBoxTexture_03cfv")
+script = ExtResource("4_evejb")
