@@ -22,7 +22,7 @@ size = Vector2(144.58359, 1146.8423)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_51253"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yinb5"]
-size = Vector2(124, 1094)
+size = Vector2(68, 1094)
 
 [node name="Node2D" type="Node2D"]
 
@@ -46,7 +46,7 @@ scale = Vector2(1, 0.9999996)
 shape = SubResource("RectangleShape2D_b48a3")
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("4_cra4x")]
-position = Vector2(85, 64)
+position = Vector2(686, 0)
 
 [node name="Button" type="Button" parent="."]
 offset_left = 641.0
@@ -64,13 +64,14 @@ script = ExtResource("5_yinb5")
 position = Vector2(733, 571)
 texture = ExtResource("6_l1hri")
 
-[node name="ExitLeft" type="Area2D" parent="."]
+[node name="ExitLeft" type="Area2D" parent="." groups=["player"]]
 script = ExtResource("7_l1hri")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
-position = Vector2(52, 537)
+position = Vector2(24, 537)
 shape = SubResource("RectangleShape2D_yinb5")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Button" to="ExitRight" method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]

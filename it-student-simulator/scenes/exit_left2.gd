@@ -5,11 +5,13 @@ extends Area2D
 
 func _init():
 	print("ExitLeft script INIT!")
-func _ready():
+func _on_ready() -> void:
 	print("ExitLeft _ready START")
 	body_entered.connect(_on_body_entered)
 func _on_body_entered(body):
 	print("Something entered: ", body.name)
+	print("Is in group 'player'?: ", body.is_in_group("player"))
+	print("Groups: ", body.get_groups())
 	if body.is_in_group("player"):
 		print("Player detected! Changing scene...")
 		GlobalScript.player_spawn_side = spawn_position

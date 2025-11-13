@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://s3xvrxu5lc6t"]
+[gd_scene load_steps=18 format=3 uid="uid://s3xvrxu5lc6t"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_kxflt"]
 [ext_resource type="Texture2D" uid="uid://e3vmbk7no1mt" path="res://scenes/acko.png" id="2_tiwi6"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://rgvgbuo0x5r3" path="res://scenes/button_do_tridya_307.gd" id="4_wuf7x"]
 [ext_resource type="Script" uid="uid://liy84f71koh" path="res://scenes/button_do_tridya_306.gd" id="5_t0grk"]
 [ext_resource type="Script" uid="uid://ccksuclpkv1ex" path="res://scenes/exit_right2.gd" id="6_atj8w"]
+[ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="7_jpaih"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wuf7x"]
 texture = ExtResource("3_0ri6e")
@@ -71,12 +72,15 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_hcnrd")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_5u2i1")
 script = ExtResource("5_t0grk")
 
-[node name="ExitRight" type="Area2D" parent="."]
+[node name="ExitRight" type="Area2D" parent="." groups=["player"]]
 script = ExtResource("6_atj8w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
 position = Vector2(1873.75, 538.75)
 shape = SubResource("RectangleShape2D_t0grk")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("7_jpaih")]
+position = Vector2(686, 0)
 
 [connection signal="pressed" from="buttonDoTridya307" to="buttonDoTridya307" method="_on_pressed"]
 [connection signal="pressed" from="buttonDoTridya306" to="buttonDoTridya306" method="_on_pressed"]

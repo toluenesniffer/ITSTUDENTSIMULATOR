@@ -22,7 +22,7 @@ func _physics_process(delta) -> void:
 func _ready():
 	if GlobalScript.player_spawn_side == "left":
 		position.x = 250
-		position.y = 500
+		position.y = 700
 	elif GlobalScript.player_spawn_side == "right":
 		position.x = 900
 		position.y = 500

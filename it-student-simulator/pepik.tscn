@@ -80,7 +80,7 @@ animations = [{
 "speed": 24.0
 }]
 
-[node name="pepik" type="Node2D"]
+[node name="pepik" type="Node2D" groups=["player"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
