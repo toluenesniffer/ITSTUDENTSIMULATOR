@@ -1,0 +1,19 @@
+join programator center [animation="Slide In Right"]
+programator: Naučíme se jazyk C++.
+programator: C++ je předchůdce všech programovacích jazyků, je to posvátný jazyk, který vymysleli ještěři z vesmíru, a který nás provází po celá staletí…
+programator: Doufám, že se těšíte na algoritmy, prvočísla, pole a spoustu dalších zábavných věcí!
+programator: Ale to není všechno, ještě vás čeká C#... celkově se toho naučíte dost.
+programator: Teď si prosím otevřete PS Diagram a udělejte tento úkol.
+programator: Podívejte se na tento obrázek. Kdo mi řekne co bude výsledek?
+join diagram_objekt center [animation="Fade In"]
+UMMMMMMMMM CO MÁM DĚLAT
+- 16
+	programator: No to je ale chlupaté číslo! 🐱
+	(zkus to znovu vro)
+- 64
+	programator: Správně, tak z tebe nakonec bude programátor!
+	set {prgPlayed} = true
+- Začít křičet
+	programator: *taky začne křičet*
+	set {prgPlayed} = true
+leave diagram_objekt

@@ -25,12 +25,15 @@ GlobalScript="*res://global.gd"
 directories/dch_directory={
 "Ondra": "res://dialogicYap/yapperi/Ondra.dch",
 "cestinarka": "res://dialogicYap/yapperi/cestinarka.dch",
+"diagram_objekt": "res://dialogicYap/yapperi/diagram_objekt.dch",
+"programator": "res://dialogicYap/yapperi/programator.dch",
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch"
 }
 directories/dtl_directory={
 "Intro": "res://dialogicYap/intro/Intro.dtl",
 "Ondrayap": "res://dialogicYap/intro/Ondrayap.dtl",
 "cestina": "res://dialogicYap/intro/cestina.dtl",
+"programovani": "res://dialogicYap/intro/programovani.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
@@ -38,6 +41,7 @@ variables={
 "cestinaPlayed": false,
 "introPlayed": false,
 "kamos": false,
+"prgPlayed": false,
 "zavolat": false
 }
 glossary/default_case_sensitive=true

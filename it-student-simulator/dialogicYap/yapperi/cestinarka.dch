@@ -10,11 +10,20 @@
 },
 &"default_portrait": "cestinarka",
 &"description": "",
-&"display_name": "cestinarka",
+&"display_name": "Češtinářka",
 &"mirror": false,
 &"nicknames": ["cestin"],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Programátor": {
+"export_overrides": {
+"image": "\"res://dialogicYap/yapperi/programator.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
 "cestinarka": {
 "export_overrides": {
 "image": "\"res://dialogicYap/yapperi/cestinarka.png\""

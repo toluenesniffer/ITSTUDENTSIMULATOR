@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://bpw58hnthpa3g"]
+[gd_scene load_steps=11 format=3 uid="uid://bpw58hnthpa3g"]
 
+[ext_resource type="Script" uid="uid://di80i0u1pxfef" path="res://scenes/pc_room_a.gd" id="1_ec5hk"]
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_srs50"]
 [ext_resource type="Texture2D" uid="uid://cert8js8khk15" path="res://scenes/pcroom.png" id="2_p5wm4"]
 [ext_resource type="Texture2D" uid="uid://blr3s3gbw5io5" path="res://scenes/dvirka.png" id="3_1a8qa"]
@@ -21,6 +22,7 @@ texture = ExtResource("3_1a8qa")
 texture = ExtResource("3_1a8qa")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_ec5hk")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
 position = Vector2(962, 542.5)
@@ -44,4 +46,5 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_0kik7")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_s3j1l")
 script = ExtResource("4_r0gke")
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
