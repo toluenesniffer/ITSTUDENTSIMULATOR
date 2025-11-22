@@ -1,0 +1,18 @@
+join anglictinarka center
+anglictinarka: Dobrý den noví žáci, vítám vás na naší škole. 
+anglictinarka: Napíšeme si test na slovíčka, nebojte, bude to velmi jednoduché.
+anglictinarka: Věřím, že jste se všechny tyto slovíčka už naučili na základní škole.
+anglictinarka: Ukliďte si prosím vše ze stolu, nechte si pouze propisky!
+anglictinarka: Přeložte mi toto slovíčko\: pes.
+[text_input text="Pes:" var="pes"]
+if {pes} == "dog":
+	anglictinarka: Správně, teď další slovo\: učitelka
+	[text_input text="Učitelka:" var="ucitelka"]
+	if {ucitelka} == "teacher":
+		anglictinarka: Správně, máš za 1!
+		set {anglictinaPlayed} = true
+	else:
+		anglictinarka: <Empty Text Event>
+		anglictinarka: Zkus to znovu \:/
+else:
+	anglictinarka: Jak můžes i tohle zkazit..? (nezadal jsi velké písmeno na začátku? prosím piš jen malé)

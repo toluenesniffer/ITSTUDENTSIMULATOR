@@ -1,0 +1,40 @@
+join matikarka center [animation="Fade In"]
+matikarka: Uděláme zkoušku znalostí!
+matikarka: Udělejte tento pracovní list, sami prosím \:)
+matikarka: Procvičíte si to, co jste dělali na základní škole.. Prvočísla, goniometrické funkce, kvadratické rovnice nebo i magický trojuhelník!!!
+Co je magický trojuhelník...?
+matikarka: Teď prosím spočítejte tyto příklady!
+Hmmmm.. 32 + 35 se rovná...?
+- 67 hahaha
+	matikarka: Správně! Tak si rovnou dáme další příklad!! 
+	join priklad_objekt center
+	matikarka: Kolik je zde jablíček?
+	- 8!!!
+		matikarka: Správně! Máš jedničku \:)
+	- PROČ JSOU BAREVNÝ
+		matikarka: Hele, řekněme si to na rovinu\: Barva neexistuje. Je to jen elegantní, halucinatorní trik, který hraje tvůj mozek, aby se nezbláznil z čistého, chaotického chaosu elektromagnetického záření! Vidíš červenou? Ne, nevidíš. Vidíš vlnovou délku světla – konkrétně paprsek fotonů o délce, řekněme, 650 nm – a tvůj mozek se rozhodne, že to je "ČERVENÁ". Je to mentální zkratka!
+		matikarka: Celá ta šaráda začíná u slunce, které vypustí ten svůj nekonečný proud energie. To je ta velká, neviditelná kosmická polévka radiace, kde viditelné světlo tvoří jen takový tenký, úzký plátek (od 380 do 760 nm), jako plátek šunky na nekonečném sendviči! A ty, ty chudáku lidský, vidíš jen tenhle malý úsek a myslíš si, že vidíš SVĚT!
+		matikarka: Když ten paprsek světla narazí na tvůj oční bulvu (což je v podstatě jen mokrá, rosolovitá koule, která se vyvinula, aby se vyhnula dravcům), musí projít čočkou a nakonec dopadne na sítnici. A tam, tam je ta magie – nebo spíš ta biologická lež!
+		matikarka: Máme tam dvě sorty buněk, tyčinky a čípky. Tyčinky? Ty jsou jen pro to, abys ve tmě nenarazil do skříně – vidí jen černo-bílo-šedý žalostný svět. Ale čípky? To jsou ti praví tyrani barev!
+		matikarka: Lidské bytosti jsou trichromati, což znamená, že máme tři druhy čípků, z nichž každý je citlivý na jinou oblast vlnových délek\:\
+\
+    L-čípky (Long)\: Milují ČERVENOU (delší vlnové délky).\
+\
+    M-čípky (Medium)\: Jsou nadšené ze ZELENÉ (střední vlnové délky).\
+\
+    S-čípky (Short)\: Jsou cool s MODROU (kratší vlnové délky).
+		matikarka: A teď ten fór\: ŽÁDNÝ čípek nevidí jen jednu barvu! Každý čípek je jen takový rozhodčí s megafonem, který křičí\: "Hej, je tady hodně, MÁLO, nebo NIC energie v tomhle vlnovém rozsahu!"\
+\
+Když se podíváš na ŽLUTOU, která má tak 580 nm, tak se spustí silná odezva z L-čípků (Červené) i z M-čípků (Zelené). Mozek dostane hlášku\: "Hlásí se ČERVENÝ a ZELENÝ! Hlásí se srovnatelně silně!" A mozek, ten cynik, si řekne\: "Aha. To je ŽLUTÁ." Přitom žlutá vlnová délka by teoreticky měla existovat sama o sobě, ale my ji sestavujeme v hlavě!
+		leave priklad_objekt
+		Dobrý asi se jdu projít..
+		matikarka: Pak se vrať zpátky!
+	- TO nejsou jablka ale švestky.
+		matikarka: Tak teď si taky nejsem jistá co to je za ovoce..
+		set {matikaPlayed} = true
+- 3235
+	matikarka: To.. moc nezní správně \:((((
+	set {matikaPlayed} = true
+- Neumím počítat
+	matikarka: Do příšte se prosím nauč tento příklad, tím si vše procvičíš\: ( Suma od n=1 až do i^(pi) z [ cos(n! * Delta) / ( ln(| D-2 |) + e^(-Zeta(3)) ) ] ) umocněno na ( Limit x jde k 0 z [ (x^2 + 4) / (x^2) ] ) * ( Třetí odmocnina z Integrálu od Alfa do Beta z ( x^3 * Derivace ( Phi / Epsilon ) dx ) ) / ( 42 * ( D^2 - 4ac ) )
+	set {matikaPlayed} = true

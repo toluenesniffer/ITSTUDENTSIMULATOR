@@ -49,7 +49,7 @@ text = "
 "
 script = ExtResource("3_nj85w")
 
-[node name="CharacterBody2D" parent="." groups=["player"] instance=ExtResource("4_gbt8u")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_gbt8u")]
 position = Vector2(1384, 841)
 
 [node name="ExitLeft" type="Area2D" parent="."]
