@@ -1,0 +1,33 @@
+join fyzikarka center
+fyzikarka: Dobrý den, už teď nestíháme se zkoušením, takže si teď vyzkouším alespoň 8 lidí.
+fyzikarka: Vyzkouším si vás na základy co umíte ze základní školy... doufám.
+fyzikarka: Tak pojď k tabuli.. třeba ty Pepo.
+PROČ JÁ???????
+fyzikarka: Co je v jádru atomu?
+- Protony a neutrony
+	fyzikarka: Správně!
+	fyzikarka: Teď další otázka\: \
+Proč vidíme blesk dříve, než uslyšíme hrom, i když oba vznikají ve stejnou chvíli?
+	- Světlo se šíří rychleji než zvuk.
+		fyzikarka: Ano správně! A ještě jedna otázka na konec.
+		join pravidlo_objekt center
+		fyzikarka: Co je tohle?
+		- AMPÉROVO PRAVIDLO PRAVÉ RUKY
+			fyzikarka: Jde vidět že ses toho na základní škole naučil dost, to je dobře.
+			fyzikarka: Máš za jedna!
+			set {fyzikaPlayed} = true
+		- goon
+			fyzikarka: Prosím ne.
+			set {fyzikaPlayed} = true
+		- Už nechci zkoušení!!!
+			fyzikarka: Jak chceš. Dám ti 4 a jdi si sednout do lavice.
+			set {fyzikaPlayed} = true
+	- Hrom se ztratil
+		fyzikarka: Prosimtě a kam by se ztratil..? Příště tě vyzkouším znovu.
+	- nevím!!!!!!!!!!!!!!!!!!!!!§§
+		fyzikarka: Tak teda za 5 no, jdi si sednout do lavice
+		set {fyzikaPlayed} = true
+- Láva
+	fyzikarka: Co prosím..? No tebe si hned příště prozkouším znovu... za 5.
+- Elektrony
+	fyzikarka: Ne... ty jsou v obalu atomu. Vyzkouším si tě znovu.

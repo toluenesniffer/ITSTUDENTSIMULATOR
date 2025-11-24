@@ -1,0 +1,23 @@
+join elektrotechnicka center
+elektrotechnicka: Dobrý den, v tomto předmětu se naučíte jak vlastně fungují všechny obvody v počítači, v zásuvce, spotřebičích a tak..
+elektrotechnicka: Teď mi prosím řekněte Ohmův zákon. Jak se vypočítá napětí?
+Ummm jak že to bylo..hmmmmm
+- U = R * I
+	elektrotechnicka: Ano správně, takhle se počítá napětí \:)
+	elektrotechnicka: Takže.. naučme se teď vypočítat paralelní odpory...
+	- Usnout
+		elektrotechnicka: Že já se vůbec snažím...
+		set {elkPlayed} = true
+- I = U / R
+	Ne, to je proud... utíkám pryč odsud!!
+	set {elkPlayed} = true
+- R = U / I
+	elektrotechnicka: Ne, to je odpor.. utíkám pryč odsud!!
+	set {elkPlayed} = true
+- USNOUT
+	elektrotechnicka: Klasicky tu zase někdo spí... vzbuď se a pojď k tabuli!
+	elektrotechnicka: Vypočítej mi příklad k tomuto obvodu\: 
+	join odpory_objekt center
+	- Jít spinkat dál
+		elektrotechnicka: Ach jo.. tak co se dá dělat..
+		set {elkPlayed} = true

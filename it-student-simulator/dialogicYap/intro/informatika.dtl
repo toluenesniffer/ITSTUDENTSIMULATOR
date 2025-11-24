@@ -1,0 +1,31 @@
+join yapper1 center
+yapper1: Dobrý den, opět se spolu vidíme!
+yapper1: Určitě vám ze základní školy chybí Word, PowerPoint a Excel, Takže si s nimi užijete ještě další 3 roky!
+yapper1: Doufám, že se těšíte na šílené tabulky v Excelu, citace a podobně.
+yapper1: Teď mi prosím udělejte hezkou prezentaci a budu hodnotit vaše prezentační schopnosti.
+OK naštěstí jsem si už nejakou prezentaci připravil...
+join prezentace1_objekt center
+join pepa rightmost
+pepa: Um... vítejte u mé prezentace na můj projekt Betting Edge Elderly..
+pepa: Tento projekt je o...
+- Casinu
+	pepa: Které bylo stvořené jen pro důchodce aby zde mohli utrácet svůj důchod.
+	leave prezentace1_objekt
+	join prezentace2_objekt center
+	pepa: Pro každého nového uživatele máme bonus až 3000Kč.
+	pepa: Také naše casino obsahuje spoustu různých her!
+	pepa: Takže až zestárnete, neváhejte se připonit do Betting Edge Elderly!
+	leave prezentace2_objekt
+	yapper1: Wow, to je.. moc krásné. Dávám ti 1.
+	set {infPlayed} = true
+- Důchodcích
+	pepa: Kteří.. chodí do casina aby gamblili.
+	pepa: Aaaa měli by tu utratit co nejvíce peněz.
+	yapper1: Tak to nevím jestli bych tam chtěl jít, dám ti 2 \:/
+	yapper1: Jestli chceš, můžes si to opravit příště.
+- "Hranění....."
+	leave prezentace1_objekt
+	yapper1: Cože? Co to znamená?
+	JÁ SE PŘEŘEKL
+	- Utéct ze třídy
+		set {infPlayed} = true

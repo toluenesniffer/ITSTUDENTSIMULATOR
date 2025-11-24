@@ -10,3 +10,7 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/intro/cestina.dtl")
 	elif(Dialogic.VAR.matikaPlayed == true and Dialogic.VAR.anglictinaPlayed == false):
 		Dialogic.start("res://dialogicYap/intro/anglictina.dtl")
+	elif(Dialogic.VAR.anglictinaPlayed == true and Dialogic.VAR.elkPlayed == false):
+		Dialogic.start("res://dialogicYap/intro/elektrotechnika.dtl")
+	else:
+		pass

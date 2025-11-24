@@ -5,8 +5,8 @@ cestinarka (cestinarka): doplňte interpunkci, napište ke každému slovu synon
 COZE?????????????????????????
 Klikni na přísudek. Věta\: Nechtějte mě rozzlobit.
 - Nechtějte
-	No co je tohle za pohromu.. tak za pět.
-	[end_timeline]
+	Ano, i tohle je přísudek, správně!
+	set {cestinaPlayed} = true
 - mě
 	No co je tohle za pohromu.. tak za pět.
 	[end_timeline]

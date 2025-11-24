@@ -1,5 +1,5 @@
 join anglictinarka center
-anglictinarka: Dobrý den noví žáci, vítám vás na naší škole. 
+anglictinarka: Dobrý den noví žáci, vítám vás na naší škole.
 anglictinarka: Napíšeme si test na slovíčka, nebojte, bude to velmi jednoduché.
 anglictinarka: Věřím, že jste se všechny tyto slovíčka už naučili na základní škole.
 anglictinarka: Ukliďte si prosím vše ze stolu, nechte si pouze propisky!
@@ -12,7 +12,7 @@ if {pes} == "dog":
 		anglictinarka: Správně, máš za 1!
 		set {anglictinaPlayed} = true
 	else:
-		anglictinarka: <Empty Text Event>
+		anglictinarka: Noo to nezní správně..
 		anglictinarka: Zkus to znovu \:/
 else:
 	anglictinarka: Jak můžes i tohle zkazit..? (nezadal jsi velké písmeno na začátku? prosím piš jen malé)
