@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://r57s7qxx43t4"]
+[gd_scene load_steps=9 format=3 uid="uid://r57s7qxx43t4"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_6rib3"]
+[ext_resource type="Script" uid="uid://e4um5nt4p4yo" path="res://scenes/hallway.gd" id="1_bvle2"]
 [ext_resource type="Texture2D" uid="uid://dy6rrtkc5qdtk" path="res://scenes/chodbaBecko.png" id="2_nj85w"]
 [ext_resource type="Script" uid="uid://c5sqib8kq8j4u" path="res://scenes/dvere_do_tridy.gd" id="3_nj85w"]
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_gbt8u"]
@@ -19,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bvle2")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
 position = Vector2(968.5, 555.00006)
@@ -59,4 +61,5 @@ script = ExtResource("5_3ttk3")
 position = Vector2(23, 543)
 shape = SubResource("RectangleShape2D_gbt8u")
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="Chodba/dvereDoTridy" method="_on_pressed"]

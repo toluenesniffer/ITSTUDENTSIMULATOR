@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 GlobalScript="*res://global.gd"
+SFXManager="*res://sfx_manager.tscn"
 
 [dialogic]
 
