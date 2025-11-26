@@ -11,6 +11,8 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/intro/matika.dtl")
 	elif(Dialogic.VAR.infPlayed == true and Dialogic.VAR.fyzikaPlayed == false):
 		Dialogic.start("res://dialogicYap/intro/fyzika.dtl")
+	elif(Dialogic.VAR.fyzikaPlayed == true and Dialogic.Var.obcankaPlayed == false):
+		Dialogic.start("res://dialogicYap/intro/obcanka.dtl")
 	else:
 		pass
 func _on_timeline_started():

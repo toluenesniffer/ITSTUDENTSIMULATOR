@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3jo2nueg4yai"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_swg4o"]
+[ext_resource type="Texture2D" uid="uid://y864e3ia288g" path="res://scenes/telocvicna.png" id="2_phdxr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(962, 541)
+texture = ExtResource("1_swg4o")
+
+[node name="Telocvicna" type="Sprite2D" parent="."]
+position = Vector2(961.99994, 543)
+scale = Vector2(1.33125, 1)
+texture = ExtResource("2_phdxr")

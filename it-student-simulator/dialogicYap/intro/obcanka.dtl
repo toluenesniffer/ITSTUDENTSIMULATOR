@@ -1,0 +1,40 @@
+join obcankarka center
+obcankarka: Vítejte na tomto ústavu noví žáci! Já budu vaše učitelka občanské výchovy.
+obcankarka: Budu od vás chtít každou hodinu i aktuality, ale to po vás teď nechci.
+obcankarka: Tentokrát vám řeknu aktuality já. Takže.. dnes jsem se dočetla v novinách, že vláda chce jako národní jídlo zavést seklihu (sekanou v koblize)...
+obcankarka: ..Také chcou ukázkonit manželství pouze pro jednu osobu.. a používat obezní děti jako děla do kanonu..
+obcankarka: Ach jo, co to máme za vládu...
+obcankarka: Teď mě ale napadla dobrá otázka.. 
+obcankarka: Víte vůbec kdo je prezident naší republiky?
+- Je to Petr?
+	obcankarka: Nejspíš i Pavel.
+	obcankarka: Ale správně! Tak jo, další otázka.
+	obcankarka: Kolik let ti musí být, pokud chceš do senátu?
+	- 18
+		obcankarka: Ne to je moc málo! Dám ti teda za 3
+		set {obcankaPlayed} = true
+	- 3
+		obcankarka: Co..? Prosím jdi se projít a zkus to znovu
+	- 67
+		obcankarka: Six sevennnnnn.
+		obcankarka: Jak vtipné. Jdi se projít a zkus to znovu.
+	- 40
+		obcankarka: Správně! Dám ti tedy za 1
+		set {obcankaPlayed} = true
+- Nebo Pavel...?
+	obcankarka: Nejspíš i Petr.
+- Já
+	obcankarka: No.. v budoucnu to někdy zkusit můžes! Jen si počkej dokud ti nebude 40.
+- Karel IV.
+	obcankarka: Jsi si jistý v jakém jsme století?
+	No...
+	- 21.
+		obcankarka: Ty jsi šikula! Máš za 1
+		set {obcankaPlayed} = true
+	- 20.
+		obcankarka: Vedle! Jsme ve 21., přece staletí jsou o to jedno číslíčko výš. Ale to nevadí... máš za 2.
+		set {obcankaPlayed} = true
+	- 15., jsem pracovník na poli!!
+		obcankarka: Ty jsi snad cestovatel v čase? Jdi se prosím projít na čerstvý vzduch a vrať se k nám...
+- Petr Cibulka
+	obcankarka: No trošku ses spletl... ale to nevadí. Zkus to znovu.

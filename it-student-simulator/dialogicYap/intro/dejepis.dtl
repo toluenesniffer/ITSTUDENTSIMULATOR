@@ -1,0 +1,69 @@
+join cestinarka center
+cestinarka: Dobrý den, znovu se vidíme! Učím vás totiž i dějepis \:)
+cestinarka: Měli jste rádi dějepis na základní škole? Jestli ne, tak je to špatně. Je to velmi důležitý předmět a všichni by jsme se ho měli naučit, aby se neopakovala historie.
+cestinarka: Ale ta se bude bohužel opakovat tak či tak..
+cestinarka: Dám vám tedy otázku. 
+cestinarka: Kdo byl upálen v Kostnici roku 1415 za své názory na církev?
+- Svatý Václav
+	cestinarka: Ne... ten zemřel jinak.. Ale dám ti ještě jednu opravnou otázku.
+	cestinarka: Kdo byl prvním prezidentem Československa?
+	- Karel Gott
+		cestinarka: Proboha ne.. tak za 5.
+		set {dejepisPlayed} = true
+	- Jan Lucemburský
+		cestinarka: Proboha ne... tak za 5.
+		set {dejepisPlayed} = true
+	- Tomáš Garrigue Masaryk
+		cestinarka: Ano správně! Dám ti teda za 3.Ano správně! Dám ti teda za 3.
+		set {dejepisPlayed} = true
+	- Edvard Beneš
+		cestinarka: Proboha ne... tak za 5.
+		set {dejepisPlayed} = true
+- Jan Hus
+	cestinarka: Ano správně!
+	cestinarka: A ještě jedna otázka! 
+	cestinarka: Kdo byl prvním prezidentem Československa?
+	- Karel Gott
+		cestinarka: Proboha ne... ale první otázku jsi měl správně, tak budiž. Dám ti za 3.
+		set {dejepisPlayed} = true
+	- Jan Lucemburský
+		cestinarka: Proboha ne... ale první otázku jsi měl správně, tak budiž. Dám ti za 3.
+		set {dejepisPlayed} = true
+	- Tomáš Garrigue Masaryk
+		cestinarka: Ano správně! Máš za 1.
+		set {dejepisPlayed} = true
+	- Edvard Beneš
+		cestinarka: Proboha ne... ale první otázku jsi měl správně, tak budiž. Dám ti za 3.
+		set {dejepisPlayed} = true
+- Jan Amos Komenský
+	cestinarka: Co prosím..? Ne, ten takhle nezemřel a ještě k tomu žil v úplně jiné době..
+	cestinarka: Dám ti teda ještě jednu opravnou otázku.
+	cestinarka: Kdo byl prvním prezidentem Československa?
+	- Karel Gott
+		cestinarka: Proboha ne.. tak za 5.
+		set {dejepisPlayed} = false
+	- Jan Lucemburký
+		cestinarka: Proboha ne.. tak za 5.
+		set {dejepisPlayed} = true
+	- Tomáš Garrigue Masaryk
+		cestinarka: Ano správně! Dám ti teda za 3.
+		set {dejepisPlayed} = true
+	- Edvard Beneš
+		cestinarka: Proboha ne.. tak za 5.
+		set {dejepisPlayed} = true
+- Bedřich Smetana
+	cestinarka: Co prosím..? Ne, ten takhle nezemřel a ještě k tomu žil v úplně jiné době..
+	cestinarka: Dám ti teda ještě jednu kontrolní otázku.
+	cestinarka: Kdo byl prvním prezidentem Československa?
+	- Karel Gott
+		cestinarka: Proboha ne.. tak za 5.
+		set {dejepisPlayed} = true
+	- Jan Lucemburský
+		cestinarka: Proboha ne.. tak za 5.
+		set {dejepisPlayed} = true
+	- Tomáš Garrigue Masaryk
+		Ano správně! Dám ti teda za 3.
+		set {dejepisPlayed} = true
+	- Edvard Beneš
+		Proboha ne.. tak za 5.
+		set {dejepisPlayed} = true
