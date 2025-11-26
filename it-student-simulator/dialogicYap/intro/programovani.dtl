@@ -9,11 +9,38 @@ join diagram_objekt center [animation="Fade In"]
 UMMMMMMMMM CO MÁM DĚLAT
 - 16
 	programator: No to je ale chlupaté číslo! 🐱
-	(zkus to znovu vro)
+	leave diagram_objekt
+	Ještě ti to odpustím a dám ti další otázku.
+	programator: Jak napíšu cyklus while?
+	- while (podminka) {nejaky program}
+		programator: Tak dobře, dám ti teda za 3.
+		set {Znamky.prgZnamka} = 3.0
+		set {prgPlayed} = true
+	- (podminka) while {nejaky program}
+		programator: No ty jseš taky chlupatej, máš to naopak... tak za 5.
+		set {Znamky.prgZnamka} = 5.0
+		set {prgPlayed} = true
+	- for (int i = 0; i <n; i++)
+		programator: No ty jseš taky chlupatej, tohle je cyklus for! Tak za 5.
+		set {Znamky.prgZnamka} = 5.0
+		set {prgPlayed} = true
 - 64
 	programator: Správně, tak z tebe nakonec bude programátor!
+	set {Znamky.prgZnamka} = 1.0
 	set {prgPlayed} = true
 - Začít křičet
 	programator: *taky začne křičet*
-	set {prgPlayed} = true
+	programator: Odpovíš mi teda na otázku? Je to 64 nebo 16?
+	- 64
+		programator: Tak dobře, máš štěstí. Za 1.
+		set {Znamky.prgZnamka} = 1.0
+		set {prgPlayed} = true
+	- 16
+		programator: Tak nic no... tak za 5.
+		set {Znamky.prgZnamka} = 5.0
+		set {prgPlayed} = true
+	- 67 hihi
+		programator: Tuhle frázi už prosím ne!! A navíc špatná odpověď, takže bohužel za 5..
+		set {Znamky.prgZnamka} = 5.0
+		set {prgPlayed} = true
 leave diagram_objekt

@@ -6,10 +6,15 @@ COZE?????????????????????????
 Klikni na přísudek. Věta\: Nechtějte mě rozzlobit.
 - Nechtějte
 	Ano, i tohle je přísudek, správně!
+	cestinarka: Máš za 1!
+	set {Znamky.cestinaZnamka} = 1.0
 	set {cestinaPlayed} = true
 - mě
 	No co je tohle za pohromu.. tak za pět.
+	set {Znamky.cestinaZnamka} = 5.0
+	set {cestinaPlayed} = true
 	[end_timeline]
 - rozzlobit
 	cestinarka (cestinarka): Dám ti jedna a fous, zítra si připrav kulturní aktuality.
+	set {Znamky.cestinaZnamka} = 1.0
 	set {cestinaPlayed} = true

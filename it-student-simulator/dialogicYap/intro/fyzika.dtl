@@ -15,19 +15,30 @@ Proč vidíme blesk dříve, než uslyšíme hrom, i když oba vznikají ve stej
 		- AMPÉROVO PRAVIDLO PRAVÉ RUKY
 			fyzikarka: Jde vidět že ses toho na základní škole naučil dost, to je dobře.
 			fyzikarka: Máš za jedna!
+			set {Znamky.fyzZnamka} = 1.0
 			set {fyzikaPlayed} = true
 		- goon
 			fyzikarka: Prosím ne.
+			Dám ti 2.
+			set {Znamky.fyzZnamka} = 2.0
 			set {fyzikaPlayed} = true
 		- Už nechci zkoušení!!!
 			fyzikarka: Jak chceš. Dám ti 4 a jdi si sednout do lavice.
+			set {Znamky.fyzZnamka} = 4.0
 			set {fyzikaPlayed} = true
 	- Hrom se ztratil
-		fyzikarka: Prosimtě a kam by se ztratil..? Příště tě vyzkouším znovu.
+		fyzikarka: Prosimtě a kam by se ztratil..? Dám ti 3.
+		set {Znamky.fyzZnamka} = 3.0
+		set {fyzikaPlayed} = true
 	- nevím!!!!!!!!!!!!!!!!!!!!!§§
 		fyzikarka: Tak teda za 5 no, jdi si sednout do lavice
+		set {Znamky.fyzZnamka} = 5.0
 		set {fyzikaPlayed} = true
 - Láva
 	fyzikarka: Co prosím..? No tebe si hned příště prozkouším znovu... za 5.
+	set {Znamky.fyzZnamka} = 5.0
+	set {fyzikaPlayed} = true
 - Elektrony
-	fyzikarka: Ne... ty jsou v obalu atomu. Vyzkouším si tě znovu.
+	fyzikarka: Ne... ty jsou v obalu atomu. Vyzkouším si tě příště znovu. Teď máš za 5.
+	set {Znamky.fyzZnamka} = 5.0
+	set {fyzikaPlayed} = true

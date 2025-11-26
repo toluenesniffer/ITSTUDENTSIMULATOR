@@ -4,7 +4,7 @@ obcankarka: Budu od vás chtít každou hodinu i aktuality, ale to po vás teď 
 obcankarka: Tentokrát vám řeknu aktuality já. Takže.. dnes jsem se dočetla v novinách, že vláda chce jako národní jídlo zavést seklihu (sekanou v koblize)...
 obcankarka: ..Také chcou ukázkonit manželství pouze pro jednu osobu.. a používat obezní děti jako děla do kanonu..
 obcankarka: Ach jo, co to máme za vládu...
-obcankarka: Teď mě ale napadla dobrá otázka.. 
+obcankarka: Teď mě ale napadla dobrá otázka..
 obcankarka: Víte vůbec kdo je prezident naší republiky?
 - Je to Petr?
 	obcankarka: Nejspíš i Pavel.
@@ -12,29 +12,63 @@ obcankarka: Víte vůbec kdo je prezident naší republiky?
 	obcankarka: Kolik let ti musí být, pokud chceš do senátu?
 	- 18
 		obcankarka: Ne to je moc málo! Dám ti teda za 3
+		set {Znamky.obnZnamka} = 3.0
 		set {obcankaPlayed} = true
 	- 3
-		obcankarka: Co..? Prosím jdi se projít a zkus to znovu
+		obcankarka: Co..? Ne to je moc málo! Dám ti teda za 3
+		set {Znamky.obnZnamka} = 3.0
+		set {obcankaPlayed} = true
 	- 67
 		obcankarka: Six sevennnnnn.
-		obcankarka: Jak vtipné. Jdi se projít a zkus to znovu.
+		obcankarka: Jak vtipné. Dám ti za 3.
+		set {Znamky.obnZnamka} = 3.0
+		set {obcankaPlayed} = true
 	- 40
 		obcankarka: Správně! Dám ti tedy za 1
+		set {Znamky.obnZnamka} = 1.0
 		set {obcankaPlayed} = true
 - Nebo Pavel...?
 	obcankarka: Nejspíš i Petr.
+	obcankarka: Ale správně, tak další otázka.
+	obcankarka: Kolik let ti musí být, pokud chceš do senátu?
+	- 18
+		obcankarka: Ne to je moc málo! Dám ti teda za 3
+		set {Znamky.obnZnamka} = 3.0
+		set {obcankaPlayed} = true
+	- 3
+		obcankarka: Co..? Ne to je moc málo! Dám ti teda za 3
+		set {Znamky.obnZnamka} = 3.0
+		set {obcankaPlayed} = true
+	- 67
+		obcankarka: Six sevennnnnn.
+		Jak vtipné. Dám ti za 3.
+		set {Znamky.obnZnamka} = 3.0
+		set {obcankaPlayed} = true
+	- 40
+		obcankarka: Správně! Dám ti tedy za 1!
+		set {Znamky.obnZnamka} = 1.0
+		set {obcankaPlayed} = true
 - Já
 	obcankarka: No.. v budoucnu to někdy zkusit můžes! Jen si počkej dokud ti nebude 40.
+	obcankarka: Ale jestli opravdu chceš, tak už jen za tohle ti dám 1! Super \:)
+	set {Znamky.obnZnamka} = 1.0
+	set {obcankaPlayed} = true
 - Karel IV.
 	obcankarka: Jsi si jistý v jakém jsme století?
 	No...
 	- 21.
 		obcankarka: Ty jsi šikula! Máš za 1
+		set {Znamky.obnZnamka} = 1.0
 		set {obcankaPlayed} = true
 	- 20.
 		obcankarka: Vedle! Jsme ve 21., přece staletí jsou o to jedno číslíčko výš. Ale to nevadí... máš za 2.
+		set {Znamky.obnZnamka} = 2.0
 		set {obcankaPlayed} = true
 	- 15., jsem pracovník na poli!!
-		obcankarka: Ty jsi snad cestovatel v čase? Jdi se prosím projít na čerstvý vzduch a vrať se k nám...
+		obcankarka: Ty jsi snad cestovatel v čase? Dám ti 4...
+		set {Znamky.obnZnamka} = 4.0
+		set {obcankaPlayed} = true
 - Petr Cibulka
-	obcankarka: No trošku ses spletl... ale to nevadí. Zkus to znovu.
+	obcankarka: No trošku ses spletl... ale to nevadí. Tak ti dám 4
+	set {Znamky.obnZnamka} = 4.0
+	set {obcankaPlayed} = true

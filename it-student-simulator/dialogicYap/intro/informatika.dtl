@@ -17,15 +17,20 @@ pepa: Tento projekt je o...
 	pepa: Takže až zestárnete, neváhejte se připonit do Betting Edge Elderly!
 	leave prezentace2_objekt
 	yapper1: Wow, to je.. moc krásné. Dávám ti 1.
+	set {Znamky.infZnamka} = 1.0
 	set {infPlayed} = true
 - Důchodcích
 	pepa: Kteří.. chodí do casina aby gamblili.
 	pepa: Aaaa měli by tu utratit co nejvíce peněz.
 	yapper1: Tak to nevím jestli bych tam chtěl jít, dám ti 2 \:/
-	yapper1: Jestli chceš, můžes si to opravit příště.
+	set {Znamky.infZnamka} = 2.0
+	set {infPlayed} = true
 - "Hranění....."
 	leave prezentace1_objekt
 	yapper1: Cože? Co to znamená?
 	JÁ SE PŘEŘEKL
 	- Utéct ze třídy
+		yapper1: Prosím nikam nechoď. Udělej mi teď dotazník a rozešli ho celé škole.
+		yapper1: Další hodinu mi ukážeš výsledky a spravíš si známku. Prozatím ti dám 4.
+		set {Znamky.infZnamka} = 4.0
 		set {infPlayed} = true

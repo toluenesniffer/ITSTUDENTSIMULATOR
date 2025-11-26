@@ -2,22 +2,44 @@ join elektrotechnicka center
 elektrotechnicka: Dobrý den, v tomto předmětu se naučíte jak vlastně fungují všechny obvody v počítači, v zásuvce, spotřebičích a tak..
 elektrotechnicka: Teď mi prosím řekněte Ohmův zákon. Jak se vypočítá napětí?
 Ummm jak že to bylo..hmmmmm
+elektrotechnicka: A POŘÁDNĚ se nad tím zamyslete!! Napětí je to U.
 - U = R * I
 	elektrotechnicka: Ano správně, takhle se počítá napětí \:)
 	elektrotechnicka: Takže.. naučme se teď vypočítat paralelní odpory...
 	- Usnout
 		elektrotechnicka: Že já se vůbec snažím...
-		set {elkPlayed} = true
+		elektrotechnicka: Vzbuď se a řekni mi, co je pull up rezistor. Co znamená to "pull up"?
+		- Jakože přijíždí
+			elektrotechnicka: Co..? tak ti teda dám za 3..
+			set {Znamky.elkZnamka} = 3.0
+			set {elkPlayed} = true
+		- rezistor v logickém obvodu, který na vodiči určuje logickou hodnotu v době, kdy zde není přiveden signál.
+			elektrotechnicka: No ty jsi ale chytrý! Tak za 1.
+			set {Znamky.elkZnamka} = 1.0
+			set {elkPlayed} = true
 - I = U / R
 	Ne, to je proud... utíkám pryč odsud!!
+	elektrotechnicka: Za 5..
+	set {Znamky.elkZnamka} = 5.0
 	set {elkPlayed} = true
 - R = U / I
 	elektrotechnicka: Ne, to je odpor.. utíkám pryč odsud!!
+	elektrotechnicka: Za 5..
+	set {Znamky.elkZnamka} = 5.0
 	set {elkPlayed} = true
 - USNOUT
 	elektrotechnicka: Klasicky tu zase někdo spí... vzbuď se a pojď k tabuli!
-	elektrotechnicka: Vypočítej mi příklad k tomuto obvodu\: 
+	elektrotechnicka: Vypočítej mi příklad k tomuto obvodu\:
 	join odpory_objekt center
 	- Jít spinkat dál
 		elektrotechnicka: Ach jo.. tak co se dá dělat..
-		set {elkPlayed} = true
+		elektrotechnicka: Vzbuď se a odpověz mi aspoň na tohle\:
+		elektrotechnicka: Co je pull up rezistor. Co znamená to "pull up"?
+		- Jakože přijíždí
+			elektrotechnicka: Co..? tak ti teda dám za 5..
+			set {Znamky.elkZnamka} = 5.0
+			set {elkPlayed} = true
+		- rezistor v logickém obvodu, který na vodiči určuje logickou hodnotu v době, kdy zde není přiveden signál.
+			Ano jsi moc chytrý, máš za 1!
+			set {Znamky.elkZnamka} = 1.0
+			set {elkPlayed} = true

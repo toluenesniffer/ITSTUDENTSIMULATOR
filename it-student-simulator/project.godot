@@ -56,6 +56,17 @@ directories/dtl_directory={
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
+"Znamky": {
+"angZnamka": 0,
+"cestinaZnamka": 0,
+"dejZnamka": 0,
+"elkZnamka": 0,
+"fyzZnamka": 0,
+"infZnamka": 0,
+"matikaZnamka": 0,
+"obnZnamka": 0,
+"prgZnamka": 0
+},
 "anglictinaPlayed": false,
 "byl_na_chodbe": false,
 "cestinaPlayed": false,
@@ -69,8 +80,7 @@ variables={
 "obcankaPlayed": false,
 "pes": "",
 "prgPlayed": false,
-"ucitelka": "",
-"zavolat": false
+"ucitelka": ""
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogicYap/intro/style.tres"]

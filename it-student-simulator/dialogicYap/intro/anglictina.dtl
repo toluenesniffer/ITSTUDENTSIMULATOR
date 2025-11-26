@@ -10,9 +10,12 @@ if {pes} == "dog":
 	[text_input text="Učitelka:" var="ucitelka"]
 	if {ucitelka} == "teacher":
 		anglictinarka: Správně, máš za 1!
+		set {Znamky.angZnamka} = 1.0
 		set {anglictinaPlayed} = true
 	else:
 		anglictinarka: Noo to nezní správně..
 		anglictinarka: Zkus to znovu \:/
+		anglictinarka: Vyjdi ze třídy, vrať a zkus to znovu! (Pětky nedávám \:) )
 else:
 	anglictinarka: Jak můžes i tohle zkazit..? (nezadal jsi velké písmeno na začátku? prosím piš jen malé)
+	anglictinarka: Vyjdi ze třídy, vrať a zkus to znovu! (Pětky nedávám \:) )

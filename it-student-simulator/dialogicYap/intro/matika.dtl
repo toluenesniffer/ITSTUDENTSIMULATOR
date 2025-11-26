@@ -11,6 +11,7 @@ Hmmmm.. 32 + 35 se rovná...?
 	matikarka: Kolik je zde jablíček?
 	- 8!!!
 		matikarka: Správně! Máš jedničku \:)
+		set {Znamky.matikaZnamka} = 1.0
 		set {matikaPlayed} = true
 	- PROČ JSOU BAREVNÝ
 		matikarka: Hele, řekněme si to na rovinu\: Barva neexistuje. Je to jen elegantní, halucinatorní trik, který hraje tvůj mozek, aby se nezbláznil z čistého, chaotického chaosu elektromagnetického záření! Vidíš červenou? Ne, nevidíš. Vidíš vlnovou délku světla – konkrétně paprsek fotonů o délce, řekněme, 650 nm – a tvůj mozek se rozhodne, že to je "ČERVENÁ". Je to mentální zkratka!
@@ -28,14 +29,30 @@ S-čípky (Short)\: Jsou cool s MODROU (kratší vlnové délky).
 \
 Když se podíváš na ŽLUTOU, která má tak 580 nm, tak se spustí silná odezva z L-čípků (Červené) i z M-čípků (Zelené). Mozek dostane hlášku\: "Hlásí se ČERVENÝ a ZELENÝ! Hlásí se srovnatelně silně!" A mozek, ten cynik, si řekne\: "Aha. To je ŽLUTÁ." Přitom žlutá vlnová délka by teoreticky měla existovat sama o sobě, ale my ji sestavujeme v hlavě!
 		leave priklad_objekt
-		Dobrý asi se jdu projít..
-		matikarka: Pak se vrať zpátky!
+		Tak... tak dobře.. a těch jablek bylo 8.
+		matikarka: Tak jo, dám ti 1!! A doufám, že odteď budeš vědět, proč jsou tato jablíčka barevná.
+		set {Znamky.matikaZnamka} = 1.0
+		set {matikaPlayed} = true
 	- TO nejsou jablka ale švestky.
 		matikarka: Tak teď si taky nejsem jistá co to je za ovoce..
+		Ale je jich 8.
+		matikarka: Správně!! Dám ti 1.
+		set {Znamky.matikaZnamka} = 1.0
 		set {matikaPlayed} = true
 - 3235
 	matikarka: To.. moc nezní správně \:((((
-	set {matikaPlayed} = true
+	matikarka: Tak ještě opravná otázka.
+	matikarka: Kolik je 2 * 7?
+	- 14
+		matikarka: Správně! Tak ti dám aspoň za 3.
+		set {Znamky.matikaZnamka} = 3.0
+		set {matikaPlayed} = true
+	- 27
+		matikarka: Škoda, ale.. ne. Bohužel máš za 5.
+		set {Znamky.matikaZnamka} = 5.0
+		set {matikaPlayed} = true
 - Neumím počítat
 	matikarka: Do příšte se prosím nauč tento příklad, tím si vše procvičíš\: ( Suma od n=1 až do i^(pi) z [ cos(n! * Delta) / ( ln(| D-2 |) + e^(-Zeta(3)) ) ] ) umocněno na ( Limit x jde k 0 z [ (x^2 + 4) / (x^2) ] ) * ( Třetí odmocnina z Integrálu od Alfa do Beta z ( x^3 * Derivace ( Phi / Epsilon ) dx ) ) / ( 42 * ( D^2 - 4ac ) )
+	matikarka: Mezitím ti dám za 4.
+	set {Znamky.matikaZnamka} = 4.0
 	set {matikaPlayed} = true
