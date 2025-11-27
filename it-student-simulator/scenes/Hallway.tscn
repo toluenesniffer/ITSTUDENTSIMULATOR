@@ -62,4 +62,5 @@ position = Vector2(23, 543)
 shape = SubResource("RectangleShape2D_gbt8u")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Chodba/dvereDoTridy" to="." method="_on_dvere_do_tridy_pressed"]
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="Chodba/dvereDoTridy" method="_on_pressed"]

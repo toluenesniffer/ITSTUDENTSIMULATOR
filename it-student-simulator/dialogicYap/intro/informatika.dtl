@@ -14,7 +14,7 @@ pepa: Tento projekt je o...
 	join prezentace2_objekt center
 	pepa: Pro každého nového uživatele máme bonus až 3000Kč.
 	pepa: Také naše casino obsahuje spoustu různých her!
-	pepa: Takže až zestárnete, neváhejte se připonit do Betting Edge Elderly!
+	pepa: Takže až zestárnete, neváhejte se připojit do Betting Edge Elderly!
 	leave prezentace2_objekt
 	yapper1: Wow, to je.. moc krásné. Dávám ti 1.
 	set {Znamky.infZnamka} = 1.0

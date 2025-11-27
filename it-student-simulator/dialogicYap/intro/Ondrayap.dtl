@@ -5,6 +5,7 @@ Mám se s tímto vochechulou zkamarádit?
 - NN BOJIM
 	[end_timeline]
 if {kamos} == true:
-	Ondra (ondra): Teď jsme kamarádi!! 
+	Ondra (ondra): Teď jsme kamarádi!!
 	Ondra (ondra): Btw, už je 10\:00. Nemáš náhodou hodinu?
 	Nn dobrý času dost!
+	[end_timeline]

@@ -47,4 +47,5 @@ theme_override_styles/disabled = SubResource("StyleBoxTexture_s3j1l")
 script = ExtResource("4_r0gke")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

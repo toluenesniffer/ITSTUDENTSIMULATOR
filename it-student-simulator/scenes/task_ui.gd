@@ -25,3 +25,14 @@ func update_task(new_text: String):
 	if !label:
 		return
 	label.text = new_text
+
+
+func _on_ready() -> void:
+	Dialogic.timeline_ended.connect(_on_dialogic_ended)
+	
+func _on_dialogic_ended():
+	if Dialogic.VAR.kamos == true and Dialogic.VAR.cestinaPlayed == false:
+		update_task("VRAŤ SE DO TŘÍDY B209")
+	elif Dialogic.VAR.obcankaPlayed == true and Dialogic.VAR.dejepisPlayed == false:
+		update_task("JDI DO TŘÍDY B209")
+	
