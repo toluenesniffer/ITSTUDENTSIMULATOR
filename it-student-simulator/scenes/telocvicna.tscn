@@ -1,15 +1,68 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3jo2nueg4yai"]
+[gd_scene load_steps=11 format=3 uid="uid://b3jo2nueg4yai"]
 
+[ext_resource type="Script" uid="uid://byi05qc8jgl5b" path="res://scenes/telocvicna.gd" id="1_phdxr"]
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_swg4o"]
 [ext_resource type="Texture2D" uid="uid://y864e3ia288g" path="res://scenes/telocvicna.png" id="2_phdxr"]
+[ext_resource type="Texture2D" uid="uid://blr3s3gbw5io5" path="res://scenes/dvirka.png" id="4_1mjwk"]
+[ext_resource type="Script" uid="uid://cd6qvymgl44xw" path="res://scenes/buttontelak.gd" id="5_1mjwk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vlkhl"]
+texture = ExtResource("4_1mjwk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ad7mh"]
+texture = ExtResource("4_1mjwk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qxegr"]
+texture = ExtResource("4_1mjwk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0srro"]
+texture = ExtResource("4_1mjwk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cqpfc"]
+texture = ExtResource("4_1mjwk")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_phdxr")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
-position = Vector2(962, 541)
+position = Vector2(976.00006, 520.5)
+scale = Vector2(1.0572916, 1.1249999)
 texture = ExtResource("1_swg4o")
 
 [node name="Telocvicna" type="Sprite2D" parent="."]
-position = Vector2(961.99994, 543)
-scale = Vector2(1.33125, 1)
+position = Vector2(955.5, 543)
+scale = Vector2(1.4791666, 1)
 texture = ExtResource("2_phdxr")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = 1014.0
+offset_right = 1927.0
+offset_bottom = 1084.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 50.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1395.0
+offset_top = 153.0
+offset_right = 1482.0
+offset_bottom = 322.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_vlkhl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ad7mh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qxegr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_0srro")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cqpfc")
+script = ExtResource("5_1mjwk")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

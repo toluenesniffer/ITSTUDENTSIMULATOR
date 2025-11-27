@@ -1,0 +1,9 @@
+join telocvikarka center
+join pepa (Pepa po telaku) left
+telocvikarka: Jseš nějakej zadejchanej ne?
+Ummm.. neee...
+telocvikarka: Bohužel ti ale vypršel čas. Omlouvám se, ale nezvládl jsi to.
+telocvikarka: Dávám ti 5.
+Ach jo..
+set {Znamky.telocvikZnamka} = 5.0
+set {Znamky.telocvikPlayed} = true

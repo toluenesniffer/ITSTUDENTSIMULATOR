@@ -1,0 +1,9 @@
+join telocvikarka center
+join pepa (Pepa po telaku) left
+ASI UMŘU
+telocvikarka: Wow... ty jsi to opravdu dokázal.. obdivuhodné!
+telocvikarka: Tak dobře, máš za 1!
+DÍKY BOHU JÁ TO DOKÁZAL
+PROJDU DO DRUHÁKU!!!!!
+set {Znamky.telocvikZnamka} = 1.0
+set {Znamky.telocvikPlayed} = true

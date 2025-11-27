@@ -40,6 +40,7 @@ directories/dch_directory={
 "prezentace2_objekt": "res://dialogicYap/yapperi/prezentace2_objekt.dch",
 "priklad_objekt": "res://dialogicYap/yapperi/priklad_objekt.dch",
 "programator": "res://dialogicYap/yapperi/programator.dch",
+"telocvikarka": "res://dialogicYap/yapperi/telocvikarka.dch",
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch"
 }
 directories/dtl_directory={
@@ -54,6 +55,9 @@ directories/dtl_directory={
 "matika": "res://dialogicYap/intro/matika.dtl",
 "obcanka": "res://dialogicYap/intro/obcanka.dtl",
 "programovani": "res://dialogicYap/intro/programovani.dtl",
+"telocvik": "res://dialogicYap/intro/telocvik.dtl",
+"telocvik_prohra": "res://dialogicYap/intro/telocvik_prohra.dtl",
+"telocvik_vyhra": "res://dialogicYap/intro/telocvik_vyhra.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
@@ -66,7 +70,9 @@ variables={
 "infZnamka": 0,
 "matikaZnamka": 0,
 "obnZnamka": 0,
-"prgZnamka": 0
+"prgZnamka": 0,
+"telocvikPlayed": false,
+"telocvikZnamka": 0
 },
 "anglictinaPlayed": false,
 "byl_na_chodbe": false,
