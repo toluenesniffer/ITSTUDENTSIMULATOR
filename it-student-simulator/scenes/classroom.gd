@@ -56,4 +56,7 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI ZPĚT DO TŘÍDY B209")
 	elif Dialogic.VAR.elkPlayed == true and Dialogic.VAR.infPlayed == false:
 		TaskUI.update_task("JDI DO TŘÍDY A306")
+	elif Dialogic.VAR.dejepisPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false:
+		TaskUI.update_task("PŘEŽIJ TĚLOCVIK.")
+		TaskUI.set_color_danger()
 	SFXManager.play("res://music/dvereotevreni.mp3")

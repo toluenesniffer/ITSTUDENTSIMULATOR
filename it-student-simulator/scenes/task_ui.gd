@@ -36,3 +36,11 @@ func _on_dialogic_ended():
 	elif Dialogic.VAR.obcankaPlayed == true and Dialogic.VAR.dejepisPlayed == false:
 		update_task("JDI DO TŘÍDY B209")
 	
+func set_color_danger():
+	if !label:
+		return
+	label.add_theme_color_override("font_color", Color.RED)
+func reset_color():
+	if !label:
+		return
+	label.remove_theme_color_override("font_color")

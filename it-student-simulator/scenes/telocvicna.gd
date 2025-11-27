@@ -7,7 +7,8 @@ var cilove_skore = 50
 
 
 func _on_ready() -> void:
-	Dialogic.start("res://dialogicYap/intro/telocvik.dtl")
+	if (Dialogic.VAR.cestinaPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false):
+		Dialogic.start("res://dialogicYap/intro/telocvik.dtl")
 	$ProgressBar.visible = false
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 func _on_dialogic_signal(argument: String):
@@ -30,7 +31,8 @@ func _process(_delta):
 			if skore >= cilove_skore:
 				ukonci_hru(true)
 
-
+func _on_timeline_started():
+	SFXManager.change_music("res://music/ukolhudba.mp3")
 
 func _on_timer_timeout() -> void:
 	ukonci_hru(false)
@@ -42,7 +44,11 @@ func ukonci_hru(vyhral):
 	$ProgressBar.visible = false
 	if vyhral:
 		Dialogic.VAR.Znamky.telocvikZnamka = 1
+		TaskUI.reset_color()
+		TaskUI.hide_task()
 		Dialogic.start("res://dialogicYap/intro/telocvik_vyhra.dtl")
 	else:
 		Dialogic.VAR.Znamky.telocvikZnamka = 5
+		TaskUI.reset_color()
+		TaskUI.hide_task()
 		Dialogic.start("res://dialogicYap/intro/telocvik_prohra.dtl")

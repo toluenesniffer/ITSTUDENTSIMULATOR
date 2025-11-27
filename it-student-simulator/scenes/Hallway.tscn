@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://r57s7qxx43t4"]
+[gd_scene load_steps=11 format=3 uid="uid://r57s7qxx43t4"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_6rib3"]
 [ext_resource type="Script" uid="uid://e4um5nt4p4yo" path="res://scenes/hallway.gd" id="1_bvle2"]
@@ -6,12 +6,16 @@
 [ext_resource type="Script" uid="uid://c5sqib8kq8j4u" path="res://scenes/dvere_do_tridy.gd" id="3_nj85w"]
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_gbt8u"]
 [ext_resource type="Script" uid="uid://dcalrbn5i240r" path="res://scenes/exit_left.gd" id="5_3ttk3"]
+[ext_resource type="Script" uid="uid://cn1j0f31p5vxf" path="res://scenes/exit_right_second.gd" id="7_8nsrc"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6rib3"]
 blend_mode = 1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbt8u"]
 size = Vector2(66, 1106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fnxo"]
+size = Vector2(144.58359, 4218.282)
 
 [node name="Hallway" type="Control"]
 layout_mode = 3
@@ -60,6 +64,16 @@ script = ExtResource("5_3ttk3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
 position = Vector2(23, 543)
 shape = SubResource("RectangleShape2D_gbt8u")
+
+[node name="ExitRight" type="Area2D" parent="."]
+position = Vector2(2257.6235, 386.034)
+scale = Vector2(0.77245116, 0.25768793)
+script = ExtResource("7_8nsrc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
+position = Vector2(-512.1665, 595.54956)
+scale = Vector2(1, 0.9999995)
+shape = SubResource("RectangleShape2D_1fnxo")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="." method="_on_dvere_do_tridy_pressed"]
