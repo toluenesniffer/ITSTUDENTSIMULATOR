@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://k4mooc1w742h"]
+
+[ext_resource type="Script" uid="uid://b7mjpig25ixhs" path="res://scenes/task_ui.gd" id="1_xicus"]
+[ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="2_hixqw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yung2"]
+content_margin_left = 15.0
+content_margin_top = 30.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_xicus")
+
+[node name="TaskLabel" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_hixqw")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_yung2")
+horizontal_alignment = 1
+vertical_alignment = 1

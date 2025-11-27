@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://cr2rhncxj8vyp"]
+[gd_scene load_steps=9 format=3 uid="uid://cr2rhncxj8vyp"]
 
 [ext_resource type="Script" uid="uid://bqw2kv4uci57v" path="res://scenes/classroom.gd" id="1_6h312"]
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="2_1tyx7"]
 [ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_rmcuf"]
 [ext_resource type="Texture2D" uid="uid://cnngrcu25mv84" path="res://scenes/tridaBecko_UP.png" id="5_jxxy8"]
 [ext_resource type="Script" uid="uid://bgjmueej63gqm" path="res://scenes/button_hallway.gd" id="5_rmcuf"]
-[ext_resource type="Script" uid="uid://cv46edrht5rm0" path="res://scenes/canvas_layer.gd" id="6_jxxy8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xii5s"]
 texture = ExtResource("3_rmcuf")
@@ -62,17 +61,6 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_xii5s")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_rmcuf")
 theme_override_styles/hover = SubResource("StyleBoxTexture_jxxy8")
 script = ExtResource("5_rmcuf")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("6_jxxy8")
-
-[node name="TaskLabel" type="Label" parent="CanvasLayer"]
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 101.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "JDI VEN (KLIKNI NA DVEŘE)"
 
 [node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(270, 38)
