@@ -31,10 +31,12 @@ directories/dch_directory={
 "diagram_objekt": "res://dialogicYap/yapperi/diagram_objekt.dch",
 "elektrotechnicka": "res://dialogicYap/yapperi/elektrotechnicka.dch",
 "fyzikarka": "res://dialogicYap/yapperi/fyzikarka.dch",
+"horymir": "res://dialogicYap/yapperi/horymir.dch",
 "matikarka": "res://dialogicYap/yapperi/matikarka.dch",
 "obcankarka": "res://dialogicYap/yapperi/obcankarka.dch",
 "odpory_objekt": "res://dialogicYap/yapperi/odpory_objekt.dch",
 "pepa": "res://dialogicYap/yapperi/pepa.dch",
+"petra": "res://dialogicYap/yapperi/petra.dch",
 "pravidlo_objekt": "res://dialogicYap/yapperi/pravidlo_objekt.dch",
 "prezentace1_objekt": "res://dialogicYap/yapperi/prezentace1_objekt.dch",
 "prezentace2_objekt": "res://dialogicYap/yapperi/prezentace2_objekt.dch",
@@ -44,8 +46,12 @@ directories/dch_directory={
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch"
 }
 directories/dtl_directory={
+"Horymirdefault": "res://dialogicYap/intro/Horymirdefault.dtl",
+"Horymiryap": "res://dialogicYap/intro/Horymiryap.dtl",
 "Intro": "res://dialogicYap/intro/Intro.dtl",
 "Ondrayap": "res://dialogicYap/intro/Ondrayap.dtl",
+"Petradefault": "res://dialogicYap/intro/Petradefault.dtl",
+"Petrayap": "res://dialogicYap/intro/Petrayap.dtl",
 "anglictina": "res://dialogicYap/intro/anglictina.dtl",
 "cestina": "res://dialogicYap/intro/cestina.dtl",
 "dejepis": "res://dialogicYap/intro/dejepis.dtl",
@@ -61,6 +67,7 @@ directories/dtl_directory={
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
+"HorymiryapPlayed": false,
 "Znamky": {
 "angZnamka": 0,
 "cestinaZnamka": 0,
@@ -83,9 +90,12 @@ variables={
 "infPlayed": false,
 "introPlayed": false,
 "kamos": false,
+"kamos2": false,
+"kamoska": false,
 "matikaPlayed": false,
 "obcankaPlayed": false,
 "pes": "",
+"petrayapPlayed": false,
 "prgPlayed": false,
 "ucitelka": ""
 }

@@ -23,7 +23,7 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.matikaPlayed == true and Dialogic.VAR.anglictinaPlayed == false):
 		TaskUI.update_task("NAPIŠ SPRÁVNĚ SLOVA ANGLICKY")
 		Dialogic.start("res://dialogicYap/intro/anglictina.dtl")
-	elif(Dialogic.VAR.anglictinaPlayed == true and Dialogic.VAR.elkPlayed == false):
+	elif(Dialogic.VAR.anglictinaPlayed == true and Dialogic.VAR.kamoska == true and Dialogic.VAR.elkPlayed == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/intro/elektrotechnika.dtl")
 	elif(Dialogic.VAR.obcankaPlayed == true and Dialogic.VAR.dejepisPlayed == false):
@@ -52,8 +52,8 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("NAJDI SI KAMARÁDA")
 	elif (Dialogic.VAR.kamos == true and Dialogic.VAR.prgPlayed == false):
 		TaskUI.update_task("JDI DO TŘÍDY A306")
-	elif Dialogic.VAR.anglictinaPlayed == true and Dialogic.VAR.elkPlayed == false:
-		TaskUI.update_task("JDI ZPĚT DO TŘÍDY B209")
+	elif Dialogic.VAR.anglictinaPlayed == true and Dialogic.VAR.kamoska == false:
+		TaskUI.update_task("NAJDI SI KAMARÁDKU")
 	elif Dialogic.VAR.elkPlayed == true and Dialogic.VAR.infPlayed == false:
 		TaskUI.update_task("JDI DO TŘÍDY A306")
 	elif Dialogic.VAR.dejepisPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false:

@@ -1,0 +1,17 @@
+horymir: Ahoj! Jmenuji se Horymír, kdo jseš ty?
+Mám te s tímto kulišákem zkamarádit?
+- jj!
+	set {kamos2} = true
+	Já jsem Pepa!!
+	horymir: OK nice, a co máš teď za hodinu?
+	Ummm asii občanku?
+	horymir: To je dobrý, slyšel jsem že ta učitelka na občanku je skvělá.
+	Ty jsi taky v prváku?
+	horymir: Jj, jaké máš pocity z této školy?
+	Noo zajímavý, ale baví mě to!!
+	horymir: Tak to je dobře, já už musím jít na informatiku, tak čus
+	- Čau
+		set {HorymiryapPlayed} = true
+		[end_timeline]
+- nn bojím se
+	[end_timeline]

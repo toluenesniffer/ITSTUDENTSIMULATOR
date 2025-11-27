@@ -33,6 +33,10 @@ func _on_ready() -> void:
 func _on_dialogic_ended():
 	if Dialogic.VAR.kamos == true and Dialogic.VAR.cestinaPlayed == false:
 		update_task("VRAŤ SE DO TŘÍDY B209")
+	elif Dialogic.VAR.kamoska == true and Dialogic.VAR.elkPlayed == false:
+		TaskUI.update_task("JDI ZPĚT DO TŘÍDY B209")
+	elif Dialogic.VAR.kamos2 == true and Dialogic.VAR.obcankaPlayed == false:
+		TaskUI.update_task("JDI ZPĚT DO TŘÍDY A307")
 	elif Dialogic.VAR.obcankaPlayed == true and Dialogic.VAR.dejepisPlayed == false:
 		update_task("JDI DO TŘÍDY B209")
 	

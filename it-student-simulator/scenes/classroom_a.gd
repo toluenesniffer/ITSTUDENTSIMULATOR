@@ -13,7 +13,7 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.infPlayed == true and Dialogic.VAR.fyzikaPlayed == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/intro/fyzika.dtl")
-	elif(Dialogic.VAR.fyzikaPlayed == true and Dialogic.VAR.obcankaPlayed == false):
+	elif(Dialogic.VAR.fyzikaPlayed == true and Dialogic.VAR.kamos2 == true and Dialogic.VAR.obcankaPlayed == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/intro/obcanka.dtl")
 	else:
@@ -28,8 +28,10 @@ func _on_timeline_ended():
 func _on_button_pressed() -> void:
 	if Dialogic.VAR.matikaPlayed == true and Dialogic.VAR.anglictinaPlayed == false:
 		TaskUI.update_task("JDI DO TŘÍDY B209")
-	elif Dialogic.VAR.fyzikaPlayed == true and Dialogic.VAR.obcankaPlayed == false:
-		TaskUI.update_task("JDI ZPĚT DO TŘÍDY A307")
+	elif Dialogic.VAR.fyzikaPlayed == true and Dialogic.VAR.kamos2 == false:
+		TaskUI.update_task("NAJDI SI KAMARÁDA")
+	#elif Dialogic.VAR.anglictinaPlayed == true and Dialogic.VAR.kamoska == false:
+		#TaskUI.update_task("NAJDI SI KAMARÁDKU")
 	elif Dialogic.VAR.obcankaPlayed == true and Dialogic.VAR.dejepisPlayed == false:
 		TaskUI.update_task("JDI DO TŘÍDY B209")
 	SFXManager.play("res://music/dvereotevreni.mp3")

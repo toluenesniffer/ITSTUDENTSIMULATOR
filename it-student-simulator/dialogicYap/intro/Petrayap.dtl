@@ -1,0 +1,13 @@
+petra: Ahoj jsem random borka.
+Mám se s touto bludicí zkamarádit?
+- omg jo!!
+	set {kamoska} = true
+	petra: Jupí! Jak se vlastně jmenuješ ty?
+	Já jsem PEPA.
+	petra: Dobře dobře... a co máš teď za hodinu?
+	Asi.. elektrotechniku? Nevím kde
+	petra: Aha ok tak hodně štěstí! Já musím utíkat na matiku
+	- Ahoj!
+		set {petrayapPlayed} = true
+- nn bojím se žen
+	[end_timeline]
