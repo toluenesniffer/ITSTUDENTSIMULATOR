@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqxibl8tskv1u"]
+
+[ext_resource type="Texture2D" uid="uid://b6wnde4hsiq6m" path="res://scenes/tobecontinued.jpeg" id="1_dt0yg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Tobecontinued" type="Sprite2D" parent="."]
+position = Vector2(965.5, 543.5)
+scale = Vector2(1.0151042, 1.0287037)
+texture = ExtResource("1_dt0yg")

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var sprite = $AnimatedSprite2D
-const SPEED = 300
+#const SPEED = 300
 var is_moving = false
 
 func _physics_process(delta) -> void:
@@ -9,7 +9,8 @@ func _physics_process(delta) -> void:
 	var anim_sprite = $AnimatedSprite2D
 	if direction:
 		anim_sprite.play("walk")
-		velocity.x = direction * SPEED
+		#velocity.x = direction * SPEED
+		velocity.x = direction * GlobalData.player_speed
 		is_moving = true
 	if direction > 0:
 		sprite.flip_h = false

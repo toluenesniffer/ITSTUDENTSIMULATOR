@@ -29,6 +29,9 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.obcankaPlayed == true and Dialogic.VAR.dejepisPlayed == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/intro/dejepis.dtl")
+	elif(Dialogic.VAR.Znamky.telocvikPlayed == true and Dialogic.VAR.vysvedceniPlayed == false):
+		TaskUI.update_task("VYSVĚDČENÍ")
+		Dialogic.start("res://dialogicYap/intro/vysvedceni.dtl")
 	else:
 		pass
 		
@@ -60,3 +63,7 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("PŘEŽIJ TĚLOCVIK.")
 		TaskUI.set_color_danger()
 	SFXManager.play("res://music/dvereotevreni.mp3")
+	
+func _on_dialogic_signal(argument: String):
+	if argument == "konec_hry":
+		get_tree().change_scene_to_file("res://scenes/endscreen.tscn")

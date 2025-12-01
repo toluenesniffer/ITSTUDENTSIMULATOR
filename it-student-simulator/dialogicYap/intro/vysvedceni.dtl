@@ -1,0 +1,19 @@
+join yapper1 (Spooky) center
+yapper1 (Spooky): Dobrý den, konečně jsme u konce vašeho prvního ročníku na této škole.
+yapper1 (Spooky): Jaké to bylo?
+Vzrušující.
+yapper1 (Spooky): Teď dostanete vaše vysvědčení, na které se určitě všichni těšíte.
+Snad mě rodiče nezabijou...
+yapper1 (Spooky): Takže Pepo.... z Českého jazyka máš {Znamky.cestinaZnamka}.
+yapper1 (Spooky): Z Programování máš {Znamky.prgZnamka}.
+yapper1 (Spooky): Z matematiky máš {Znamky.matikaZnamka}.
+yapper1 (Spooky): Z Anglického jazyka máš {Znamky.angZnamka}.
+yapper1 (Spooky): Z Elektrotechniky máš {Znamky.elkZnamka}.
+yapper1 (Spooky): Z Informačních technologií máš {Znamky.infZnamka}.
+yapper1 (Spooky): Z Fyziky máš {Znamky.fyzZnamka}.
+yapper1 (Spooky): Z Občanské výchovy máš {Znamky.obnZnamka}.
+yapper1 (Spooky): Z Dějepisu máš {Znamky.dejZnamka}.
+yapper1 (Spooky): A nakonec z Tělesné výchovy máš {Znamky.telocvikZnamka}.
+yapper1 (Spooky): Pokud máš z něčeho za 5, uvidíme se ještě o prázdninách.
+yapper1 (Spooky): To je tedy vše, doufám že jste si všichni užili první ročník, uvidíme se opět v druhém ročníku!
+[signal arg="konec_hry"]

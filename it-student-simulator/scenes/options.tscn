@@ -1,0 +1,68 @@
+[gd_scene load_steps=12 format=3 uid="uid://iold8qac814q"]
+
+[ext_resource type="Script" uid="uid://bdodw6hg5w6v7" path="res://scenes/options.gd" id="1_2iy26"]
+[ext_resource type="Texture2D" uid="uid://btkte2lwnw03d" path="res://scenes/mainbg.png" id="1_c2u1v"]
+[ext_resource type="Texture2D" uid="uid://c11t2bcaqh3uo" path="res://scenes/menu.png" id="2_yjkok"]
+[ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="4_o7i7e"]
+[ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="5_uon5e"]
+[ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="6_85aq5"]
+[ext_resource type="Script" uid="uid://mtku5fx0r4md" path="res://scenes/back.gd" id="7_gycth"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gyu1t"]
+texture = ExtResource("4_o7i7e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5hix"]
+texture = ExtResource("5_uon5e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rftt1"]
+texture = ExtResource("6_85aq5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0un6s"]
+texture = ExtResource("5_uon5e")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_2iy26")
+
+[node name="Mainbg" type="Sprite2D" parent="."]
+position = Vector2(960.50006, 538.5)
+scale = Vector2(1.210625, 1.0196997)
+texture = ExtResource("1_c2u1v")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(955, 533.5)
+scale = Vector2(1, 1.0033333)
+texture = ExtResource("2_yjkok")
+
+[node name="Volume" type="HSlider" parent="."]
+offset_left = 597.0
+offset_top = 264.0
+offset_right = 1280.0
+offset_bottom = 355.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Speed" type="HSlider" parent="."]
+offset_left = 599.0
+offset_top = 465.0
+offset_right = 1280.0
+offset_bottom = 485.0
+min_value = 100.0
+max_value = 600.0
+value = 300.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 754.0
+offset_top = 658.0
+offset_right = 1164.0
+offset_bottom = 882.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_gyu1t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_g5hix")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rftt1")
+theme_override_styles/focus = SubResource("StyleBoxTexture_0un6s")
+script = ExtResource("7_gycth")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="value_changed" from="Volume" to="." method="_on_volume_value_changed"]
+[connection signal="value_changed" from="Speed" to="." method="_on_speed_value_changed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

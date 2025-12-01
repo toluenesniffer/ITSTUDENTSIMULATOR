@@ -21,6 +21,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 GlobalScript="*res://global.gd"
 SFXManager="*res://sfx_manager.tscn"
 TaskUI="*res://scenes/task_ui.tscn"
+GlobalData="*res://global_data.gd"
 
 [dialogic]
 
@@ -64,6 +65,7 @@ directories/dtl_directory={
 "telocvik": "res://dialogicYap/intro/telocvik.dtl",
 "telocvik_prohra": "res://dialogicYap/intro/telocvik_prohra.dtl",
 "telocvik_vyhra": "res://dialogicYap/intro/telocvik_vyhra.dtl",
+"vysvedceni": "res://dialogicYap/intro/vysvedceni.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
@@ -97,7 +99,8 @@ variables={
 "pes": "",
 "petrayapPlayed": false,
 "prgPlayed": false,
-"ucitelka": ""
+"ucitelka": "",
+"vysvedceniPlayed": false
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogicYap/intro/style.tres"]
