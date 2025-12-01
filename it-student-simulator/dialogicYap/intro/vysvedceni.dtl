@@ -16,4 +16,5 @@ yapper1 (Spooky): Z Dějepisu máš {Znamky.dejZnamka}.
 yapper1 (Spooky): A nakonec z Tělesné výchovy máš {Znamky.telocvikZnamka}.
 yapper1 (Spooky): Pokud máš z něčeho za 5, uvidíme se ještě o prázdninách.
 yapper1 (Spooky): To je tedy vše, doufám že jste si všichni užili první ročník, uvidíme se opět v druhém ročníku!
+set {vysvedceniPlayed} = true
 [signal arg="konec_hry"]

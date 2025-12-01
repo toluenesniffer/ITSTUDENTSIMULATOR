@@ -9,6 +9,7 @@ func _on_ready() -> void:
 	
 	print("Music playing: ", SFXManager.music_player.playing)
 	print("Current music: ", SFXManager.current_music)
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 	if !signals_connected:
 		Dialogic.timeline_started.connect(_on_timeline_started)
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
@@ -32,6 +33,8 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.Znamky.telocvikPlayed == true and Dialogic.VAR.vysvedceniPlayed == false):
 		TaskUI.update_task("VYSVĚDČENÍ")
 		Dialogic.start("res://dialogicYap/intro/vysvedceni.dtl")
+	elif(Dialogic.VAR.vysvedceniPlayed == true):
+		TaskUI.hide_task()
 	else:
 		pass
 		
