@@ -27,12 +27,13 @@ size = Vector2(68, 1094)
 [node name="Node2D" type="Node2D"]
 
 [node name="Cernybg" type="Sprite2D" parent="."]
-position = Vector2(956, 539)
+position = Vector2(956.99994, 539)
+scale = Vector2(1.0354166, 1)
 texture = ExtResource("1_b48a3")
 
 [node name="Corridor" type="Sprite2D" parent="."]
-position = Vector2(954.00006, 531.00006)
-scale = Vector2(0.96, 0.9499999)
+position = Vector2(959.99994, 531.00006)
+scale = Vector2(0.964, 0.9499999)
 texture = ExtResource("2_7ycg3")
 
 [node name="ExitRight" type="Area2D" parent="."]

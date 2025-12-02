@@ -24,8 +24,8 @@ texture = ExtResource("5_uon5e")
 script = ExtResource("1_2iy26")
 
 [node name="Mainbg" type="Sprite2D" parent="."]
-position = Vector2(960.50006, 538.5)
-scale = Vector2(1.210625, 1.0196997)
+position = Vector2(962.5, 542.5)
+scale = Vector2(1.2131249, 1.0628518)
 texture = ExtResource("1_c2u1v")
 
 [node name="Menu" type="Sprite2D" parent="."]

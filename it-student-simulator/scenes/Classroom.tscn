@@ -29,7 +29,8 @@ grow_vertical = 2
 script = ExtResource("1_6h312")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
-position = Vector2(1233, 573)
+position = Vector2(1234, 580.00006)
+scale = Vector2(1.0187501, 1.0351852)
 texture = ExtResource("2_1tyx7")
 
 [node name="Container" type="Container" parent="."]

@@ -67,10 +67,10 @@ texture = ExtResource("1_opqb1")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 807.0
-offset_top = 467.0
-offset_right = 1146.7256
-offset_bottom = 647.0
+offset_left = 802.0
+offset_top = 462.0
+offset_right = 1156.0
+offset_bottom = 656.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_lsu5y")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_okyki")
 theme_override_styles/hover = SubResource("StyleBoxTexture_dpbdj")
