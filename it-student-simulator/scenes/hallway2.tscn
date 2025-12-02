@@ -100,13 +100,13 @@ y_sort_enabled = true
 position = Vector2(1296, 596)
 
 [node name="Sprite2D" type="Sprite2D" parent="Postavy"]
-position = Vector2(1121, 493)
+position = Vector2(1109, 474)
 texture = ExtResource("8_dnr27")
 
 [node name="Button" type="Button" parent="Postavy/Sprite2D"]
-offset_left = -96.0
+offset_left = -113.0
 offset_top = -175.0
-offset_right = 91.0
+offset_right = 74.0
 offset_bottom = 175.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5u2i1")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_hef4o")

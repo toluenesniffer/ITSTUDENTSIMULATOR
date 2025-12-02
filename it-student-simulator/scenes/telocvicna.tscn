@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://b3jo2nueg4yai"]
+[gd_scene load_steps=12 format=3 uid="uid://b3jo2nueg4yai"]
 
 [ext_resource type="Script" uid="uid://byi05qc8jgl5b" path="res://scenes/telocvicna.gd" id="1_phdxr"]
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_swg4o"]
 [ext_resource type="Texture2D" uid="uid://y864e3ia288g" path="res://scenes/telocvicna.png" id="2_phdxr"]
 [ext_resource type="Texture2D" uid="uid://blr3s3gbw5io5" path="res://scenes/dvirka.png" id="4_1mjwk"]
 [ext_resource type="Script" uid="uid://cd6qvymgl44xw" path="res://scenes/buttontelak.gd" id="5_1mjwk"]
+[ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="6_wx80q"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vlkhl"]
 texture = ExtResource("4_1mjwk")
@@ -64,11 +65,12 @@ theme_override_styles/disabled = SubResource("StyleBoxTexture_cqpfc")
 script = ExtResource("5_1mjwk")
 
 [node name="TimeLabel" type="Label" parent="."]
-offset_left = 910.0
-offset_top = 156.0
-offset_right = 1049.0
-offset_bottom = 247.0
+offset_left = 908.0
+offset_top = 145.0
+offset_right = 1047.0
+offset_bottom = 236.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_wx80q")
 theme_override_font_sizes/font_size = 50
 
 [connection signal="ready" from="." to="." method="_on_ready"]

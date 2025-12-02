@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cpu6cci114l3x"]
+[gd_scene load_steps=17 format=3 uid="uid://cpu6cci114l3x"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_b48a3"]
 [ext_resource type="Texture2D" uid="uid://vq142dmllwwh" path="res://scenes/corridor.png" id="2_7ycg3"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" uid="uid://c51lw8ye7xkaa" path="res://scenes/buttonondra.gd" id="5_yinb5"]
 [ext_resource type="Texture2D" uid="uid://dvp6v28y1ht3r" path="res://dialogicYap/yapperi/ondra.png" id="6_l1hri"]
 [ext_resource type="Script" uid="uid://biulye0oa8xdp" path="res://scenes/exit_left2.gd" id="7_l1hri"]
+[ext_resource type="Texture2D" uid="uid://dyd28bmim3g2k" path="res://dialogicYap/yapperi/anca.png" id="8_nelxl"]
+[ext_resource type="Script" uid="uid://c51t1c64c6wmp" path="res://scenes/button_anca.gd" id="9_51253"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b48a3"]
 size = Vector2(144.58359, 1146.8423)
@@ -75,7 +77,24 @@ script = ExtResource("5_yinb5")
 [node name="CharacterBody2D2" parent="Postavy" instance=ExtResource("4_cra4x")]
 position = Vector2(686, 0)
 
+[node name="Anca" type="Sprite2D" parent="Postavy"]
+position = Vector2(1345, 731)
+texture = ExtResource("8_nelxl")
+
+[node name="Button" type="Button" parent="Postavy/Anca"]
+offset_left = -96.0
+offset_top = -175.0
+offset_right = 91.0
+offset_bottom = 144.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yinb5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l1hri")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jc8wr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nelxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_51253")
+script = ExtResource("9_51253")
+
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]
 [connection signal="pressed" from="Postavy/Ondra/Button" to="ExitRight" method="_on_button_pressed"]
 [connection signal="pressed" from="Postavy/Ondra/Button" to="Postavy/Ondra/Button" method="_on_pressed"]
+[connection signal="pressed" from="Postavy/Anca/Button" to="Postavy/Anca/Button" method="_on_pressed"]
