@@ -7,3 +7,4 @@ DÍKY BOHU JÁ TO DOKÁZAL
 PROJDU DO DRUHÁKU!!!!!
 set {Znamky.telocvikZnamka} = 1.0
 set {Znamky.telocvikPlayed} = true
+[signal arg="konec"]

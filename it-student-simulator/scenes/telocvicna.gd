@@ -14,6 +14,8 @@ func _on_ready() -> void:
 func _on_dialogic_signal(argument: String):
 	if argument == "start_telocvik":
 		zacni_cvicit()
+	elif argument == "konec":
+		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 func zacni_cvicit():
 	TaskUI.show_task("MAČKEJ MEZERNÍK CO NEJRYCHLEJI 50X (MÁŠ 15 SEKUND)")
 	skore = 0
