@@ -7,7 +7,7 @@ var cilove_skore = 50
 
 
 func _on_ready() -> void:
-	if (Dialogic.VAR.cestinaPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false):
+	if (Dialogic.VAR.dejepisPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false):
 		Dialogic.start("res://dialogicYap/intro/telocvik.dtl")
 	$ProgressBar.visible = false
 	Dialogic.signal_event.connect(_on_dialogic_signal)
@@ -27,6 +27,8 @@ func _process(_delta):
 	if je_konec_hry:
 		return
 	if not $Timer.is_stopped():
+		var zbyvajici_cas = ceil($Timer.time_left)
+		$TimeLabel.text = str(zbyvajici_cas)
 		if Input.is_action_just_pressed("ui_accept"):
 			skore += 1
 			$ProgressBar.value = skore
@@ -44,6 +46,7 @@ func ukonci_hru(vyhral):
 	je_konec_hry = true
 	$Timer.stop()
 	$ProgressBar.visible = false
+	$TimeLabel.visible = false
 	if vyhral:
 		Dialogic.VAR.Znamky.telocvikZnamka = 1
 		TaskUI.reset_color()

@@ -27,6 +27,7 @@ GlobalData="*res://global_data.gd"
 
 directories/dch_directory={
 "Ondra": "res://dialogicYap/yapperi/Ondra.dch",
+"andy": "res://dialogicYap/yapperi/andy.dch",
 "anglictinarka": "res://dialogicYap/yapperi/anglictinarka.dch",
 "cestinarka": "res://dialogicYap/yapperi/cestinarka.dch",
 "diagram_objekt": "res://dialogicYap/yapperi/diagram_objekt.dch",
@@ -55,6 +56,7 @@ directories/dtl_directory={
 "Petradefault": "res://dialogicYap/intro/Petradefault.dtl",
 "Petrakamoska": "res://dialogicYap/intro/Petrakamoska.dtl",
 "Petrayap": "res://dialogicYap/intro/Petrayap.dtl",
+"andyyap": "res://dialogicYap/intro/andyyap.dtl",
 "anglictina": "res://dialogicYap/intro/anglictina.dtl",
 "cestina": "res://dialogicYap/intro/cestina.dtl",
 "dejepis": "res://dialogicYap/intro/dejepis.dtl",
