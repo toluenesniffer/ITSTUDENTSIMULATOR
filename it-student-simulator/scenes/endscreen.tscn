@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dqxibl8tskv1u"]
+[gd_scene load_steps=11 format=3 uid="uid://dqxibl8tskv1u"]
 
 [ext_resource type="Texture2D" uid="uid://b6wnde4hsiq6m" path="res://scenes/tobecontinued.jpeg" id="1_dt0yg"]
+[ext_resource type="Script" uid="uid://ra73kpimiemu" path="res://scenes/endscreen.gd" id="1_rrh12"]
 [ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="2_jev7x"]
 [ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="3_rrh12"]
 [ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="4_x84le"]
@@ -19,6 +20,7 @@ texture = ExtResource("4_x84le")
 texture = ExtResource("3_rrh12")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_rrh12")
 
 [node name="Tobecontinued" type="Sprite2D" parent="."]
 position = Vector2(965.5, 535.00006)
@@ -36,4 +38,5 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_1t3vv")
 theme_override_styles/focus = SubResource("StyleBoxTexture_cts0l")
 script = ExtResource("5_wo5n7")
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
