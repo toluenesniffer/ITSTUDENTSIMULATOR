@@ -21,8 +21,8 @@
 "image": "\"res://dialogicYap/yapperi/spookytridni.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(25, 0),
+"scale": 1.0,
 "scene": ""
 },
 "_UP_FINALE": {
@@ -30,7 +30,7 @@
 "image": "\"res://dialogicYap/yapperi/tridni_UP_FINALE.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(25, 0),
 "scale": 1.0,
 "scene": ""
 }

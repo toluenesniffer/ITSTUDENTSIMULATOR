@@ -29,7 +29,7 @@
 "image": "\"res://dialogicYap/yapperi/cestinarka.png\""
 },
 "mirror": false,
-"offset": Vector2(14, -700),
+"offset": Vector2(14, -730),
 "scale": 0.25,
 "scene": ""
 },

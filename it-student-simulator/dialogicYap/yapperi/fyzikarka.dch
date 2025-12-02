@@ -20,7 +20,7 @@
 "image": "\"res://dialogicYap/yapperi/fyzikarka.png\""
 },
 "mirror": false,
-"offset": Vector2(14, -700),
+"offset": Vector2(14, -725),
 "scale": 0.2,
 "scene": ""
 }

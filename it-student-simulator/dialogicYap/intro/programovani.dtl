@@ -1,10 +1,12 @@
-join programator center [animation="Slide In Right"]
+join programator center [animation="Fade In"]
 programator: Naučíme se jazyk C++.
 programator: C++ je předchůdce všech programovacích jazyků, je to posvátný jazyk, který vymysleli ještěři z vesmíru, a který nás provází po celá staletí…
 programator: Doufám, že se těšíte na algoritmy, prvočísla, pole a spoustu dalších zábavných věcí!
 programator: Ale to není všechno, ještě vás čeká C#... celkově se toho naučíte dost.
 programator: Teď si prosím otevřete PS Diagram a udělejte tento úkol.
 programator: Podívejte se na tento obrázek. Kdo mi řekne co bude výsledek?
+programator: Pro vysvětlení, funkce Math.pow() umocní dané číslo exponentem napsaném vedle.
+programator: V tomto případě tu máme 8 na druhou.
 join diagram_objekt center [animation="Fade In"]
 UMMMMMMMMM CO MÁM DĚLAT
 - 16
