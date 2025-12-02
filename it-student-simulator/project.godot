@@ -48,10 +48,12 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Horymirdefault": "res://dialogicYap/intro/Horymirdefault.dtl",
+"Horymirkamos": "res://dialogicYap/intro/Horymirkamos.dtl",
 "Horymiryap": "res://dialogicYap/intro/Horymiryap.dtl",
 "Intro": "res://dialogicYap/intro/Intro.dtl",
 "Ondrayap": "res://dialogicYap/intro/Ondrayap.dtl",
 "Petradefault": "res://dialogicYap/intro/Petradefault.dtl",
+"Petrakamoska": "res://dialogicYap/intro/Petrakamoska.dtl",
 "Petrayap": "res://dialogicYap/intro/Petrayap.dtl",
 "anglictina": "res://dialogicYap/intro/anglictina.dtl",
 "cestina": "res://dialogicYap/intro/cestina.dtl",
@@ -61,6 +63,7 @@ directories/dtl_directory={
 "informatika": "res://dialogicYap/intro/informatika.dtl",
 "matika": "res://dialogicYap/intro/matika.dtl",
 "obcanka": "res://dialogicYap/intro/obcanka.dtl",
+"ondrakamos": "res://dialogicYap/intro/ondrakamos.dtl",
 "programovani": "res://dialogicYap/intro/programovani.dtl",
 "telocvik": "res://dialogicYap/intro/telocvik.dtl",
 "telocvik_prohra": "res://dialogicYap/intro/telocvik_prohra.dtl",

@@ -12,11 +12,11 @@ UMMMMMMMMM CO MÁM DĚLAT
 	leave diagram_objekt
 	Ještě ti to odpustím a dám ti další otázku.
 	programator: Jak napíšu cyklus while?
-	- while (podminka) {nejaky program}
+	- while (podminka)
 		programator: Tak dobře, dám ti teda za 3.
 		set {Znamky.prgZnamka} = 3.0
 		set {prgPlayed} = true
-	- (podminka) while {nejaky program}
+	- (podminka) while
 		programator: No ty jseš taky chlupatej, máš to naopak... tak za 5.
 		set {Znamky.prgZnamka} = 5.0
 		set {prgPlayed} = true

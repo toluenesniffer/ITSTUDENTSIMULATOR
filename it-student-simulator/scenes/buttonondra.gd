@@ -2,4 +2,7 @@ extends Button
 
 
 func _on_pressed() -> void:
-	Dialogic.start("res://dialogicYap/intro/Ondrayap.dtl")
+	if (Dialogic.VAR.kamos == false):
+		Dialogic.start("res://dialogicYap/intro/Ondrayap.dtl")
+	else:
+		Dialogic.start("res://dialogicYap/intro/ondrakamos.dtl")
