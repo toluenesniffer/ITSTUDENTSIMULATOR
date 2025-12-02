@@ -67,9 +67,6 @@ text = "
 "
 script = ExtResource("3_nj85w")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_gbt8u")]
-position = Vector2(1384, 841)
-
 [node name="ExitLeft" type="Area2D" parent="."]
 script = ExtResource("5_3ttk3")
 
@@ -87,17 +84,20 @@ position = Vector2(-512.1665, 595.54956)
 scale = Vector2(1, 0.9999995)
 shape = SubResource("RectangleShape2D_1fnxo")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(694.0001, 483.00003)
-scale = Vector2(0.96, 0.96)
+[node name="Postavy" type="Node2D" parent="."]
+y_sort_enabled = true
+scale = Vector2(0.97499996, 0.96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Postavy"]
+position = Vector2(424.61536, 515.625)
+scale = Vector2(0.98461545, 1)
 texture = ExtResource("8_fcfgm")
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 600.0
-offset_top = 315.0
-offset_right = 787.0
-offset_bottom = 665.0
+[node name="Button" type="Button" parent="Postavy/Sprite2D"]
+offset_left = -97.916626
+offset_top = -174.99997
+offset_right = 89.083374
+offset_bottom = 175.00006
 theme_override_styles/normal = SubResource("StyleBoxEmpty_egbau")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_inlpd")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_5va5p")
@@ -105,7 +105,11 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_5jyi7")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_fgls2")
 script = ExtResource("9_8pxjo")
 
+[node name="CharacterBody2D" parent="Postavy" instance=ExtResource("4_gbt8u")]
+position = Vector2(1171.2821, 625.00006)
+scale = Vector2(1.0256411, 1.0416667)
+
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="." method="_on_dvere_do_tridy_pressed"]
 [connection signal="pressed" from="Chodba/dvereDoTridy" to="Chodba/dvereDoTridy" method="_on_pressed"]
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Postavy/Sprite2D/Button" to="Postavy/Sprite2D/Button" method="_on_pressed"]

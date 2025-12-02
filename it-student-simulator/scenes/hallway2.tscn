@@ -93,18 +93,21 @@ script = ExtResource("6_atj8w")
 position = Vector2(1873.75, 538.75)
 shape = SubResource("RectangleShape2D_t0grk")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("7_jpaih")]
-position = Vector2(686, 0)
+[node name="Postavy" type="Node2D" parent="."]
+y_sort_enabled = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1184, 483)
+[node name="CharacterBody2D2" parent="Postavy" instance=ExtResource("7_jpaih")]
+position = Vector2(1296, 596)
+
+[node name="Sprite2D" type="Sprite2D" parent="Postavy"]
+position = Vector2(1121, 493)
 texture = ExtResource("8_dnr27")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 1081.0
-offset_top = 308.0
-offset_right = 1268.0
-offset_bottom = 658.0
+[node name="Button" type="Button" parent="Postavy/Sprite2D"]
+offset_left = -96.0
+offset_top = -175.0
+offset_right = 91.0
+offset_bottom = 175.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5u2i1")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_hef4o")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_b02pc")
@@ -112,15 +115,15 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_lf0pf")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_m3rn2")
 script = ExtResource("9_dnr27")
 
-[node name="Me" type="Sprite2D" parent="."]
-position = Vector2(71, 728)
+[node name="Me" type="Sprite2D" parent="Postavy"]
+position = Vector2(80, 752)
 texture = ExtResource("10_hcnrd")
 
-[node name="Button2" type="Button" parent="."]
-offset_left = -9.0
-offset_top = 625.0
-offset_right = 158.0
-offset_bottom = 882.0
+[node name="Button2" type="Button" parent="Postavy/Me"]
+offset_left = -80.0
+offset_top = -115.0
+offset_right = 87.0
+offset_bottom = 142.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5u2i1")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_hef4o")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_b02pc")
@@ -131,5 +134,5 @@ script = ExtResource("11_5u2i1")
 [connection signal="pressed" from="buttonDoTridya307" to="buttonDoTridya307" method="_on_pressed"]
 [connection signal="pressed" from="buttonDoTridya306" to="buttonDoTridya306" method="_on_pressed"]
 [connection signal="ready" from="ExitRight" to="ExitRight" method="_on_ready"]
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
-[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Postavy/Sprite2D/Button" to="Postavy/Sprite2D/Button" method="_on_pressed"]
+[connection signal="pressed" from="Postavy/Me/Button2" to="Postavy/Me/Button2" method="_on_pressed"]
