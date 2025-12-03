@@ -10,8 +10,8 @@ Mám se s tímto kulišákem zkamarádit?
 	horymir: Jj, jaké máš pocity z této školy?
 	Noo zajímavý, ale baví mě to!!
 	horymir: Tak to je dobře, já už musím jít na informatiku, tak čus
-	- Čau
-		set {HorymiryapPlayed} = true
-		[end_timeline]
+	Čau!
+	set {HorymiryapPlayed} = true
+	[end_timeline]
 - nn bojím se
 	[end_timeline]

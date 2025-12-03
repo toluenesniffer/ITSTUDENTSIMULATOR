@@ -7,6 +7,7 @@ extends Node2D
 
 
 func _on_ready() -> void:
+	SFXManager.play_music("res://music/mainmenuhudba.mp3")
 	speed_slider.value = GlobalData.player_speed
 	volume_slider.value = GlobalData.master_volume
 

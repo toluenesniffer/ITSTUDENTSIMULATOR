@@ -31,6 +31,7 @@ func _on_ready() -> void:
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/intro/dejepis.dtl")
 	elif(Dialogic.VAR.Znamky.telocvikPlayed == true and Dialogic.VAR.vysvedceniPlayed == false):
+		GlobalData.fixgrades()
 		TaskUI.update_task("VYSVĚDČENÍ")
 		Dialogic.start("res://dialogicYap/intro/vysvedceni.dtl")
 	elif(Dialogic.VAR.vysvedceniPlayed == true):

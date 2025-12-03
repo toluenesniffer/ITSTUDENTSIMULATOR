@@ -78,14 +78,14 @@ script = ExtResource("5_yinb5")
 position = Vector2(686, 0)
 
 [node name="Anca" type="Sprite2D" parent="Postavy"]
-position = Vector2(1345, 731)
+position = Vector2(1335, 720)
 texture = ExtResource("8_nelxl")
 
 [node name="Button" type="Button" parent="Postavy/Anca"]
 offset_left = -96.0
-offset_top = -175.0
+offset_top = -154.0
 offset_right = 91.0
-offset_bottom = 144.0
+offset_bottom = 165.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yinb5")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_l1hri")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_jc8wr")
