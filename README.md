@@ -11,5 +11,7 @@
 
 ## How to play
 
-Download the .exe file, set up preferred settings in Options and click New Game
+Open it-student-simulator folder, click GAME.txt, go on the link in there and download the .exe file, set up preferred settings in Options and click New Game
+
+
 Play by using left and right arrows or A and D keys to move. Click on doors or NPCS to trigger an action.
