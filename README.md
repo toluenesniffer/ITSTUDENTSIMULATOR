@@ -4,10 +4,12 @@
 
 
 ## Authors
-* Andrea Semančinová - programmer, manager of the project
-* Anna Spieglová - graphics, animations
-* Josef Šubrt - music, tester
+* Andrea Semančinová - programmer, manager of the project - semancinovaa.08@spst.eu
+* Anna Spieglová - graphics, animations - spieglovaa.07@spst.eu
+* Josef Šubrt - music, tester - subrtj.08@spst.eu
 
 
 ## How to play
+
+Download the .exe file, set up preferred settings in Options and click New Game
 Play by using left and right arrows or A and D keys to move. Click on doors or NPCS to trigger an action.
