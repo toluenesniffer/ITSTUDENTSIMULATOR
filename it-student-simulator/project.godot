@@ -62,6 +62,7 @@ directories/dtl_directory={
 "anglictina": "res://dialogicYap/intro/anglictina.dtl",
 "cestina": "res://dialogicYap/intro/cestina.dtl",
 "dejepis": "res://dialogicYap/intro/dejepis.dtl",
+"druhak_start": "res://dialogicYap/intro/druhak_start.dtl",
 "elektrotechnika": "res://dialogicYap/intro/elektrotechnika.dtl",
 "fyzika": "res://dialogicYap/intro/fyzika.dtl",
 "informatika": "res://dialogicYap/intro/informatika.dtl",
@@ -73,6 +74,7 @@ directories/dtl_directory={
 "telocvik_prohra": "res://dialogicYap/intro/telocvik_prohra.dtl",
 "telocvik_vyhra": "res://dialogicYap/intro/telocvik_vyhra.dtl",
 "vysvedceni": "res://dialogicYap/intro/vysvedceni.dtl",
+"webisky_druhak": "res://dialogicYap/intro/webisky_druhak.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
@@ -88,7 +90,8 @@ variables={
 "obnZnamka": 0,
 "prgZnamka": 0,
 "telocvikPlayed": false,
-"telocvikZnamka": 0
+"telocvikZnamka": 0,
+"webisky2Znamka": 0
 },
 "anglictinaPlayed": false,
 "byl_na_chodbe": false,
@@ -107,7 +110,8 @@ variables={
 "petrayapPlayed": false,
 "prgPlayed": false,
 "ucitelka": "",
-"vysvedceniPlayed": false
+"vysvedceniPlayed": false,
+"webisky2Played": false
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogicYap/intro/style.tres"]

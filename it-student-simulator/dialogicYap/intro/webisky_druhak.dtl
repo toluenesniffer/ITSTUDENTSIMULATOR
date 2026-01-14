@@ -1,0 +1,33 @@
+join yapper1 (_UP_FINALE) center
+yapper1: Tak jo, začneme webovými technolgiemi, ať to máte z krku.
+yapper1: Ještě něco k historii internetu... kdysi to byl ARPANET a využíval se za války a um jo pak se z toho stal prostě internet více a více počítačů se propojovali a teď tu máme obrovskou síť.
+yapper1: Pak se objevil Tim-Berners Lee a ten vytvořil WWW
+yapper1: A tím se přibložujeme k tomu co budete často navštěvovat, W3Schools! Zde se naučíte vše potřebné pro tvorbu webu.
+yapper1: Pustmě se konečně do HTML.
+Úkol\: vytvoř simple stránku jen pomocí HTML
+- Actually to sám udělat.
+	yapper1: No.. dal jsem tu tvoji stránku do validatoru a vyskočilo mi 58 chyb.. Máš tam neuzavřené závorky.. Chyby v syntaxi.. Zkus se to doučit.
+	yapper1: Dám ti 4.
+	set {Znamky.webisky2Znamka} = 4.0
+	set {webisky2Played} = true
+- Hodit to do AI.
+	yapper1: Wow to je velmi pěkná stránka! 0 chyb na validatoru a dokonce máš i CSS a i.. JavaScript..! Ty jsi opravdový expert.
+	yapper1: Máš za 1.
+	set {Znamky.webisky2Znamka} = 1.0
+	set {webisky2Played} = true
+- Koukat celou hodinu na W3Schools (questionable)
+	yapper1: Pepo na co tam celou dobu koukáš..
+	Hledám jak zprovotnit Endoru.
+	yapper1: No sice jsem říkal že tam najdeš vše k tvorbě webu.. ale tohle zrovna asi ne,,
+	yapper1: Musíš se prvně zaregistrovat na Endoru a použít náš speciální školní kód.
+	OK děkuji vám
+	- HODIT TO DO AI
+		yapper1: No páni.. ty jsi ale šikula, kompletně bez chyby a máš to dokonce responzivní!
+		yapper1: Máš za 1.
+		set {Znamky.webisky2Znamka} = 1.0
+		set {webisky2Played} = true
+	- Být poctivý student a udělat to sám
+		yapper1: No.. dal jsem tvůj web do validatoru a vyskočilo mi tam 58 chyb... Nevím jak se to povedlo, ale musíš se do příště zlepšit.
+		yapper1: Mezitím ti dám 4.
+		set {Znamky.webisky2Znamka} = 4.0
+		set {webisky2Played} = true
