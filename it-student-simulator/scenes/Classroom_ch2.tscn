@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0c23a66owwsw"]
+
+[ext_resource type="PackedScene" uid="uid://cr2rhncxj8vyp" path="res://scenes/Classroom.tscn" id="1_5o4hl"]
+[ext_resource type="Script" uid="uid://cwcpsjmspgkot" path="res://scenes/classroom_ch_2.gd" id="2_wvqm6"]
+
+[node name="Classroom" instance=ExtResource("1_5o4hl")]
+script = ExtResource("2_wvqm6")

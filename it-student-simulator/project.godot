@@ -62,7 +62,7 @@ directories/dtl_directory={
 "anglictina": "res://dialogicYap/intro/anglictina.dtl",
 "cestina": "res://dialogicYap/intro/cestina.dtl",
 "dejepis": "res://dialogicYap/intro/dejepis.dtl",
-"druhak_start": "res://dialogicYap/intro/druhak_start.dtl",
+"druhak_start": "res://dialogicYap/Chapter 2/druhak_start.dtl",
 "elektrotechnika": "res://dialogicYap/intro/elektrotechnika.dtl",
 "fyzika": "res://dialogicYap/intro/fyzika.dtl",
 "informatika": "res://dialogicYap/intro/informatika.dtl",
@@ -74,7 +74,7 @@ directories/dtl_directory={
 "telocvik_prohra": "res://dialogicYap/intro/telocvik_prohra.dtl",
 "telocvik_vyhra": "res://dialogicYap/intro/telocvik_vyhra.dtl",
 "vysvedceni": "res://dialogicYap/intro/vysvedceni.dtl",
-"webisky_druhak": "res://dialogicYap/intro/webisky_druhak.dtl",
+"webisky_druhak": "res://dialogicYap/Chapter 2/webisky_druhak.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
@@ -97,6 +97,7 @@ variables={
 "byl_na_chodbe": false,
 "cestinaPlayed": false,
 "dejepisPlayed": false,
+"dstartPlayed": false,
 "elkPlayed": false,
 "fyzikaPlayed": false,
 "infPlayed": false,

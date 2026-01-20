@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dqxibl8tskv1u"]
+[gd_scene load_steps=17 format=3 uid="uid://dqxibl8tskv1u"]
 
 [ext_resource type="Texture2D" uid="uid://b6wnde4hsiq6m" path="res://scenes/tobecontinued.jpeg" id="1_dt0yg"]
 [ext_resource type="Script" uid="uid://ra73kpimiemu" path="res://scenes/endscreen.gd" id="1_rrh12"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="3_rrh12"]
 [ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="4_x84le"]
 [ext_resource type="Script" uid="uid://drdwl0jsblfcy" path="res://scenes/buttonExit.gd" id="5_wo5n7"]
+[ext_resource type="Texture2D" uid="uid://chvf2co6u4hy3" path="res://buttons/button_continue.png" id="7_wo5n7"]
+[ext_resource type="Script" uid="uid://c7mqr5d0ew5b3" path="res://scenes/continue_druhak.gd" id="8_0tqbr"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0tqbr"]
 texture = ExtResource("2_jev7x")
@@ -19,6 +21,18 @@ texture = ExtResource("4_x84le")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cts0l"]
 texture = ExtResource("3_rrh12")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tw1lo"]
+texture = ExtResource("7_wo5n7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wo5n7"]
+texture = ExtResource("7_wo5n7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2v6sd"]
+texture = ExtResource("7_wo5n7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ruc7"]
+texture = ExtResource("7_wo5n7")
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_rrh12")
 
@@ -28,15 +42,27 @@ scale = Vector2(1.0151042, 1.012963)
 texture = ExtResource("1_dt0yg")
 
 [node name="Button3" type="Button" parent="."]
-offset_left = 687.0
-offset_top = 515.0
-offset_right = 1269.0
-offset_bottom = 871.0
+offset_left = 752.0
+offset_top = 437.0
+offset_right = 1220.0
+offset_bottom = 713.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_0tqbr")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_2c75u")
 theme_override_styles/hover = SubResource("StyleBoxTexture_1t3vv")
 theme_override_styles/focus = SubResource("StyleBoxTexture_cts0l")
 script = ExtResource("5_wo5n7")
 
+[node name="Continue" type="Button" parent="."]
+offset_left = 751.0
+offset_top = 659.0
+offset_right = 1234.0
+offset_bottom = 943.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_tw1lo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wo5n7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_2v6sd")
+theme_override_styles/focus = SubResource("StyleBoxTexture_2ruc7")
+script = ExtResource("8_0tqbr")
+
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
+[connection signal="pressed" from="Continue" to="Continue" method="_on_pressed"]

@@ -36,6 +36,9 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/intro/vysvedceni.dtl")
 	elif(Dialogic.VAR.vysvedceniPlayed == true):
 		TaskUI.hide_task()
+		GlobalData.current_chapter = 2
+		GlobalData.save_game()
+		await get_tree().create_timer(1.5).timeout
 	else:
 		pass
 		
