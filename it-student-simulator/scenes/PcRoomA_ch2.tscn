@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://cijvyocrp30yg"]
+
+[ext_resource type="PackedScene" uid="uid://bpw58hnthpa3g" path="res://scenes/PcRoomA.tscn" id="1_ndylv"]
+[ext_resource type="Script" uid="uid://b0u1m8aplkock" path="res://scenes/pc_room_a_ch_2.gd" id="2_e2i7h"]
+
+[node name="Node2D" instance=ExtResource("1_ndylv")]
+script = ExtResource("2_e2i7h")

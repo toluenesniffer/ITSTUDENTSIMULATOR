@@ -1,8 +1,9 @@
 join yapper1 (_UP_FINALE) center
 yapper1: Vítejte opět v novém školním roce, doufám že jste si užili letní prázdniny, že jste odpočatí a plní elánu.
-yapper1:  A taky DOUFÁM že jste se celé prázdniny učili JavaScript jinak teď propadnete. 
-yapper1: Čekají vás nově webové technologie, kde budete potřebovat JavaScript.. a když na něj budete kašlat tak neodmaturujete!! 
+yapper1: A taky DOUFÁM že jste se celé prázdniny učili JavaScript jinak teď propadnete.
+yapper1: Čekají vás nově webové technologie, kde budete potřebovat JavaScript.. a když na něj budete kašlat tak neodmaturujete!!
 yapper1: Když propadnete tak se už nikam nedostanete, v nižších třídách je všude plno a nikde vás nebudou chtít.. tak se snažte.
 yapper1: Tento rok vás také budou čekat odborné praxe, půjdete do firmy, tak tam nedělejte ostudu. Hlavně si zařiďte praxi co nejdříve jinak vás nikam nevezmou!
 yapper1: Přeji vám hodně štěstí.
+set {dstartPlayed} = true
 [end_timeline]
