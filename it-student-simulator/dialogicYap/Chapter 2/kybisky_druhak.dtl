@@ -1,0 +1,32 @@
+join ucitel_kybisku center
+ucitel_kybisku: Dobrý den... máme teď kybísek, nebo webísek?
+Máme kybísek!!!
+ucitel_kybisku: Aaa dobře! Tak si dnes vysvětlíme co je Caesarova šifra a pak... si můžete udělat kybernetickou arénu s touto šifrou.
+ucitel_kybisku: Takže.. Caesarova šifra je jednoduchá. Jenom posunete písmenko v abecedě o 3 místa doprava a postupně vám vznikne šifra. 
+ucitel_kybisku: Každá tato šifra může mít i klíč, od jakého písmenka začít a může se také změnit počet o kolik se písmenko posune.
+ucitel_kybisku: To je asi vše co se dá říct k této šifře. Teď se prosím přihlašte do kybernetické arény.
+- Přihlásit se
+	!!POZOR!!\: Při dělání kybernetické arény jsi narazil na škodlivou stránku.
+	- Nahlásit to učitelovi
+		ucitel_kybisku: No jejda co to tam je... Tohle půjdu vyřešit s kolegou, který tu arénu udělal.. 
+		ucitel_kybisku: Děkuji že jsi mi to řekl, máš 1 \:)
+		set {Znamky.kybisky2Znamka} = 1.0
+		set {kybisky2Played} = true
+	- Infikovat PC virem
+		ucitel_kybisku: No jejda, co jsi to provedl...? Proboha ten počítač je rozbitý!
+		ucitel_kybisku: Hele zkusím udělat jednu věc... *napíše sus příkaz do cmd* Funguje to!!
+		ucitel_kybisku: Mělo by to být v pořádku už. A co se týče tvojí známky.. dám ti 2, jen proto že jsi klikl na škodlivou stránku.
+		ucitel_kybisku: Tohle je velmi nebezpečné, nikdy neklikej na podezřelé odkazy! Snad si to teď zapamatuješ.
+		set {Znamky.kybisky2Znamka} = 2.0
+		set {kybisky2Played} = true
+	- INFIKOVAT SOUSEDŮV PC
+		ucitel_kybisku: Co se to tady stalo..? Proč ti bliká počítač\:.?
+		Ondra: PANE UČITELI TO JÁ NE PEPA MI STÁHL NĚCO A ZAČALO SE DÍT TOTO
+		ucitel_kybisku: Pepo....?
+		pepa: JÁ NIC NEUDĚLAL PŘÍSAHÁM
+		ucitel_kybisku: Dobře, nebudu řešit kdo co tady udělal... zkusím to spravit.
+		ucitel_kybisku: *napíše sus příkaz do cmd a počítač se vrátí do pořádku*
+		ucitel_kybisku: Tohle je naposled.. ještě jednou a bude to třídní dutka.
+		ucitel_kybisku: Co se týče vaší známky.. oba dostanete 2, ať už to udělal kdokoliv, měli byste vědět, že nesmíte klikat na podezřelé odkazy.
+		set {Znamky.kybisky2Znamka} = 2.0
+		set {kybisky2Played} = true

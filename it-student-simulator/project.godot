@@ -46,6 +46,7 @@ directories/dch_directory={
 "priklad_objekt": "res://dialogicYap/yapperi/priklad_objekt.dch",
 "programator": "res://dialogicYap/yapperi/programator.dch",
 "telocvikarka": "res://dialogicYap/yapperi/telocvikarka.dch",
+"ucitel_kybisku": "res://dialogicYap/yapperi/ucitel_kybisku.dch",
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch"
 }
 directories/dtl_directory={
@@ -66,6 +67,7 @@ directories/dtl_directory={
 "elektrotechnika": "res://dialogicYap/intro/elektrotechnika.dtl",
 "fyzika": "res://dialogicYap/intro/fyzika.dtl",
 "informatika": "res://dialogicYap/intro/informatika.dtl",
+"kybisky_druhak": "res://dialogicYap/Chapter 2/kybisky_druhak.dtl",
 "matika": "res://dialogicYap/intro/matika.dtl",
 "obcanka": "res://dialogicYap/intro/obcanka.dtl",
 "ondrakamos": "res://dialogicYap/intro/ondrakamos.dtl",
@@ -86,6 +88,7 @@ variables={
 "elkZnamka": 0,
 "fyzZnamka": 0,
 "infZnamka": 0,
+"kybisky2Znamka": 0,
 "matikaZnamka": 0,
 "obnZnamka": 0,
 "prgZnamka": 0,
@@ -105,6 +108,7 @@ variables={
 "kamos": false,
 "kamos2": false,
 "kamoska": false,
+"kybisky2Played": false,
 "matikaPlayed": false,
 "obcankaPlayed": false,
 "pes": "",

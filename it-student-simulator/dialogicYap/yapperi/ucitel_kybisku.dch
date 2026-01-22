@@ -8,20 +8,20 @@
 "sound_moods": {},
 "style": ""
 },
-&"default_portrait": "petra",
+&"default_portrait": "ucitelkybisku",
 &"description": "",
-&"display_name": "Petra",
+&"display_name": "Učitel kybísků",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"petra": {
+"ucitelkybisku": {
 "export_overrides": {
-"image": "\"res://dialogicYap/yapperi/petra.png\""
+"image": "\"res://dialogicYap/yapperi/kybiskovyucitel.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1.0,
+"offset": Vector2(14, -725),
+"scale": 0.2,
 "scene": ""
 }
 },
