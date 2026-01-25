@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cpr6i0wv4atjj"]
+
+[node name="Testcestin" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 548.0
+offset_bottom = 560.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 0
+offset_right = 549.0
+offset_bottom = 560.0
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Který směr klade důraz na city, fantazii a osamělého hrdinu?
+"

@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://dqgwkdqawio4j"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_203tt"]
+[ext_resource type="Script" uid="uid://cc6upy44vcq2k" path="res://scenes/i_troom_ch_2.gd" id="1_d88uc"]
+[ext_resource type="Texture2D" uid="uid://ngl3vrif6ye5" path="res://scenes/it_class.png" id="2_d88uc"]
+[ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_fyneb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ikn6"]
+texture = ExtResource("3_fyneb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dr7ss"]
+texture = ExtResource("3_fyneb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4qhv3"]
+texture = ExtResource("3_fyneb")
+
+[node name="ITroomCh2" type="Node2D"]
+script = ExtResource("1_d88uc")
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(975, 538.5)
+scale = Vector2(1.0552083, 1.0768518)
+texture = ExtResource("1_203tt")
+
+[node name="ItClass" type="Sprite2D" parent="."]
+position = Vector2(974.00006, 528)
+scale = Vector2(1.049074, 0.6882715)
+texture = ExtResource("2_d88uc")
+
+[node name="ButtonHallway" type="Button" parent="."]
+offset_left = 1307.0
+offset_top = 42.0
+offset_right = 1490.0
+offset_bottom = 298.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0ikn6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dr7ss")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4qhv3")
+
+[connection signal="pressed" from="ButtonHallway" to="ButtonHallway" method="_on_pressed"]
