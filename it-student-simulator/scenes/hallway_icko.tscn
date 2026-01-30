@@ -1,0 +1,65 @@
+[gd_scene load_steps=13 format=3 uid="uid://r6ooi57mk5qe"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_n0vjy"]
+[ext_resource type="Texture2D" uid="uid://d0dfv2xvm6jol" path="res://scenes/hallway_icko.png" id="2_ad3b5"]
+[ext_resource type="Script" uid="uid://yrhh7trnpgn5" path="res://scenes/exit_right_icko.gd" id="3_ad3b5"]
+[ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_vunph"]
+[ext_resource type="Texture2D" uid="uid://dcehyu8rvf1nm" path="res://scenes/dvere_icko.png" id="5_6ry3h"]
+[ext_resource type="Script" uid="uid://dm5vyhwoio15u" path="res://scenes/dvere_i102.gd" id="6_6bnwq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vunph"]
+size = Vector2(93.125046, 1175.5266)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6bnwq"]
+texture = ExtResource("5_6ry3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_170xb"]
+texture = ExtResource("5_6ry3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kkgbv"]
+texture = ExtResource("5_6ry3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ehjv4"]
+texture = ExtResource("5_6ry3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4evci"]
+texture = ExtResource("5_6ry3h")
+
+[node name="HallwayIcko" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(956.5, 543.5)
+scale = Vector2(1.0359375, 1.0898148)
+texture = ExtResource("1_n0vjy")
+
+[node name="HallwayIcko" type="Sprite2D" parent="."]
+position = Vector2(953, 520)
+texture = ExtResource("2_ad3b5")
+
+[node name="ExitRight" type="Area2D" parent="."]
+position = Vector2(2867, 1577)
+scale = Vector2(0.96, 0.9499999)
+script = ExtResource("3_ad3b5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
+position = Vector2(-1016.9791, -1090.9205)
+scale = Vector2(1, 0.99999946)
+shape = SubResource("RectangleShape2D_vunph")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("4_vunph")]
+position = Vector2(869.0005, 538.00037)
+scale = Vector2(0.9216, 0.9024995)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1529.0
+offset_top = 254.0
+offset_right = 1827.0
+offset_bottom = 567.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_6bnwq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_170xb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kkgbv")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ehjv4")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_4evci")
+script = ExtResource("6_6bnwq")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

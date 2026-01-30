@@ -8,20 +8,20 @@
 "sound_moods": {},
 "style": ""
 },
-&"default_portrait": "horymir",
+&"default_portrait": "uhelnik",
 &"description": "",
-&"display_name": "Horymír",
+&"display_name": "trojuhelnik_objekt",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"horymir": {
+"uhelnik": {
 "export_overrides": {
-"image": "\"res://dialogicYap/yapperi/horymir.png\""
+"image": "\"res://dialogicYap/yapperi/trojuhelnik.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1.0,
+"scale": 1,
 "scene": ""
 }
 },

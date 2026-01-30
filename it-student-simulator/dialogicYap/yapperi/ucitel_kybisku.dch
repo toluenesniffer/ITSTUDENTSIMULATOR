@@ -20,7 +20,7 @@
 "image": "\"res://dialogicYap/yapperi/kybiskovyucitel.png\""
 },
 "mirror": false,
-"offset": Vector2(14, -725),
+"offset": Vector2(400, -280),
 "scale": 0.2,
 "scene": ""
 }

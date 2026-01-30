@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var target_scene: String = "res://scenes/chodbicka.tscn"
+@export var target_scene: String = "res://scenes/hallway_icko.tscn"
 @export var spawn_position: String = "right"
 
 func _init():

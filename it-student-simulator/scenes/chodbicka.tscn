@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://cvojt3jodycuf"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_1ngl2"]
+[ext_resource type="Texture2D" uid="uid://cj1nqvetm77xx" path="res://scenes/chodbicka.png" id="2_chyk5"]
+[ext_resource type="Script" uid="uid://cn7i8ilbhjrr0" path="res://scenes/exit_right_chodbicka.gd" id="3_7ik5b"]
+[ext_resource type="Script" uid="uid://bcw7ck1l2iwao" path="res://scenes/exit_left_chodbicka.gd" id="4_7ik5b"]
+[ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="5_q5svy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5svy"]
+size = Vector2(144.58359, 1146.8423)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efjwl"]
+size = Vector2(121.50014, 1160.6844)
+
+[node name="Chodbicka" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(957, 537)
+scale = Vector2(1.0260416, 1.0611111)
+texture = ExtResource("1_1ngl2")
+
+[node name="Chodbicka" type="Sprite2D" parent="."]
+position = Vector2(960, 526)
+texture = ExtResource("2_chyk5")
+
+[node name="ExitRight" type="Area2D" parent="."]
+position = Vector2(1914, 1057)
+scale = Vector2(0.96, 0.9499999)
+script = ExtResource("3_7ik5b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
+position = Vector2(-58.33336, -543.1579)
+scale = Vector2(1, 0.9999996)
+shape = SubResource("RectangleShape2D_q5svy")
+
+[node name="ExitLeft" type="Area2D" parent="." groups=["player"]]
+position = Vector2(1858, 541.00006)
+scale = Vector2(0.96, 0.9499995)
+script = ExtResource("4_7ik5b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
+position = Vector2(-1881.5837, -1.3945923)
+shape = SubResource("RectangleShape2D_efjwl")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("5_q5svy")]
+position = Vector2(710.2397, 539.6752)
+scale = Vector2(0.96, 0.9499995)
+
+[connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]
