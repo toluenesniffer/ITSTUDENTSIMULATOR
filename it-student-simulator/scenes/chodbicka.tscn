@@ -1,16 +1,33 @@
-[gd_scene load_steps=8 format=3 uid="uid://cvojt3jodycuf"]
+[gd_scene load_steps=15 format=3 uid="uid://cvojt3jodycuf"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_1ngl2"]
 [ext_resource type="Texture2D" uid="uid://cj1nqvetm77xx" path="res://scenes/chodbicka.png" id="2_chyk5"]
 [ext_resource type="Script" uid="uid://cn7i8ilbhjrr0" path="res://scenes/exit_right_chodbicka.gd" id="3_7ik5b"]
 [ext_resource type="Script" uid="uid://bcw7ck1l2iwao" path="res://scenes/exit_left_chodbicka.gd" id="4_7ik5b"]
+[ext_resource type="Texture2D" uid="uid://btb0wfemyqs7c" path="res://scenes/dvere_koridor.png" id="5_efjwl"]
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="5_q5svy"]
+[ext_resource type="Script" uid="uid://bkpy8a0k2wjnc" path="res://scenes/button_koridor.gd" id="6_pwjrg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5svy"]
 size = Vector2(144.58359, 1146.8423)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_efjwl"]
 size = Vector2(121.50014, 1160.6844)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6cu1l"]
+texture = ExtResource("5_efjwl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yea3j"]
+texture = ExtResource("5_efjwl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_12mjq"]
+texture = ExtResource("5_efjwl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yvtm0"]
+texture = ExtResource("5_efjwl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qb6kq"]
+texture = ExtResource("5_efjwl")
 
 [node name="Chodbicka" type="Node2D"]
 
@@ -42,8 +59,21 @@ script = ExtResource("4_7ik5b")
 position = Vector2(-1881.5837, -1.3945923)
 shape = SubResource("RectangleShape2D_efjwl")
 
+[node name="koridor" type="Button" parent="."]
+offset_left = 802.0
+offset_top = 250.0
+offset_right = 1063.0
+offset_bottom = 577.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_6cu1l")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yea3j")
+theme_override_styles/hover = SubResource("StyleBoxTexture_12mjq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_yvtm0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_qb6kq")
+script = ExtResource("6_pwjrg")
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("5_q5svy")]
 position = Vector2(710.2397, 539.6752)
 scale = Vector2(0.96, 0.9499995)
 
 [connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]
+[connection signal="pressed" from="koridor" to="koridor" method="_on_pressed"]
