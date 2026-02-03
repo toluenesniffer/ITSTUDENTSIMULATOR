@@ -1,21 +1,37 @@
-[gd_scene format=3 uid="uid://cpr6i0wv4atjj"]
+[gd_scene load_steps=2 format=3 uid="uid://cpr6i0wv4atjj"]
+
+[ext_resource type="Script" uid="uid://cc85k8v142ugw" path="res://scenes/testcestin.gd" id="1_ip3j8"]
 
 [node name="Testcestin" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_ip3j8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 548.0
-offset_bottom = 560.0
+offset_right = 1945.0
+offset_bottom = 1097.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+[node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 0
-offset_right = 549.0
-offset_bottom = 560.0
+offset_left = 508.0
+offset_top = -6.0
+offset_right = 1358.0
+offset_bottom = 1105.0
 
-[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Který směr klade důraz na city, fantazii a osamělého hrdinu?
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Vyber vše, co patří k romantismu
 "
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+columns = 6
+
+[node name="Hotovo" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="ready" from="." to="." method="_on_ready"]
