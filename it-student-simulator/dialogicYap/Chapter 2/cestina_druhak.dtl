@@ -1,4 +1,32 @@
 join cestinarka center
-cestinarka: Dnes si napíšeme test a také představíte vaše kulturní aktuality. Doufám, že je máte připravené.
-cestinarka: Začneme testem.
-[signal arg="start_test_romantismus"]
+cestinarka: Dnes představíte vaše kulturní aktuality. Doufám, že je máte připravené.
+cestinarka: Tak první půjde... Pepa.
+Proč pořád jen já..
+join ka1_objekt center [animation="Slide In Up"]
+join pepa (Pepa) right
+Vítejte u mých kulturních aktualit.
+leave ka1_objekt [animation="Fade Out"]
+join ka2_objekt center [animation="Slide In Up"]
+Začal bych knihou Bibi, kterou napsal Benjamin Netanyahu, je to můj oblíbený autor a proto jsem si ji vybral.
+Tato kniha mi dala spoustu inspirace do života a moc se mi líbila, určitě doporučuji všem.
+Srovnal bych ji s knihou Elon Musk od Waltera Isaacsona, ta kniha se mi nelíbila, protože Elon Muškátový je reptilián co mi očipoval rodinu.
+Stejně jako zlý ještěr Marek Cukrhora, ale to už je příliš osobní.
+leave ka2_objekt [animation="Fade Out"]
+join ka3_objekt center [animation="Slide In Up"]
+Přesuneme se na film A people without a land.
+Toto je můj oblíbený film, režíroval ho Eliyahu Ungar-Sargon
+Vlastně nevím o čem přesně byl, ale líbila se mi tematika tohoto filmu.
+Porovnal bych ho s filmem Karel, ten film se mi nelíbil, protože Karel Gott nepochází z Izraele.
+leave ka3_objekt [animation="Bounce Out"]
+join ka4_objekt center [animation="Slide In Up"]
+Na konec bych zmínil Západní zeď v Jeruzalémě, byl jsem tam o prázdninách s rodinou a moc se mi to líbilo.
+Tato zřícenina ve mně vyvolala židovské pocity.
+leave ka4_objekt [animation="Zoom Center Out"]
+Tímto bych to ukončil, děkuji vám za pozornost.
+cestinarka: ..No dobře. Tak ti to ohodnotí.. třeba Horymír.
+(Ten mě snad nepotopí, ne? Včera jsem mu kupoval červeného býka ve slevě..)
+horymir: Vzhled prezentace se mi líbil, obsah mi přišel vhodný akorát... tam neměl zdroje....
+cestinarka: Jsem ráda, že sis všiml. Tak Pepo, dám ti 2.
+Ok to není špatný děkuju
+set {Znamky.cestina2Znamka} = 2.0
+set {cestina2Played} = true

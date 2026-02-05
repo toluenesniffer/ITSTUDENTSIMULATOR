@@ -19,6 +19,6 @@ func _on_timeline_ended():
 
 
 func _on_button_pressed() -> void:
-	#if (Dialogic.VAR.webisky2Played == true and Dialogic.VAR.matikaPlayed == false):
-	#	TaskUI.update_task("JDI DO UCEBNY I")
+	if (Dialogic.VAR.webisky2Played == true and Dialogic.VAR.kybisky2Played == false):
+		TaskUI.update_task("JDI DO UCEBNY I")
 	SFXManager.play("res://music/dvereotevreni.mp3")

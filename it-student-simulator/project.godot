@@ -35,6 +35,10 @@ directories/dch_directory={
 "elektrotechnicka": "res://dialogicYap/yapperi/elektrotechnicka.dch",
 "fyzikarka": "res://dialogicYap/yapperi/fyzikarka.dch",
 "horymir": "res://dialogicYap/yapperi/horymir.dch",
+"ka1_objekt": "res://dialogicYap/yapperi/ka1_objekt.dch",
+"ka2_objekt": "res://dialogicYap/yapperi/ka2_objekt.dch",
+"ka3_objekt": "res://dialogicYap/yapperi/ka3_objekt.dch",
+"ka4_objekt": "res://dialogicYap/yapperi/ka4_objekt.dch",
 "matikarka": "res://dialogicYap/yapperi/matikarka.dch",
 "obcankarka": "res://dialogicYap/yapperi/obcankarka.dch",
 "odpory_objekt": "res://dialogicYap/yapperi/odpory_objekt.dch",
@@ -89,6 +93,7 @@ variables={
 "HorymiryapPlayed": false,
 "Znamky": {
 "angZnamka": 0,
+"cestina2Znamka": 0,
 "cestinaZnamka": 0,
 "dejZnamka": 0,
 "elkZnamka": 0,
