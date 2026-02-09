@@ -10,3 +10,60 @@ join trojuhelnik_objekt center [animation="Slide In Up"]
 	matikarka: Wow správně! Tak nakonec umíš počítat trojuhelníky!
 	(Nemáme spíš počítat strany nebo tak něco..? Ale to je jedno)
 	matikarka: OK další úkol!
+	matikarka: Vyřeš tuto složitou rovnici!
+	join rovnice_objekt center [animation="Slide In Up"]
+	Hmmmmm
+	- 104
+		matikarka: Noo tady ses spletl o 3, znovu se podívej na obrázek a uvidíš že dole je jen 1 banán!
+		matikarka: To ale nevadí, dám ti 2.
+		set {Znamky.matika2Znamka} = 2.0
+		set {matika2Played} = true
+	- 120
+		matikarka: Ty jsi asi popletl násobení, že..?
+		matikarka: Tak pro teď ti to odpustím, dám ti 2.
+		set {Znamky.matika2Znamka} = 2.0
+		set {matika2Played} = true
+	- 101
+		matikarka: Výborně! Dám ti 1
+		set {Znamky.matika2Znamka} = 1.0
+		set {matika2Played} = true
+- 10
+	matikarka: Spletl ses o 1, ale to nevadí, dáme si hned další úkol.
+	matikarka: Vypočítej tuto rovnici\:
+	join rovnice_objekt center [animation="Slide In Up"]
+	Hmmm
+	- 104
+		matikarka: Noo tady ses spletl o 3, znovu se podívej na obrázek a uvidíš že dole je jen 1 banán!
+		matikarka: Budu ti bohužel muset dát 4, nezvládl jsi oba úkoly.
+		set {Znamky.matika2Znamka} = 4.0
+		set {matika2Played} = true
+	- 120
+		matikarka: Ty sis i spletl násobení..?
+		matikarka: Bohužel ti budu muset dát 5.
+		set {Znamky.matika2Znamka} = 5.0
+		set {matika2Played} = true
+	- 101
+		matikarka: Správně!
+		matikarka: Tak když jsi měl jen chybu v prvním úkolu, dám ti 2.
+		set {Znamky.matika2Znamka} = 2.0
+		set {matika2Played} = true
+- 9
+	matikarka: Bohužel ne, ale dáme si ještě jednu úlohu!
+	matikarka: Vypočítej tuto rovnici prosím!
+	join rovnice_objekt center [animation="Slide In Up"]
+	Hmmmmm
+	- 104
+		matikarka: Noo tady ses spletl o 3, znovu se podívej na obrázek a uvidíš že dole je jen 1 banán!
+		matikarka: Bohužel ti budu muset dát 4, nezvládl jsi ani jednu úlohu.
+		set {Znamky.matika2Znamka} = 4.0
+		set {matika2Played} = true
+	- 120
+		matikarka: Ty sis spletl i násobení...?
+		matikarka: Bohužel ti budu muset dát za 5.
+		set {Znamky.matika2Znamka} = 5.0
+		set {matika2Played} = true
+	- 101
+		matikarka: Správně!
+		matikarka: Tak když jsi nezvládl jen první úkol, dám ti za 2.
+		set {Znamky.matika2Znamka} = 2.0
+		set {matika2Played} = true
