@@ -53,6 +53,7 @@ directories/dch_directory={
 "telocvikarka": "res://dialogicYap/yapperi/telocvikarka.dch",
 "trojuhelnik_objekt": "res://dialogicYap/yapperi/trojuhelnik_objekt.dch",
 "ucitel_kybisku": "res://dialogicYap/yapperi/ucitel_kybisku.dch",
+"ucitelhw": "res://dialogicYap/yapperi/ucitelhw.dch",
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch"
 }
 directories/dtl_directory={
@@ -77,6 +78,7 @@ directories/dtl_directory={
 "hardware_druhak": "res://dialogicYap/Chapter 2/hardware_druhak.dtl",
 "horymir_druhak": "res://dialogicYap/Chapter 2/horymir_druhak.dtl",
 "informatika": "res://dialogicYap/intro/informatika.dtl",
+"koukejnamujstroj": "res://dialogicYap/Chapter 2/koukejnamujstroj.dtl",
 "kybisky_druhak": "res://dialogicYap/Chapter 2/kybisky_druhak.dtl",
 "matika": "res://dialogicYap/intro/matika.dtl",
 "matika_druhak": "res://dialogicYap/Chapter 2/matika_druhak.dtl",
@@ -118,6 +120,7 @@ variables={
 "dstartPlayed": false,
 "elkPlayed": false,
 "fyzikaPlayed": false,
+"hardwarePlayed": false,
 "horymir2Played": false,
 "infPlayed": false,
 "introPlayed": false,

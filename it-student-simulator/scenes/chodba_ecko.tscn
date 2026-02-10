@@ -1,0 +1,55 @@
+[gd_scene load_steps=12 format=3 uid="uid://cv30j4iaw3kyb"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_5mpsa"]
+[ext_resource type="Texture2D" uid="uid://dk8q3neyq21l7" path="res://scenes/chodba_ecko.png" id="2_6nftq"]
+[ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_cuulv"]
+[ext_resource type="Texture2D" uid="uid://7eadmseewtk0" path="res://scenes/dvere_hover.png" id="4_okc7q"]
+[ext_resource type="Script" uid="uid://ct0mq76qmhk1f" path="res://scenes/button_ecko.gd" id="5_okc7q"]
+[ext_resource type="Script" uid="uid://i6rj25a25dmh" path="res://scenes/exit_left_fromecko.gd" id="6_e8nol"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e8nol"]
+texture = ExtResource("3_cuulv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btrhu"]
+texture = ExtResource("3_cuulv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y1wk4"]
+texture = ExtResource("4_okc7q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_foqoo"]
+texture = ExtResource("4_okc7q")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btrhu"]
+size = Vector2(112, 1103)
+
+[node name="ChodbaEcko" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(966, 539)
+scale = Vector2(1.0291667, 1.0462962)
+texture = ExtResource("1_5mpsa")
+
+[node name="ChodbaEcko" type="Sprite2D" parent="."]
+position = Vector2(968, 531)
+texture = ExtResource("2_6nftq")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 851.0
+offset_top = 276.0
+offset_right = 1148.0
+offset_bottom = 579.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_e8nol")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btrhu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y1wk4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_foqoo")
+script = ExtResource("5_okc7q")
+
+[node name="ExitLeft" type="Area2D" parent="." groups=["player"]]
+script = ExtResource("6_e8nol")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
+position = Vector2(46, 541.5)
+shape = SubResource("RectangleShape2D_btrhu")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]

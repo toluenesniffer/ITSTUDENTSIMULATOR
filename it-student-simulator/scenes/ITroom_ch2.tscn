@@ -39,4 +39,5 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_4qhv3")
 script = ExtResource("5_fyneb")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="ButtonHallway" to="." method="_on_button_hallway_pressed"]
 [connection signal="pressed" from="ButtonHallway" to="ButtonHallway" method="_on_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://s3xvrxu5lc6t"]
+[gd_scene load_steps=29 format=3 uid="uid://s3xvrxu5lc6t"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_kxflt"]
 [ext_resource type="Texture2D" uid="uid://e3vmbk7no1mt" path="res://scenes/acko.png" id="2_tiwi6"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://lkn5llb1v4mu" path="res://dialogicYap/yapperi/ME.png" id="10_hcnrd"]
 [ext_resource type="Script" uid="uid://cg8kmoslqim8h" path="res://scenes/button_andy.gd" id="11_5u2i1"]
 [ext_resource type="Script" uid="uid://biulye0oa8xdp" path="res://scenes/exit_left2.gd" id="11_hef4o"]
+[ext_resource type="Script" uid="uid://xl80osa8kkga" path="res://scenes/exit_right_toecko.gd" id="12_hef4o"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wuf7x"]
 texture = ExtResource("3_0ri6e")
@@ -51,6 +52,9 @@ texture = ExtResource("3_0ri6e")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b02pc"]
 size = Vector2(68, 1094)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lf0pf"]
+size = Vector2(144.58359, 1146.8423)
 
 [node name="Node2D" type="Node2D"]
 
@@ -130,6 +134,16 @@ script = ExtResource("11_hef4o")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
 position = Vector2(24, 537)
 shape = SubResource("RectangleShape2D_b02pc")
+
+[node name="ExitRight" type="Area2D" parent="."]
+position = Vector2(1914, 1057)
+scale = Vector2(0.96, 0.9499999)
+script = ExtResource("12_hef4o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight"]
+position = Vector2(-53.125023, -547.3684)
+scale = Vector2(1, 0.9999996)
+shape = SubResource("RectangleShape2D_lf0pf")
 
 [connection signal="pressed" from="buttonDoTridya307" to="buttonDoTridya307" method="_on_pressed"]
 [connection signal="pressed" from="buttonDoTridya306" to="buttonDoTridya306" method="_on_pressed"]
