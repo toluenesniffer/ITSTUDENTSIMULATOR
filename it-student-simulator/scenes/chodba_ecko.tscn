@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cv30j4iaw3kyb"]
+[gd_scene load_steps=13 format=3 uid="uid://cv30j4iaw3kyb"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_5mpsa"]
 [ext_resource type="Texture2D" uid="uid://dk8q3neyq21l7" path="res://scenes/chodba_ecko.png" id="2_6nftq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://7eadmseewtk0" path="res://scenes/dvere_hover.png" id="4_okc7q"]
 [ext_resource type="Script" uid="uid://ct0mq76qmhk1f" path="res://scenes/button_ecko.gd" id="5_okc7q"]
 [ext_resource type="Script" uid="uid://i6rj25a25dmh" path="res://scenes/exit_left_fromecko.gd" id="6_e8nol"]
+[ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="7_btrhu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e8nol"]
 texture = ExtResource("3_cuulv")
@@ -50,6 +51,9 @@ script = ExtResource("6_e8nol")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLeft"]
 position = Vector2(46, 541.5)
 shape = SubResource("RectangleShape2D_btrhu")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("7_btrhu")]
+position = Vector2(1296, 596)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]

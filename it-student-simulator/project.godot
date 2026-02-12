@@ -27,13 +27,16 @@ GlobalData="*res://global_data.gd"
 
 directories/dch_directory={
 "Ondra": "res://dialogicYap/yapperi/Ondra.dch",
+"aislop_objekt": "res://dialogicYap/yapperi/aislop_objekt.dch",
 "anca": "res://dialogicYap/yapperi/anca.dch",
 "andy": "res://dialogicYap/yapperi/andy.dch",
 "anglictinarka": "res://dialogicYap/yapperi/anglictinarka.dch",
 "cestinarka": "res://dialogicYap/yapperi/cestinarka.dch",
 "diagram_objekt": "res://dialogicYap/yapperi/diagram_objekt.dch",
 "elektrotechnicka": "res://dialogicYap/yapperi/elektrotechnicka.dch",
+"fotka_objekt": "res://dialogicYap/yapperi/fotka_objekt.dch",
 "fyzikarka": "res://dialogicYap/yapperi/fyzikarka.dch",
+"graficka": "res://dialogicYap/yapperi/graficka.dch",
 "horymir": "res://dialogicYap/yapperi/horymir.dch",
 "ka1_objekt": "res://dialogicYap/yapperi/ka1_objekt.dch",
 "ka2_objekt": "res://dialogicYap/yapperi/ka2_objekt.dch",
@@ -75,6 +78,9 @@ directories/dtl_directory={
 "elektrotechnika": "res://dialogicYap/intro/elektrotechnika.dtl",
 "furryci_druhak": "res://dialogicYap/Chapter 2/furryci_druhak.dtl",
 "fyzika": "res://dialogicYap/intro/fyzika.dtl",
+"grafika_druhak": "res://dialogicYap/Chapter 2/grafika_druhak.dtl",
+"grafika_druhak2": "res://dialogicYap/Chapter 2/grafika_druhak2.dtl",
+"grafika_ondra1": "res://dialogicYap/Chapter 2/grafika_ondra1.dtl",
 "hardware_druhak": "res://dialogicYap/Chapter 2/hardware_druhak.dtl",
 "horymir_druhak": "res://dialogicYap/Chapter 2/horymir_druhak.dtl",
 "informatika": "res://dialogicYap/intro/informatika.dtl",
@@ -93,7 +99,9 @@ directories/dtl_directory={
 "yap001": "res://dialogicYap/intro/yap001.dtl"
 }
 variables={
+"GondraPlayed": false,
 "HorymiryapPlayed": false,
+"Var": "",
 "Znamky": {
 "angZnamka": 0,
 "cestina2Znamka": 0,
@@ -101,6 +109,7 @@ variables={
 "dejZnamka": 0,
 "elkZnamka": 0,
 "fyzZnamka": 0,
+"hardwareZnamka": 0,
 "infZnamka": 0,
 "kybisky2Znamka": 0,
 "matika2Znamka": 0,
@@ -120,10 +129,13 @@ variables={
 "dstartPlayed": false,
 "elkPlayed": false,
 "fyzikaPlayed": false,
+"grafika1Played": false,
+"grafika2Played": false,
 "hardwarePlayed": false,
 "horymir2Played": false,
 "infPlayed": false,
 "introPlayed": false,
+"jezmrzly": false,
 "kamos": false,
 "kamos2": false,
 "kamoska": false,

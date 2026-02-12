@@ -1,0 +1,14 @@
+Ondra: Ahoj Pepo, co tu děláš když je hodina?
+Spíš co ty tady děláš, to tu celý den jen stojíš v koridoru?
+Ondra: Já tu rád stojím. Je to můj koníček.
+Dobře.. nebudu soudit. Každopádně, mám prosbu.
+Ondra: No?
+Já mám teď grafiku a potřeboval bych tě vyfotit, je to v pořádku?
+Ondra: Jj v pohodě.
+Tak zapózuj prosím \:P
+- Udělat fotku
+	Dík Ondro, já musím zpátky do hodiny, měj se!
+	Ondra: Ty taky, čau..
+	set {GondraPlayed} = true
+	set {jezmrzly} = true
+	[end_timeline]

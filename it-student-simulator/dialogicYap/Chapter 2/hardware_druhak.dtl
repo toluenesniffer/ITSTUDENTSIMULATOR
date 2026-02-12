@@ -1,13 +1,61 @@
-Dobrý den žáci… je mi jedno jestli jste kluk, holka, nebo něco mezi……. známkovat vás budu stejně.
-A HELE TY TAM VZADU CO TAM PÍŠEŠ TO DOHO POČÍTAČE!!!! JEŠTĚ NIC NEDĚLÁME. Nech toho!
-Teď si řekněme něco důležitého.
-POKUD CHCETE SERVER DOMA, ROZHODNĚ SI HO NEDÁVEJTE DO POKOJE JINAK SE ZBLÁZNÍTE Z TOHO HLUKU.
-A taky musíte ho dát doprostřed místnosti, ať se k němu můžete dostat.
- Hej ty vzadu.. jak se jmenuješ?
+join ucitelhw center
+ucitelhw: Dobrý den žáci… je mi jedno jestli jste kluk, holka, nebo něco mezi……. známkovat vás budu stejně.
+ucitelhw: A HELE TY TAM VZADU CO TAM PÍŠEŠ TO DOHO POČÍTAČE!!!! JEŠTĚ NIC NEDĚLÁME. Nech toho!
+ucitelhw: Teď si řekněme něco důležitého.
+ucitelhw: POKUD CHCETE SERVER DOMA, ROZHODNĚ SI HO NEDÁVEJTE DO POKOJE JINAK SE ZBLÁZNÍTE Z TOHO HLUKU.
+ucitelhw: A taky musíte ho dát doprostřed místnosti, ať se k němu můžete dostat.
+ucitelhw: Hej ty vzadu.. jak se jmenuješ?
 pepa: No... Pepa
-Ty se tam koukáš na ovčí p.. pohádky, žejo?
+ucitelhw: Ty se tam koukáš na ovčí p.. pohádky, žejo?
 pepa: CO??
-No nedáváš pozor!! Ok dám ti za úkol sestavit počítač.. ne v realitě, ale vybereš si komponenty a sepíšeš si je.
- NO POČKAT, ty máš na sobě boty!! To řeknu třídnímu učitelovi.
-V těch botech se ti určitě zapařujou nohy a upadnou ti..
-..Vrhni se teda na ten úkol.
+ucitelhw: No nedáváš pozor!! Ok dám ti za úkol sestavit počítač.. ne v realitě, ale vybereš si komponenty a sepíšeš si je.
+ucitelhw: NO POČKAT, ty máš na sobě boty!! To řeknu třídnímu učitelovi.
+ucitelhw: V těch botech se ti určitě zapařujou nohy a upadnou ti..
+ucitelhw: ..Vrhni se teda na ten úkol.
+(Ok takže... jelikož je teď problém s ramkama, asi je nebudu "kupovat" na běžných e-shopech s elektronikou..
+Co zkusím?
+- Temu
+	ucitelhw: Hmm tak teď budu čekat jestli tvůj počítač by vybouchl nebo fungoval ale byl tam čínský spyware..
+	ucitelhw: Ale dobře.. Tak teď mi ukaž jakou grafiku bys koupil.
+	Samozřejmě tu nejvýkonnější, chci generovat hodně AI slopu
+	ucitelhw: Ty... ty používáš umělého inteligenta....? No fuj, kvůli tomu si už ani nemůžu koupit ramku!!!
+	ucitelhw: Ukaž mi aspoň case jaký by sis vybral..
+	Moment, vygeneruju!
+	join aislop_objekt center
+	Přesně tento.
+	ucitelhw: Už to asi... nechci s tebou řešit.. Dám ti 3 a jdi už pryč prosimtě.
+	set {Znamky.hardwareZnamka} = 3.0
+	set {hardwarePlayed} = true
+- Podezřelý kupec na Vintedu co prodává ramky za 200Kč
+	ucitelhw: Podíval ses pořádně..? To jsou RÁMKY NA OBRÁZKY. Tak jakou vybereš grafiku hmm?
+	Samozřejmě tu nejvýkonnější, chci generovat hodně AI slopu
+	ucitelhw: Ty... ty používáš umělého inteligenta....? No fuj, kvůli tomu si už ani nemůžu koupit ramku!!!
+	ucitelhw: Dobře, ukaž mi case jaký si vybereš.
+	Moment, vygeneruju
+	Mám to, koukejte na to!
+	join aislop_objekt center
+	TENTO SE MI LIBÍ
+	ucitelhw: Ty mě opravdu chceš jen naštvat, dám ti 5 a řeknu to třídnímu učiteli!
+	(Náš třídní doslova vede AI kroužek....ale ok)
+	set {Znamky.hardwareZnamka} = 5.0
+	set {hardwarePlayed} = true
+- Kaufland.cz.
+	ucitelhw: Ok, docela dobrá volba. Tohle byla zatím zkouška co bys udělal, ale jdeme zpět k začátku.
+	ucitelhw: Ukaž mi case co by sis vybral.
+	Hmmm...
+	join aislop_objekt center
+	Tento se mi líbí!
+	ucitelhw: Ty si chceš kupovat AI case jo? Však tady jde jasně vidět že to je AI!
+	Nn maj ho na TEMU a má moc dobrý recenze!!!
+	ucitelhw: Dobře... teď důležitá otázka.
+	ucitelhw: Používáš virtuální realitu?
+	- Ano
+		ucitelhw: A koukáš se na ní na ovčí pohádky?
+		Ano koukám
+		ucitelhw: Tak to má být, dám ti jedničku.
+		set {Znamky.hardwareZnamka} = 1.0
+		set {hardwarePlayed} = true
+	- Ne
+		ucitelhw: Škoda. No.. dám ti za 2.
+		set {Znamky.hardwareZnamka} = 2.0
+		set {hardwarePlayed} = true

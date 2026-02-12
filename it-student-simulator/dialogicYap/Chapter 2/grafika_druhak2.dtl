@@ -1,0 +1,8 @@
+join graficka center
+graficka: Tak mi ukažte vaše fotky, upravte je ve photoshopu a odešlete na classroom
+join fotka_objekt center
+(Umm.. zdá se mi to nebo.. je Ondra nějakej.. namodralej??)
+(Měl bych ho asi zkontrolovat..)
+Paní učitelko, můžu jit prosím na záchod?
+graficka: Můžeš, brzy se vrať.
+set {grafika2Played} = true

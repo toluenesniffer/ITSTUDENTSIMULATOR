@@ -1,0 +1,7 @@
+join graficka center
+graficka:  Dobrý den, tento rok bude Aplikační software jiný, než minule.
+graficka: Tentokrát budeme dělat grafiku a učit se fotografovat, budeme chodit i ven.
+graficka: Dáme si hned úkol, vemte si foťáky a vyfoťte svého kamaráda v pohybu, stačí tady na chodbě.
+- Vzít si foťák
+	set {grafika1Played} = true
+	[end_timeline]

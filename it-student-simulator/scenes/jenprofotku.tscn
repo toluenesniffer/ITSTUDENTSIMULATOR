@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsnol1v3fyvbf"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_hqwgc"]
+[ext_resource type="Texture2D" uid="uid://vq142dmllwwh" path="res://scenes/corridor.png" id="2_ujuqn"]
+[ext_resource type="Texture2D" uid="uid://cljj4uxfuaavc" path="res://scenes/chudak.png" id="3_02l5s"]
+
+[node name="Jenprofotku" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(954.5, 534)
+scale = Vector2(1.0390625, 1.075926)
+texture = ExtResource("1_hqwgc")
+
+[node name="Corridor" type="Sprite2D" parent="."]
+position = Vector2(952, 525)
+texture = ExtResource("2_ujuqn")
+
+[node name="Chudak" type="Sprite2D" parent="."]
+position = Vector2(897, 560.00006)
+scale = Vector2(1.6015625, 1.515625)
+texture = ExtResource("3_02l5s")

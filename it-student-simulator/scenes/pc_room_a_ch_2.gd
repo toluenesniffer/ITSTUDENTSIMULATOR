@@ -9,13 +9,21 @@ func _on_ready() -> void:
 	if(Dialogic.VAR.dstartPlayed == true and Dialogic.VAR.webisky2Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 2/webisky_druhak.dtl")
+	elif(Dialogic.VAR.hardwarePlayed == true and Dialogic.VAR.grafika1Played == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 2/webisky_druhak.dtl")
 	else:
 		pass
 func _on_timeline_started():
 	SFXManager.change_music("res://music/ukolhudba.mp3")
 func _on_timeline_ended():
-	TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
-	SFXManager.change_music("res://music/normalnihudba.mp3")
+	if (Dialogic.VAR.grafika1Played == true and Dialogic.VAR.GondraPlayed == false):
+		TaskUI.update_task("JDI NA CHODBU VYFOTIT ONDRU")
+	elif (Dialogic.VAR.GondraPlayed == true and Dialogic.VAR.grafika2Played == false):
+		TaskUI.update_task("JDI ZPATKY DO TRIDY")
+	else:
+		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
+		SFXManager.change_music("res://music/normalnihudba.mp3")
 
 
 func _on_button_pressed() -> void:
