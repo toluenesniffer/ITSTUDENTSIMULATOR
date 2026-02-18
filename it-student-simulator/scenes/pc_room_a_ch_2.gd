@@ -12,6 +12,9 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.hardwarePlayed == true and Dialogic.VAR.grafika1Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 2/grafika_druhak.dtl")
+	elif(Dialogic.VAR.GondraPlayed == true and Dialogic.VAR.grafika2Played == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 2/grafika_druhak2.dtl")
 	else:
 		pass
 func _on_timeline_started():

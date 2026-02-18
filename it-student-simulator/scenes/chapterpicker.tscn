@@ -1,0 +1,65 @@
+[gd_scene load_steps=16 format=3 uid="uid://cytvu88gcqa27"]
+
+[ext_resource type="Texture2D" uid="uid://btkte2lwnw03d" path="res://scenes/mainbg.png" id="1_iaiqh"]
+[ext_resource type="Texture2D" uid="uid://erc0a8jc5naj" path="res://buttons/newgame.png" id="2_ep0c5"]
+[ext_resource type="Texture2D" uid="uid://lp01c2qoruue" path="res://buttons/newgame_clicked.png" id="3_4loa8"]
+[ext_resource type="Texture2D" uid="uid://dcldq6s8buo3g" path="res://buttons/newgame_focus.png" id="4_l0kqr"]
+[ext_resource type="Script" uid="uid://c3nldng1uogjd" path="res://scenes/button.gd" id="5_2kcqj"]
+[ext_resource type="Texture2D" uid="uid://chvf2co6u4hy3" path="res://buttons/button_continue.png" id="6_sibho"]
+[ext_resource type="Script" uid="uid://c7mqr5d0ew5b3" path="res://scenes/continue_druhak.gd" id="7_38plw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qm8od"]
+texture = ExtResource("2_ep0c5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gvpeq"]
+texture = ExtResource("3_4loa8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nepfh"]
+texture = ExtResource("4_l0kqr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rtrow"]
+texture = ExtResource("3_4loa8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6q33k"]
+texture = ExtResource("6_sibho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c1ba1"]
+texture = ExtResource("6_sibho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b5ucx"]
+texture = ExtResource("6_sibho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oh15x"]
+texture = ExtResource("6_sibho")
+
+[node name="Chapterpicker" type="Node2D"]
+
+[node name="Mainbg" type="Sprite2D" parent="."]
+position = Vector2(955.25, 544.75)
+scale = Vector2(1.2196876, 1.0473733)
+texture = ExtResource("1_iaiqh")
+
+[node name="Button" type="Button" parent="Mainbg"]
+offset_left = -142.04462
+offset_top = -187.85089
+offset_right = 211.95538
+offset_bottom = 6.149109
+theme_override_styles/normal = SubResource("StyleBoxTexture_qm8od")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gvpeq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nepfh")
+theme_override_styles/focus = SubResource("StyleBoxTexture_rtrow")
+script = ExtResource("5_2kcqj")
+
+[node name="Continue" type="Button" parent="Mainbg"]
+offset_left = -139.58493
+offset_top = -46.545
+offset_right = 209.68484
+offset_bottom = 169.23286
+theme_override_styles/normal = SubResource("StyleBoxTexture_6q33k")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_c1ba1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b5ucx")
+theme_override_styles/focus = SubResource("StyleBoxTexture_oh15x")
+script = ExtResource("7_38plw")
+
+[connection signal="pressed" from="Mainbg/Button" to="Mainbg/Button" method="_on_pressed"]
+[connection signal="pressed" from="Mainbg/Continue" to="Mainbg/Continue" method="_on_pressed"]
