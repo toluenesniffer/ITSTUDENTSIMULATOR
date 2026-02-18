@@ -67,5 +67,6 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_3ip5v")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bwjk3")
 script = ExtResource("7_3pltk")
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

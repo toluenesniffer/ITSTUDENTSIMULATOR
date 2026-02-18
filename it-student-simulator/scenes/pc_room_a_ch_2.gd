@@ -11,7 +11,7 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/Chapter 2/webisky_druhak.dtl")
 	elif(Dialogic.VAR.hardwarePlayed == true and Dialogic.VAR.grafika1Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
-		Dialogic.start("res://dialogicYap/Chapter 2/webisky_druhak.dtl")
+		Dialogic.start("res://dialogicYap/Chapter 2/grafika_druhak.dtl")
 	else:
 		pass
 func _on_timeline_started():
@@ -21,6 +21,8 @@ func _on_timeline_ended():
 		TaskUI.update_task("JDI NA CHODBU VYFOTIT ONDRU")
 	elif (Dialogic.VAR.GondraPlayed == true and Dialogic.VAR.grafika2Played == false):
 		TaskUI.update_task("JDI ZPATKY DO TRIDY")
+	elif (Dialogic.VAR.grafika2Played == true and Dialogic.VAR.zachranaPlayed == false):
+		TaskUI.update_task("JDI ZPET ZA ONDROU")
 	else:
 		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 		SFXManager.change_music("res://music/normalnihudba.mp3")

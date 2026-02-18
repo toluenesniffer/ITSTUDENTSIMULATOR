@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://cpu6cci114l3x"]
+[gd_scene load_steps=18 format=3 uid="uid://cpu6cci114l3x"]
 
+[ext_resource type="Script" uid="uid://d14gyjo785i4k" path="res://scenes/corridor.gd" id="1_51253"]
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_b48a3"]
 [ext_resource type="Texture2D" uid="uid://vq142dmllwwh" path="res://scenes/corridor.png" id="2_7ycg3"]
 [ext_resource type="Script" uid="uid://dh3f6kvayp4ht" path="res://scenes/exit_right.gd" id="3_7ycg3"]
@@ -27,6 +28,7 @@ size = Vector2(68, 1094)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_51253"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_51253")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
 position = Vector2(956.99994, 539)

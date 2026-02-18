@@ -96,7 +96,8 @@ directories/dtl_directory={
 "telocvik_vyhra": "res://dialogicYap/intro/telocvik_vyhra.dtl",
 "vysvedceni": "res://dialogicYap/intro/vysvedceni.dtl",
 "webisky_druhak": "res://dialogicYap/Chapter 2/webisky_druhak.dtl",
-"yap001": "res://dialogicYap/intro/yap001.dtl"
+"yap001": "res://dialogicYap/intro/yap001.dtl",
+"zachrana_ondry": "res://dialogicYap/Chapter 2/zachrana_ondry.dtl"
 }
 variables={
 "GondraPlayed": false,
@@ -148,7 +149,8 @@ variables={
 "prgPlayed": false,
 "ucitelka": "",
 "vysvedceniPlayed": false,
-"webisky2Played": false
+"webisky2Played": false,
+"zachranaPlayed": false
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogicYap/intro/style.tres"]
