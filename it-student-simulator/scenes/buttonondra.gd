@@ -11,6 +11,6 @@ func _on_pressed() -> void:
 		if(Dialogic.VAR.grafika1Played == true and Dialogic.VAR.GondraPlayed == false):
 			Dialogic.start("res://dialogicYap/Chapter 2/grafika_ondra1.dtl")
 		elif(Dialogic.VAR.grafika2Played == true and Dialogic.VAR.zachranaPlayed == false):
-			Dialogic.start("res://dialogicYap/Chapter 2/grafika_ondra1.dtl")
+			Dialogic.start("res://dialogicYap/Chapter 2/zachrana_ondry.dtl")
 		else:
 			Dialogic.start("res://dialogicYap/intro/ondrakamos.dtl")

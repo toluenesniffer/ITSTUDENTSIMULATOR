@@ -20,7 +20,7 @@
 "image": "\"res://dialogicYap/yapperi/graficka.png\""
 },
 "mirror": false,
-"offset": Vector2(14, -700),
+"offset": Vector2(200, -700),
 "scale": 0.2,
 "scene": ""
 }

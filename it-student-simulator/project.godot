@@ -97,7 +97,9 @@ directories/dtl_directory={
 "vysvedceni": "res://dialogicYap/intro/vysvedceni.dtl",
 "webisky_druhak": "res://dialogicYap/Chapter 2/webisky_druhak.dtl",
 "yap001": "res://dialogicYap/intro/yap001.dtl",
-"zachrana_ondry": "res://dialogicYap/Chapter 2/zachrana_ondry.dtl"
+"zachrana_ondry": "res://dialogicYap/Chapter 2/zachrana_ondry.dtl",
+"zachrana_prohra": "res://dialogicYap/Chapter 2/zachrana_prohra.dtl",
+"zachrana_vyhra": "res://dialogicYap/Chapter 2/zachrana_vyhra.dtl"
 }
 variables={
 "GondraPlayed": false,
@@ -143,6 +145,8 @@ variables={
 "kybisky2Played": false,
 "matika2Played": false,
 "matikaPlayed": false,
+"minihraHotova": false,
+"navzdyZmrzly": false,
 "obcankaPlayed": false,
 "pes": "",
 "petrayapPlayed": false,
@@ -150,7 +154,9 @@ variables={
 "ucitelka": "",
 "vysvedceniPlayed": false,
 "webisky2Played": false,
-"zachranaPlayed": false
+"zachranaPlayed": false,
+"zachranaprohraPlayed": false,
+"zachranenPlayed": false
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogicYap/intro/style.tres"]

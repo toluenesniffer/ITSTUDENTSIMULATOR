@@ -15,7 +15,8 @@ func update_ondra_appearance():
 func _on_timeline_ended():
 	SFXManager.change_music("res://music/normalnihudba.mp3")
 	if Dialogic.VAR.zachranaPlayed == true:
-		start_fire_minigame()
+		if Dialogic.VAR.minihraHotova == false:
+			start_fire_minigame()
 func start_fire_minigame():
 	var minigame = MINIGAME_SCENE.instantiate()
 	add_child(minigame)
@@ -25,9 +26,14 @@ func start_fire_minigame():
 func _on_fire_success():
 	print("Uhašeno!")
 	Dialogic.VAR.skolaHori = false
+	Dialogic.VAR.minihraHotova = true
+	Dialogic.start("res://dialogicYap/Chapter 2/zachrana_vyhra.dtl")
 	TaskUI.update_task("VRAT SE DO TRIDY")
 	#tady pak spustit dialog (uff to bylo tesne)
 func _on_fire_fail():
 	print("Škola hoří!")
 	Dialogic.VAR.skolaHori = true
+	Dialogic.VAR.minihraHotova = true
+	Dialogic.start("res://dialogicYap/Chapter 2/zachrana_prohra.dtl")
+	TaskUI.update_task("NAJDI NOUZOVY VYCHOD.")
 	#tady spustim apokalypsu

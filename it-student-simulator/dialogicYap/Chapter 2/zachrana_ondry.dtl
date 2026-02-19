@@ -1,4 +1,11 @@
 ONDRO CO SE TI STALO
 Ondra: Zima... je mi zima...
 JDU TI POMOCT
-set {zachranaPlayed} = true
+- Pomoct mu
+	set {zachranaPlayed} = true
+	set {minihraHotova} = false
+	[end_timeline]
+- Vykašlat se na něj
+	Umm já vlastně.. musím zpět do třídy, promiň
+	set {zachranaPlayed} = true
+	set {navzdyZmrzly} = true
