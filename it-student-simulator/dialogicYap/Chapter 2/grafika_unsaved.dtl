@@ -1,0 +1,8 @@
+join graficka center
+graficka: Pepo… ten obrázek máš hodně rozmazaný a to pozadí se tam nehodí..
+graficka: A kdes byl tak dlouho?
+Střevní potíže, omlouvám se.
+graficka: Ach jo.. no.. dám ti za 4.
+set {Znamky.grafikaZnamka} = 4.0
+set {grafika3Played} = true
+[end_timeline]

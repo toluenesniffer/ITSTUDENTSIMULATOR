@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj6e117qof5ai"]
+
+[ext_resource type="Script" uid="uid://cubb7dgjdunsk" path="res://scenes/fire_overlay.gd" id="1_bv5jk"]
+[ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="1_m3eqk"]
+
+[node name="FireOverlay" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_bv5jk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(1, 0, 0, 0.19607843)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 879.0
+offset_top = 204.0
+offset_right = 975.0
+offset_bottom = 290.0
+theme_override_fonts/font = ExtResource("1_m3eqk")
+theme_override_font_sizes/font_size = 30
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="ready" from="." to="." method="_on_ready"]

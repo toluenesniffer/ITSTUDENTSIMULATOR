@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://r6ooi57mk5qe"]
+[gd_scene load_steps=20 format=3 uid="uid://r6ooi57mk5qe"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_n0vjy"]
 [ext_resource type="Texture2D" uid="uid://d0dfv2xvm6jol" path="res://scenes/hallway_icko.png" id="2_ad3b5"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="4_vunph"]
 [ext_resource type="Texture2D" uid="uid://dcehyu8rvf1nm" path="res://scenes/dvere_icko.png" id="5_6ry3h"]
 [ext_resource type="Script" uid="uid://dm5vyhwoio15u" path="res://scenes/dvere_i102.gd" id="6_6bnwq"]
+[ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="6_170xb"]
+[ext_resource type="Script" uid="uid://b47jtf3auli2c" path="res://scenes/dvere_vychod.gd" id="7_ehjv4"]
+[ext_resource type="Texture2D" uid="uid://j3lb1c5fnaak" path="res://buttons/vychod.png" id="8_kkgbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vunph"]
 size = Vector2(93.125046, 1175.5266)
@@ -24,6 +27,18 @@ texture = ExtResource("5_6ry3h")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4evci"]
 texture = ExtResource("5_6ry3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2m3b1"]
+texture = ExtResource("6_170xb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7cd52"]
+texture = ExtResource("6_170xb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wc5me"]
+texture = ExtResource("6_170xb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6rfx0"]
+texture = ExtResource("6_170xb")
 
 [node name="HallwayIcko" type="Node2D"]
 
@@ -58,8 +73,24 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ehjv4")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_4evci")
 script = ExtResource("6_6bnwq")
 
+[node name="Nouze" type="Button" parent="."]
+offset_left = 703.0
+offset_top = 241.0
+offset_right = 958.0
+offset_bottom = 568.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_2m3b1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7cd52")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wc5me")
+theme_override_styles/focus = SubResource("StyleBoxTexture_6rfx0")
+script = ExtResource("7_ehjv4")
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("4_vunph")]
 position = Vector2(869.0005, 538.00037)
 scale = Vector2(0.9216, 0.9024995)
 
+[node name="Vychod" type="Sprite2D" parent="."]
+position = Vector2(846, 196)
+texture = ExtResource("8_kkgbv")
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Nouze" to="Nouze" method="_on_pressed"]

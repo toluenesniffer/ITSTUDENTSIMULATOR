@@ -1,0 +1,9 @@
+join graficka center
+graficka: Pepo cos tam dělal tak dlouho?
+Zachraňoval život! A fotku máte na classroomu
+graficka: A co se stalo? Komu jsi zachraňoval život?
+Můj kamarád na chodbě zmrznul a já zapnul topení. Už je v pořádku.
+graficka: No ještě že tak.. dobře, dám ti 1 \:)
+Omg děkuju
+set {Znamky.grafikaZnamka} = 1.0
+set {grafika3Played} = true

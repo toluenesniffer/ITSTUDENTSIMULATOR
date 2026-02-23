@@ -48,4 +48,5 @@ func _on_fire_fail():
 	Dialogic.VAR.minihraHotova = true
 	Dialogic.start("res://dialogicYap/Chapter 2/zachrana_prohra.dtl")
 	TaskUI.update_task("NAJDI NOUZOVY VYCHOD.")
-	#tady spustim apokalypsu
+	if (Dialogic.VAR.zachranaprohraPlayed == true):
+		FireSystem.start_fire(60.0)

@@ -1,0 +1,45 @@
+[gd_scene load_steps=11 format=3 uid="uid://d01d0kr7t8kjp"]
+
+[ext_resource type="Texture2D" uid="uid://dw3c6vppksgfm" path="res://scenes/badend.png" id="1_7vefu"]
+[ext_resource type="Script" uid="uid://dyouulw7fwmh0" path="res://scenes/bad_ending.gd" id="1_uibt6"]
+[ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="3_h7hsu"]
+[ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="4_lfrri"]
+[ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="5_r470h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3ya6"]
+texture = ExtResource("3_h7hsu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dfs8v"]
+texture = ExtResource("4_lfrri")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ws1d"]
+texture = ExtResource("5_r470h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7407g"]
+texture = ExtResource("3_h7hsu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q5dot"]
+texture = ExtResource("5_r470h")
+
+[node name="BadEnding" type="Node2D"]
+script = ExtResource("1_uibt6")
+
+[node name="Badend" type="Sprite2D" parent="."]
+position = Vector2(961, 542)
+scale = Vector2(1.21625, 1.0203704)
+texture = ExtResource("1_7vefu")
+
+[node name="Exit" type="Button" parent="."]
+visible = false
+offset_left = 712.0
+offset_top = 411.0
+offset_right = 1216.0
+offset_bottom = 730.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_o3ya6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dfs8v")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5ws1d")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_7407g")
+theme_override_styles/focus = SubResource("StyleBoxTexture_q5dot")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
