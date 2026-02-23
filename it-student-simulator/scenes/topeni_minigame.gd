@@ -14,7 +14,7 @@ var target_max = 70.0
 
 
 func _on_ready() -> void:
-	game_timer.wait_time = 5.0
+	game_timer.wait_time = 15.0
 	game_timer.one_shot = true
 	game_timer.timeout.connect(_on_time_up)
 
