@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsaotordbvat3"
+path="res://.godot/imported/sad ost.mp3-2f3bc2e1383c61d043d17e633dd914c8.mp3str"
+
+[deps]
+
+source_file="res://music/sad ost.mp3"
+dest_files=["res://.godot/imported/sad ost.mp3-2f3bc2e1383c61d043d17e633dd914c8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

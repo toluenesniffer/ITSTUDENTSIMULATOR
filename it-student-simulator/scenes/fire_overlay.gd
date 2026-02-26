@@ -14,6 +14,7 @@ func _process(_delta):
 	if not timer.is_stopped():
 		label.text = "Čas do výbuchu: " + str(ceil(timer.time_left))
 func start_fire(seconds: float):
+	print("!!! DEBUG: Funkce start_fire byla zavolána !!!")
 	visible = true
 	timer.wait_time = seconds
 	timer.one_shot = true

@@ -1,0 +1,55 @@
+join informaticka center
+informaticka: Dobrý den,tento rok vás mám na informatiku já. Začneme s Excelem.
+informaticka: Dneska mám pro vás takový hezký excel úkol. Je takový…. kočičkový…..
+informaticka: Otevřete si Excel a pojďte na tom pracovat.
+join kocicky_objekt center [animation="Fade In"]
+Co to proboha je.
+- Stát se kočkou
+	join catofknowledge right [animation="Bounce In"]
+	catofknowledge: Maumau mňao ma mauu (Teď když jsem kočka, už tomu rozumím!)
+	catofknowledge: Mrowww maau mau
+	catofknowledge: Mňau mau mnauou mau (Tady mám soubor kocicky.csv. Jsou to záznamy z kamerového systému. Musím z těch RAW dat zjistit, jestli se kočky v chodbě A1 cítily v bezpečí.)
+	catofknowledge: Mau mau mau(Kouknu na sloupec Ly_alert (kočka leží a dává pozor). Pokud je tam jednička, kočka sice odpočívá, ale pořád je ve střehu. Musím najít momenty, kdy jsou všechny hodnoty aktivity na nule.)
+	catofknowledge: Mau mao mau (A tady použiju funkci count abych zjistil, kolikrát se kočička protáhla)
+	catofknowledge: MAO MAU MAU!!!!!!§# (O OU TADY JSOU I VYNECHANÝ ŘÁDKY CO S TÍM MÁM UDĚLAT)
+	catofknowledge: Mrow mow mrau (Ale jelikož jsem kočka co ví vše o Excelu, umím si s tím poradit. Použiju hromadné vyplnění.)
+	catofknowledge: 1. mau, 2. mňau, 3. mrrrm, 4. mrow (Za prvé, označím celou tabulku. Za 2., Stisknu F5 a kliknu na "Jinak...". Za 3., Vyberu možnost "Prázdné buňky a zmáčknu OK". Za 4., napíšu 0 a ctrl + enter.)
+	catofknowledge: "Kontigenční tabulka" mau mau (Teď konečně můžu vytvořit krásné kontigenční tabulky!)
+	catofknowledge: Paní učitelko. mňau. Prosím pamlsek. 
+	informaticka: Cože, kde se tu vzala kočka? Ale počkej, ukaž mi ten úkol..
+	informaticka: TYS TO OPRAVDU ZVLÁDL??????? Tohle ještě nikdo nedokázal.
+	informaticka: Páni.. tohle musí jít do novin.
+	informaticka: Dávám ti velkou 1.
+	catofknowledge: (Ok ale jak se teď proměním zpátky...)
+	set {Znamky.inf2Znamka} = 1.0
+	set {inf2Played} = true
+	[end_timeline]
+- Hodit to do AI
+	S tímto se nebudu patlat, hodím to prostě do AI.
+	join airage center [animation="Bounce In" length="0.8"]
+	Umm co... cože..?
+	ANI AI TO NECHCE DĚLAT??? JÁ JSEM V KONCÍCH.
+	leave airage [animation="Bounce Out"]
+	Horymíre... nevíš co s tím..?
+	horymir: Hej vůbec nevím co s tím ani AI mi nechce pomoct..
+	Sakra co teď. Já nechci používat svůj mozek na toto, tohle by nechtěl dělat ani otrok.
+	- Zeptat se bystré Excel kočky
+		join catofknowledge right [animation="Fade In Up"]
+		catofknowledge: Dej mi pamlsek abych ti pomohl.
+		Ok dám ti toust z bufíku.
+		catofknowledge: Mrrmmm! (To je přesně co jsem chtěl. Pojďme se tedy na to podívat.)
+		catofknowledge: Mao mau mrow (Použij funkci Count, aby jsi spočítal, kolik kočiček se protáhlo)
+		catofknowledge: MŇAU!!! (ALE POČKEJ. Tady vidím, že máš vynechané nějaké data. )
+		catofknowledge: Mao mau mau (To ale není žádný problém. Prvně označ celou tabulku, stiskni F5 a klikni na "Jinak...", vyber "Prázdné buňky" a zmáčkni ok, napiš tam 0 a dej ctrl + enter)
+		catofknowledge: Mňauuu! (Vidíš, teď se ti to spravilo. A podobně dodělej celý úkol a vytvoř kontigenčni tabulky. Budu ti dále pomáhat.)
+		(Po 1 hodině...)
+		Paní učitelko, pojďte se podívat.
+		informaticka: Páni, tys to opravdu zvládl Pepo.. dám ti velkou 1!
+		set {Znamky.inf2Znamka} = 1.0
+		set {inf2Played} = true
+		[end_timeline]
+	- Odevzdat to prádzný...
+		informaticka: Ty to ani nezkusíš..? Tak ti bohužel budu muset dát za 5..
+		set {Znamky.inf2Znamka} = 5.0
+		set {inf2Played} = true
+		[end_timeline]

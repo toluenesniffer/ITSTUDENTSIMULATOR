@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://d01d0kr7t8kjp"]
+[gd_scene load_steps=12 format=3 uid="uid://d01d0kr7t8kjp"]
 
 [ext_resource type="Texture2D" uid="uid://dw3c6vppksgfm" path="res://scenes/badend.png" id="1_7vefu"]
 [ext_resource type="Script" uid="uid://dyouulw7fwmh0" path="res://scenes/bad_ending.gd" id="1_uibt6"]
 [ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="3_h7hsu"]
 [ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="4_lfrri"]
 [ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="5_r470h"]
+[ext_resource type="AudioStream" uid="uid://dsaotordbvat3" path="res://music/sad ost.mp3" id="6_lfrri"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3ya6"]
 texture = ExtResource("3_h7hsu")
@@ -40,6 +41,9 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_dfs8v")
 theme_override_styles/hover = SubResource("StyleBoxTexture_5ws1d")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_7407g")
 theme_override_styles/focus = SubResource("StyleBoxTexture_q5dot")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_lfrri")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

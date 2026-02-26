@@ -1,0 +1,33 @@
+join mikroelektronik center
+mikroelektronik: Dobrý den, vítam vás u nového předmětu kde budeme programovat 67-mi segmentové displeje a hodně ostatních věcí!
+COŽE??? To bude zase něco…
+mikroelektronik: Všíchni si otevřete Atmel Studio a zkuste napsat nějaký kód který zobrazí na displeji nějaké čísílko!
+mikroelektronik: Když zmáčknete toto tak se objeví toto číslo a toto tlačítko to vymaže a toto spustí stopky a toto zastaví stopky a toto..
+Ummm
+mikroelektronik: A pokud to uděláte, tak dostanete 1 váhy 10!
+OK TO CHCU
+- Vygenerovat AI kód
+	mikroelektronik: Tak jo Pepo, jdem to otestovat..
+	mikroelektronik: Zmáčknu toto tlačítko a...
+	join bozskecislice_objekt center [animation="Fade In"]
+	bozskecislice_objekt: CO TO JE
+	mikroelektronik: Prosimtě co se ti to ukazuje za znaky to jsou snad nějaké biblické číslice..?
+	mikroelektronik: Co jsi to provedl..
+	Noo já nevím asi jsem to špatně naprogramoval..
+	mikroelektronik: Dobře.. tak to sprav a dám ti malou 2 za snahu.
+	Ok děkuji
+	set {Znamky.mikroelkZnamka} = 2.0
+	set {mikroelkPlayed} = true
+	[end_timeline]
+- Opsat AI kód od kamaráda
+	Hej Petro... mmáš ten kód?
+	petra: Jj, chceš ho?
+	Prosííím pošli
+	petra: Ok
+	Pane učiteli už to mám!!!
+	mikroelektronik: No tak se ukaž. Kliknu na tlačítko..
+	mikroelektronik: No páni.. oběma vám to funguje!
+	mikroelektronik: Jste moc šikovní, dávám vám za 1.
+	set {Znamky.mikroelkZnamka} = 1.0
+	set {mikroelkPlayed} = true
+	[end_timeline]
