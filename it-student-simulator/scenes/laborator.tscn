@@ -1,0 +1,47 @@
+[gd_scene load_steps=10 format=3 uid="uid://bsvt4sn5lvofk"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_h7lb8"]
+[ext_resource type="Texture2D" uid="uid://ckg2cj1j1o74m" path="res://scenes/laborator.png" id="2_xl21l"]
+[ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_w3qeu"]
+[ext_resource type="Script" uid="uid://cekwjyrgjqd1k" path="res://scenes/dvere_ecko.gd" id="4_trsvg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xrjfi"]
+texture = ExtResource("3_w3qeu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xshj7"]
+texture = ExtResource("3_w3qeu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_76va6"]
+texture = ExtResource("3_w3qeu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f42rs"]
+texture = ExtResource("3_w3qeu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vqom8"]
+texture = ExtResource("3_w3qeu")
+
+[node name="Laborator" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(966, 544.5)
+scale = Vector2(1.0229167, 1.0379629)
+texture = ExtResource("1_h7lb8")
+
+[node name="Laborator" type="Sprite2D" parent="."]
+position = Vector2(965.00006, 539)
+scale = Vector2(1.5166667, 1.0055555)
+texture = ExtResource("2_xl21l")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1270.0
+offset_top = 84.0
+offset_right = 1459.0
+offset_bottom = 316.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_xrjfi")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xshj7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_76va6")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_f42rs")
+theme_override_styles/focus = SubResource("StyleBoxTexture_vqom8")
+script = ExtResource("4_trsvg")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

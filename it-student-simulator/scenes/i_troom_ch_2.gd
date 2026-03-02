@@ -11,6 +11,9 @@ func _on_ready() -> void:
 		print("Webisky: ", Dialogic.VAR.webisky2Played, " Kybisky: ", Dialogic.VAR.kybisky2Played)
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 2/kybisky_druhak.dtl")
+	elif (Dialogic.VAR.grafika3Played == true and Dialogic.VAR.mikroelkPlayed == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 2/mikroelk_druhak.dtl")
 	else:
 		pass
 		
@@ -25,3 +28,5 @@ func _on_timeline_ended():
 func _on_button_hallway_pressed() -> void:
 	if (Dialogic.VAR.kybisky2Played == true and Dialogic.VAR.horymir2Played == false):
 		TaskUI.update_task("JDI ZA HORYMIREM")
+	elif(Dialogic.VAR.mikroelkPlayed == true and Dialogic.VAR.inf2Played == false):
+		TaskUI.update_task("JDI DO A306")

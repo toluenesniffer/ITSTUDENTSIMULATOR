@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://db122gvwgf3ht"]
+
+[ext_resource type="Script" uid="uid://dwuyuc84sa7u7" path="res://scenes/fridge_minigame.gd" id="1_elcb2"]
+
+[node name="FridgeMinigame" type="CanvasLayer"]
+script = ExtResource("1_elcb2")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.43137255)
+
+[node name="Dial" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(50, 50)
+
+[node name="TempLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="ready" from="." to="." method="_on_ready"]
