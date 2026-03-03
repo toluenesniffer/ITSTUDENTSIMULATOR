@@ -1,0 +1,41 @@
+join fyzikarka center
+fyzikarka: Opět se vidíme v novém roce, tak si rovnou dáme zkoušeníčko, nestíháme a potřebuju známky! Doufám, že jste se přes prázdniny pořádně učili.
+fyzikarka:  Pepo pojď k tabuli.
+PROČ ZASE JÁ?????
+fyzikarka: Takže.. namaluj mi vypuklé zrcadlo.
+Jak to bylo..
+join zrcadlo_objekt center
+Takhle?
+fyzikarka: Hmm ano, máš to správně.. za zkoušení ti dám malou jedničku
+leave zrcadlo_objekt
+fyzikarka: Ale.. měli jste ještě odevzdávat své protokoly z laboratorek. Doufám, že ho máš u sebe.
+O OU no jo někde asi bude..
+(Sakra, zapomněl jsem na to. Zkusím odevzdat něco jiného, třeba si nevšimne)
+(Co odevzdat?)
+- Slohovku z češtiny
+	join pergamen_objekt center
+	(Chtěl jsem si udělat srandu z češtinářky a odevzdat slohovku napsanou v latině.. ale hádám že zrovna teď je dobrý moment to využít)
+	(Na češtinářku si vymyslím něco příště..)
+	fyzikarka: No Pepo teda nejsem si jistá, jestli v tom něco přečtu.
+	fyzikarka: Hrabeš jako kocour!
+	fyzikarka: Tak co no.. Dám ti už teď za úpravu 3.
+	(Na to že jsem to neudělal vůbec je 3 ještě dobrá!)
+	set {Znamky.fyzika2Znamka} = 3.0
+	set {fyzika2Played} = true
+- Omalovánku
+	join omalovanka center
+	fyzikarka: Pepo.. to není protokol z fyziky.
+	fyzikarka: Vážně mi teď dáváš omalovánku? Ale je docela hezká, takže si ji i tak nechám.
+	fyzikarka: Jako známku ti dám 4. Sice nemáš protokol, ale zvládl jsi zkoušení.
+	Ok děkuju
+	set {Znamky.fyzika2Znamka} = 4.0
+	set {fyzika2Played} = true
+- Hotový test z matematiky
+	join matikatest center
+	fyzikarka: Páni, máš ta spoustu příkladů! Ale nemáš udělané okraje..
+	fyzikarka: Budu se na to muset podívat, ale dám ti zatím za úpravu 2..
+	fyzikarka: Ty okraje jsou velmi důležité.
+	OK.. děkuju
+	(Nějak to prošlo?? Díky bohu)
+	set {Znamky.fyzika2Znamka} = 2.0
+	set {fyzika2Played} = true

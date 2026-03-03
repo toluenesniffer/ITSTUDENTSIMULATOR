@@ -11,6 +11,8 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/Chapter 2/druhak_start.dtl")
 	elif(Dialogic.VAR.horymir2Played == true and Dialogic.VAR.cestina2Played == false):
 		Dialogic.start("res://dialogicYap/Chapter 2/cestina_druhak.dtl")
+	elif(Dialogic.VAR.elk2Played == true and Dialogic.VAR.fyzika2Played == false):
+		Dialogic.start("res://dialogicYap/Chapter 2/fyzika_druhak.dtl")
 	else:
 		pass
 		

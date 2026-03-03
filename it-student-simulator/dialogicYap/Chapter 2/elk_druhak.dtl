@@ -6,3 +6,5 @@ Uhhh má ta lednička hřát?
 elektrotechnicka: Jojo, 67 stupňů je to co právě chceš… ty seš Josef?
 NE!!! teda počkat, jo vlastně jo, já jsem Pepa.
 elektrotechnicka: Ok.. tak se teda pusť do toho
+set {elk1Played} = true
+[end_timeline]

@@ -1,0 +1,6 @@
+join elektrotechnicka center
+elektrotechnicka: Ano správně jsi to nastavil, teď mi ukaž tvoje zapsané hodnoty..
+elektrotechnicka: Výborně, vše vypadá v pořádku! Dávám ti 1 \:)
+set {Znamky.elk2Znamka} = 1.0
+set {elk2Played} = true
+[end_timeline]

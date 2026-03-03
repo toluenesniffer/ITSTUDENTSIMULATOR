@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://db122gvwgf3ht"]
+[gd_scene load_steps=5 format=3 uid="uid://db122gvwgf3ht"]
 
 [ext_resource type="Script" uid="uid://dwuyuc84sa7u7" path="res://scenes/fridge_minigame.gd" id="1_elcb2"]
+[ext_resource type="Texture2D" uid="uid://bxu46btr07ly6" path="res://buttons/dial1.png" id="2_xqvja"]
+[ext_resource type="Texture2D" uid="uid://066wfvlauwqc" path="res://buttons/dial2.png" id="3_ndbkd"]
+[ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="4_ndbkd"]
 
 [node name="FridgeMinigame" type="CanvasLayer"]
 script = ExtResource("1_elcb2")
@@ -13,13 +16,25 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.43137255)
 
+[node name="Dial1" type="Sprite2D" parent="."]
+position = Vector2(959, 599)
+scale = Vector2(1.678125, 1.559375)
+texture = ExtResource("2_xqvja")
+
 [node name="Dial" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 909.0
+offset_top = 543.0
+offset_right = 1009.0
+offset_bottom = 643.0
 pivot_offset = Vector2(50, 50)
+texture = ExtResource("3_ndbkd")
 
 [node name="TempLabel" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 920.0
+offset_top = 270.0
+offset_right = 998.0
+offset_bottom = 337.0
+theme_override_fonts/font = ExtResource("4_ndbkd")
+theme_override_font_sizes/font_size = 25
 
 [connection signal="ready" from="." to="." method="_on_ready"]

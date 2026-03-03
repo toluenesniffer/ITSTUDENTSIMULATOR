@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bsvt4sn5lvofk"]
+[gd_scene load_steps=11 format=3 uid="uid://bsvt4sn5lvofk"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_h7lb8"]
+[ext_resource type="Script" uid="uid://cfjp2owqt83tk" path="res://scenes/laborator.gd" id="1_w3qeu"]
 [ext_resource type="Texture2D" uid="uid://ckg2cj1j1o74m" path="res://scenes/laborator.png" id="2_xl21l"]
 [ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_w3qeu"]
 [ext_resource type="Script" uid="uid://cekwjyrgjqd1k" path="res://scenes/dvere_ecko.gd" id="4_trsvg"]
@@ -21,6 +22,7 @@ texture = ExtResource("3_w3qeu")
 texture = ExtResource("3_w3qeu")
 
 [node name="Laborator" type="Node2D"]
+script = ExtResource("1_w3qeu")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
 position = Vector2(966, 544.5)
@@ -44,4 +46,5 @@ theme_override_styles/disabled = SubResource("StyleBoxTexture_f42rs")
 theme_override_styles/focus = SubResource("StyleBoxTexture_vqom8")
 script = ExtResource("4_trsvg")
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
