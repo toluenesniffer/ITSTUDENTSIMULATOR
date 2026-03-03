@@ -14,6 +14,9 @@ func _on_ready() -> void:
 	elif (Dialogic.VAR.grafika3Played == true and Dialogic.VAR.mikroelkPlayed == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 2/mikroelk_druhak.dtl")
+	elif (Dialogic.VAR.fyzika2Played == true and Dialogic.VAR.prg2Played == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 2/prg_druhak.dtl")
 	else:
 		pass
 		

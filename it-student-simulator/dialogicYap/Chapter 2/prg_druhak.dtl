@@ -1,0 +1,58 @@
+join programator center
+programator: Tento rok se začneme učit C#, aspoň začátek vás určitě bude bavit.
+programator: Budeme měnit barvičky, pozadí, vzhled aplikace a naprogramujeme si nějaké zábavné aplikace…
+programator:  A pak můžeme zase dělat ty stejné matematické příklady jako v C++ \:) 
+Wow tak na to se těším teda...
+programator: Začneme tématem, které všichni studenti milují.. pole!
+programator: Už jste to dělali v C++ a víte jak se to dělá,  teď jen to budeme programovat v C#
+programator: Akorát zde budou metody na to, takže to se rychle naučíte.
+programator: Hnedka si zadáme úkol..
+UŽ???
+*Na vstupu je celé číslo n. Do pole vygenerujte n náhodných celých čísel z intervalu 1..10. Vypište hodnotu mediánu a počet, kolikrát se tato hodnota v poli vyskytuje.*
+Co je sakra medián..
+- Opsat úkol od Horymíra
+	Horymíre.. máš to prosím?
+	horymir: Jo už to skoro mám, hned ti to pošlu.
+	Díky
+	Ok teď si to zkopíruju do Visual Studio.. HEJ PROČ JE TAM TOLIK CHYB???
+	join sroubovak center
+	Ukázal se mi tu tento šroubovák.. ten určitě všechno spraví, že?
+	- Kliknout na něj.
+		leave sroubovak
+		MNĚ ZMIZEL CELEJ KÓD??? CO SE S TÍM STALO POMOC
+		programator: Tak, už mi odevzdejte vaše kódy.
+		Achjo.. musím to odevzdat prázdné.
+		programator: Pepo, ty jsi ještě nic neudělal..?
+		Noo já jen nevím jak to udělat.
+		programator: Tak ti bohužel budu muset dát za 4.
+		set {Znamky.prg2Znamka} = 4.0
+		set {prg2Played} = true
+	- Neklikat.
+		leave sroubovak
+		Asi jsem si to rozmyslel.. Horymíre, proč mi to nejde?
+		horymir: Promiň měl jsem tam chybu, hned ti pošlu funkční kód
+		programator: Tak.. všichni mi už pošlete vaše kódy.
+		programator: Pepa a Horymír to mají dost podobné.. ale mají to správně, takže oba mají za 1
+		Díky moc Horymíre!
+		set {Znamky.prg2Znamka} = 1.0
+		set {prg2Played} = true
+- Zavolat vesmírným lidem
+	Nevím co s tím.. budu kontaktovat vesmírné lidi.
+	join ashtar right [animation="Bounce In"]
+	ashtar: Ahoj já jsem Ashtar Sheran a vím vše o C#
+	Pls pomož mi já nevím co je medián
+	ashtar: Medián je hodnota, která rozděluje soubor dat seřazený podle velikosti na dvě přesně stejné poloviny. Jednoduše řečeno, je to prostřední prvek.
+	ashtar: Postup je vždy stejný a skládá se ze dvou kroků\:
+	ashtar: 1. Seřadíme všechna čísla od nejmenšího po největší.
+	ashtar: 2. Najdete číslo, které stojí přesně uprostřed.
+	ashtar: Na naprogramování je to velmi jednoduché, koukej.. Teď jen vypíšeme kolikrát se medián vyskytl v poli.
+	Ok děkuju Ashtare
+	petra: Pepo, s kým to tady pořád mluvíš?
+	No.. s Ashtarem Sheranem
+	petra: Co to povídáš? Tady nikdo takový není..
+	Však tu sedí hned vedle mě..
+	leave ashtar
+	programator: Tak mi prosím odevzdejte vaše kódy.
+	Páni, Pepo ty to máš naprosto perfektně.. dám ti jedničku.
+	set {Znamky.prg2Znamka} = 1.0
+	set {prg2Played} = true
