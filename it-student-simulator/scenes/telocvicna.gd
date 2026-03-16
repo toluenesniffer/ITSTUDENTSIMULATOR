@@ -13,10 +13,6 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/Chapter 2/telocvik_druhak.dtl")
 	$ProgressBar.visible = false
 	Dialogic.signal_event.connect(_on_dialogic_signal)
-	if (Dialogic.VAR.sipkyVyhra == true):
-		Dialogic.start("res://dialogicYap/Chapter 2/telakVyhra.dtl")
-	elif (Dialogic.VAR.sipkyProhra == true):
-		Dialogic.start("res://dialogicYap/Chapter 2/telakProhra.dtl")
 func _on_dialogic_signal(argument: String):
 	if argument == "start_telocvik":
 		zacni_cvicit()

@@ -1,6 +1,4 @@
 extends Control
-
-
 @onready var kontejner_sipek = $VBoxContainer/KontejnerSipek
 @onready var casomira_label = $VBoxContainer/Casomira
 @onready var casovac = $Casovac
@@ -8,21 +6,14 @@ extends Control
 var sekvence = []
 var aktualni_krok = 0
 var delka_sekvence = 5
-
 const SMERY = ["ui_up", "ui_down", "ui_left", "ui_right"]
-
 const IKONY = {
 	"ui_up": "⬆️",
 	"ui_down": "⬇️",
 	"ui_left": "⬅️",
 	"ui_right": "➡️"
 }
-
-
-
 func _on_ready() -> void:
-	vygeneruj_sekvenci()
-	casovac.start()
 	casovac.timeout.connect(_na_konec_casu)
 func _process(_delta):
 	casomira_label.text = "Zbývá: " + str(ceil(casovac.time_left)) + " s"
@@ -60,7 +51,9 @@ func chybny_stisk():
 func vyhra():
 	casovac.stop()
 	print("Výhra! Úkol splněn.")
-	Dialogic.VAR.sipkyVyhra = true;
+	Dialogic.start("res://dialogicYap/Chapter 2/telakVyhra.dtl")
+	queue_free()
 func _na_konec_casu():
 	print("Konec času! Prohra.")
-	Dialogic.VAR.sipkyProhra = true;
+	Dialogic.start("res://dialogicYap/Chapter 2/telakProhra.dtl")
+	queue_free()

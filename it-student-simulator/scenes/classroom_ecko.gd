@@ -18,9 +18,5 @@ func _on_timeline_started():
 func _on_timeline_ended():
 	TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 	SFXManager.change_music("res://music/normalnihudba.mp3")
-	#if (Dialogic.VAR.horymir2Played == true and Dialogic.VAR.cestina2Played == false):
-		#TaskUI.update_task("JDI DO B209")
-
-#func _on_button_hallway_pressed() -> void:
-	#if (Dialogic.VAR.kybisky2Played == true and Dialogic.VAR.horymir2Played == false):
-		#TaskUI.update_task("JDI ZA HORYMIREM")
+	if (Dialogic.VAR.hardwarePlayed == true and Dialogic.VAR.mikroelkPlayed == false):
+		TaskUI.update_task("JDI DO UCEBNY I")

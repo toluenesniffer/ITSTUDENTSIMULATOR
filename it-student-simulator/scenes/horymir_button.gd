@@ -17,4 +17,6 @@ func _on_pressed() -> void:
 			Dialogic.start("res://dialogicYap/Chapter 2/horymir_druhak.dtl")
 		else:
 			Dialogic.start("res://dialogicYap/intro/Horymirkamos.dtl")
-			
+func _on_timeline_ended():
+	if (Dialogic.VAR.horymir2Played == true and Dialogic.VAR.cestina2Played == false):
+		TaskUI.update_task("JDI DO B209")

@@ -11,8 +11,10 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/Chapter 2/druhak_start.dtl")
 	elif(Dialogic.VAR.horymir2Played == true and Dialogic.VAR.cestina2Played == false):
 		Dialogic.start("res://dialogicYap/Chapter 2/cestina_druhak.dtl")
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNAMKU")
 	elif(Dialogic.VAR.elk2Played == true and Dialogic.VAR.fyzika2Played == false):
 		Dialogic.start("res://dialogicYap/Chapter 2/fyzika_druhak.dtl")
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNAMKU")
 	else:
 		pass
 		
@@ -25,4 +27,5 @@ func _on_timeline_ended():
 func _on_button_hallway_pressed() -> void:
 	if (Dialogic.VAR.dstartPlayed == true and Dialogic.VAR.webisky2Played == false):
 		TaskUI.update_task("JDI DO TŘÍDY A306")
-	#elif (Dialogic.VAR.cestina2Played == true and Dialogic.VAR.matika2Played == false):
+	elif (Dialogic.VAR.cestina2Played == true and Dialogic.VAR.matika2Played == false):
+		TaskUI.update_task("JDI DO TŘÍDY A307")
