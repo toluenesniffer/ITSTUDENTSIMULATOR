@@ -1,0 +1,8 @@
+join telocvikarka center
+telocvikarka: Dobrý den, tak se tu vidíme znovu.
+telocvikarka: Dnes si dáme pořádnou rozcvičku, musíme protáhnout všechny naše svaly po dlouhém sezení ve škole.
+(Už teď se bojím...)
+telocvikarka: Všichni udělejte kolečko, mějte kolem sebe prostor a začneme.
+set {telocvik_d1Played} = true
+[signal arg="spust_sipky"]
+[end_timeline]

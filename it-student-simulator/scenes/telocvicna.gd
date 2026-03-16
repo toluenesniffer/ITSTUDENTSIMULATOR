@@ -4,18 +4,29 @@ var skore = 0
 var je_konec_hry = false
 var cilove_skore = 50
 
-
+const MINIHRA_SCENA = preload("res://scenes/TelocvikSipky.tscn")
 
 func _on_ready() -> void:
 	if (Dialogic.VAR.dejepisPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false):
 		Dialogic.start("res://dialogicYap/intro/telocvik.dtl")
+	if (Dialogic.VAR.elk2Played == true and Dialogic.VAR.telocvik_d1Played == false):
+		Dialogic.start("res://dialogicYap/Chapter 2/telocvik_druhak.dtl")
 	$ProgressBar.visible = false
 	Dialogic.signal_event.connect(_on_dialogic_signal)
+	if (Dialogic.VAR.sipkyVyhra == true):
+		Dialogic.start("res://dialogicYap/Chapter 2/telakVyhra.dtl")
+	elif (Dialogic.VAR.sipkyProhra == true):
+		Dialogic.start("res://dialogicYap/Chapter 2/telakProhra.dtl")
 func _on_dialogic_signal(argument: String):
 	if argument == "start_telocvik":
 		zacni_cvicit()
 	elif argument == "konec":
 		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
+	if argument == "spust_sipky":
+		var nova_minihra = MINIHRA_SCENA.instantiate()
+		add_child(nova_minihra)
+		nova_minihra.vygeneruj_sekvenci()
+		nova_minihra.casovac.start()
 func zacni_cvicit():
 	TaskUI.show_task("MAČKEJ MEZERNÍK CO NEJRYCHLEJI 50X (MÁŠ 15 SEKUND)")
 	skore = 0
