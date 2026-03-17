@@ -20,7 +20,7 @@
 "image": "\"res://dialogicYap/yapperi/mikroelk.png\""
 },
 "mirror": false,
-"offset": Vector2(30, -640),
+"offset": Vector2(-10, -640),
 "scale": 0.2,
 "scene": ""
 }

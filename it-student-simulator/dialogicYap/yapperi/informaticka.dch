@@ -20,7 +20,7 @@
 "image": "\"res://dialogicYap/yapperi/informaticka.png\""
 },
 "mirror": false,
-"offset": Vector2(30, -600),
+"offset": Vector2(200, -600),
 "scale": 0.2,
 "scene": ""
 }

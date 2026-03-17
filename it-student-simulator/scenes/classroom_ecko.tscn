@@ -58,8 +58,8 @@ script = ExtResource("4_ub3lb")
 
 [node name="Button2" type="Button" parent="."]
 offset_left = 477.0
-offset_top = 119.0
-offset_right = 570.0
+offset_top = 109.0
+offset_right = 579.0
 offset_bottom = 317.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_ub3lb")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6gepj")

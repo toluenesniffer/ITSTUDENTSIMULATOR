@@ -1,9 +1,9 @@
 join yapper1 (_UP_FINALE) center
 yapper1: Tak jo, začneme webovými technologiemi, ať to máte z krku.
-yapper1: Ještě něco k historii internetu... kdysi to byl ARPANET a využíval se za války a um jo pak se z toho stal prostě internet více a více počítačů se propojovali a teď tu máme obrovskou síť.
+yapper1: Ještě něco k historii internetu... kdysi to byl ARPANET a využíval se za války a um jo pak se z toho stal prostě internet více a více počítačů se propojovaly a teď tu máme obrovskou síť.
 yapper1: Pak se objevil Tim-Berners Lee a ten vytvořil WWW
-yapper1: A tím se přibložujeme k tomu co budete často navštěvovat, W3Schools! Zde se naučíte vše potřebné pro tvorbu webu.
-yapper1: Pustmě se konečně do HTML.
+yapper1: A tím se přibližujeme k tomu co budete často navštěvovat, W3Schools! Zde se naučíte vše potřebné pro tvorbu webu.
+yapper1: Pusťme se konečně do HTML.
 Úkol\: vytvoř simple stránku jen pomocí HTML
 - Actually to sám udělat.
 	yapper1: No.. dal jsem tu tvoji stránku do validatoru a vyskočilo mi 58 chyb.. Máš tam neuzavřené závorky.. Chyby v syntaxi.. Zkus se to doučit.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cv30j4iaw3kyb"]
+[gd_scene load_steps=20 format=3 uid="uid://cv30j4iaw3kyb"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_5mpsa"]
 [ext_resource type="Texture2D" uid="uid://dk8q3neyq21l7" path="res://scenes/chodba_ecko.png" id="2_6nftq"]
@@ -39,6 +39,9 @@ texture = ExtResource("3_cuulv")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r1ifm"]
 texture = ExtResource("3_cuulv")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y1wk4"]
+size = Vector2(110, 1095)
+
 [node name="ChodbaEcko" type="Node2D"]
 
 [node name="Cernybg" type="Sprite2D" parent="."]
@@ -68,9 +71,6 @@ script = ExtResource("6_e8nol")
 position = Vector2(46, 541.5)
 shape = SubResource("RectangleShape2D_btrhu")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("7_btrhu")]
-position = Vector2(1296, 596)
-
 [node name="Button2" type="Button" parent="."]
 offset_left = 1492.0
 offset_top = 272.0
@@ -82,6 +82,15 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_nbodm")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_07p5v")
 theme_override_styles/focus = SubResource("StyleBoxTexture_r1ifm")
 script = ExtResource("8_y1wk4")
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1911, 544.5)
+shape = SubResource("RectangleShape2D_y1wk4")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("7_btrhu")]
+position = Vector2(1296, 596)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]
