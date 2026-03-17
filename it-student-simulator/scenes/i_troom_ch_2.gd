@@ -33,3 +33,5 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI ZA HORYMIREM")
 	elif(Dialogic.VAR.mikroelkPlayed == true and Dialogic.VAR.inf2Played == false):
 		TaskUI.update_task("JDI DO A306")
+	elif (Dialogic.VAR.prg2Played == true and Dialogic.VAR.telak2Played == false):
+		TaskUI.update_task("JDI DO TĚLOCVIČNY")

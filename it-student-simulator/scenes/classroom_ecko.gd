@@ -19,4 +19,4 @@ func _on_timeline_ended():
 	TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 	SFXManager.change_music("res://music/normalnihudba.mp3")
 	if (Dialogic.VAR.hardwarePlayed == true and Dialogic.VAR.mikroelkPlayed == false):
-		TaskUI.update_task("JDI DO UCEBNY I")
+		TaskUI.update_task("JDI DO UCEBNY A306")

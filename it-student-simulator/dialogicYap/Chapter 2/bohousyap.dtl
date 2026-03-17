@@ -1,0 +1,11 @@
+bohous: Čau
+Proč tady jen stojíš?
+bohous: Idk je to sranda
+bohous: Chceš termix?
+Jj klidně
+bohous: ok tady máš
+join termix center [animation="Bounce In"]
+*Dostal jsi (skoro prošlý) pistáciový termix!*
+Wow děkuju
+leave termix [animation="Bounce Out"]
+[end_timeline]

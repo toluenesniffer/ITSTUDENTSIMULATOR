@@ -148,5 +148,6 @@ shape = SubResource("RectangleShape2D_lf0pf")
 [connection signal="pressed" from="buttonDoTridya307" to="buttonDoTridya307" method="_on_pressed"]
 [connection signal="pressed" from="buttonDoTridya306" to="buttonDoTridya306" method="_on_pressed"]
 [connection signal="pressed" from="Postavy/Sprite2D/Button" to="Postavy/Sprite2D/Button" method="_on_pressed"]
+[connection signal="ready" from="Postavy/Sprite2D/Button" to="Postavy/Sprite2D/Button" method="_on_ready"]
 [connection signal="pressed" from="Postavy/Me/Button2" to="Postavy/Me/Button2" method="_on_pressed"]
 [connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]

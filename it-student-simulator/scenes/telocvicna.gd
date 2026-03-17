@@ -19,6 +19,7 @@ func _on_dialogic_signal(argument: String):
 	elif argument == "konec":
 		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 	if argument == "spust_sipky":
+		print("HALÓ! SIGNÁL DORAZIL A MINIHRU VYTVÁŘÍM!")
 		var nova_minihra = MINIHRA_SCENA.instantiate()
 		add_child(nova_minihra)
 		nova_minihra.vygeneruj_sekvenci()

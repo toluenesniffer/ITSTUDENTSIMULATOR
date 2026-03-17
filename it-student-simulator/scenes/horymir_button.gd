@@ -20,3 +20,7 @@ func _on_pressed() -> void:
 func _on_timeline_ended():
 	if (Dialogic.VAR.horymir2Played == true and Dialogic.VAR.cestina2Played == false):
 		TaskUI.update_task("JDI DO B209")
+
+
+func _on_ready() -> void:
+	Dialogic.timeline_ended.connect(_on_timeline_ended)

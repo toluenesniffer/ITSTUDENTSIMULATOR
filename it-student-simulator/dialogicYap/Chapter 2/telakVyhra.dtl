@@ -4,4 +4,5 @@ telocvikarka: Jsi první student, co tohle dokázal.
 telocvikarka: Dávám ti za 1
 set {Znamky.telak2Znamka} = 1.0
 set {telak2Played} = true
+[signal arg="konec"]
 [end_timeline]

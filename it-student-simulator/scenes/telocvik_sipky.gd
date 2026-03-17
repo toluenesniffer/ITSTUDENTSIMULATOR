@@ -1,11 +1,11 @@
-extends Control
+extends CanvasLayer
 @onready var kontejner_sipek = $VBoxContainer/KontejnerSipek
 @onready var casomira_label = $VBoxContainer/Casomira
 @onready var casovac = $Casovac
 
 var sekvence = []
 var aktualni_krok = 0
-var delka_sekvence = 5
+var delka_sekvence = 15
 const SMERY = ["ui_up", "ui_down", "ui_left", "ui_right"]
 const IKONY = {
 	"ui_up": "⬆️",

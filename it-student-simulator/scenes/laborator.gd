@@ -15,3 +15,5 @@ func _on_timeline_ended():
 		var minihra_scena = preload("res://scenes/FridgeMinigame.tscn")
 		var minihra_instance = minihra_scena.instantiate()
 		add_child(minihra_instance)
+	elif (Dialogic.VAR.elk2Played == true and Dialogic.VAR.prg2Played == false):
+		TaskUI.update_task("JDI DO TŘÍDY B209")

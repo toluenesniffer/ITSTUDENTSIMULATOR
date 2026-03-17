@@ -1,0 +1,95 @@
+[gd_scene load_steps=23 format=3 uid="uid://dcnbn7g13rpj0"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_vgrre"]
+[ext_resource type="Texture2D" uid="uid://dm0mrik7chsme" path="res://scenes/hajzliky2.png" id="2_lp1ao"]
+[ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="3_lp1ao"]
+[ext_resource type="Texture2D" uid="uid://degriplm6xnrm" path="res://dialogicYap/yapperi/bohous.png" id="4_swvxr"]
+[ext_resource type="Script" uid="uid://bgjmueej63gqm" path="res://scenes/button_hallway.gd" id="4_w1pd6"]
+[ext_resource type="Script" uid="uid://bk3dhp2yxp5rk" path="res://scenes/bohous.gd" id="6_ow7db"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_swvxr"]
+texture = ExtResource("3_lp1ao")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w1pd6"]
+texture = ExtResource("3_lp1ao")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ow7db"]
+texture = ExtResource("3_lp1ao")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bviyb"]
+texture = ExtResource("3_lp1ao")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n87rb"]
+texture = ExtResource("3_lp1ao")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ow7db"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bviyb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n87rb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_go08q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8fkuj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bbece"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7d3vc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ewpev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ut7ew"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rx51j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7p3j5"]
+
+[node name="Wc" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(961.5, 540.5)
+scale = Vector2(1.0276042, 1.0379629)
+texture = ExtResource("1_vgrre")
+
+[node name="Hajzliky2" type="Sprite2D" parent="."]
+position = Vector2(934, 539.99994)
+scale = Vector2(1.3569444, 1.0203704)
+texture = ExtResource("2_lp1ao")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 445.0
+offset_top = 19.0
+offset_right = 622.0
+offset_bottom = 318.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_swvxr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w1pd6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ow7db")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bviyb")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_n87rb")
+script = ExtResource("4_w1pd6")
+
+[node name="Bohous" type="Sprite2D" parent="."]
+position = Vector2(1126, 366)
+scale = Vector2(1.4375, 1.5195313)
+texture = ExtResource("4_swvxr")
+
+[node name="Button" type="Button" parent="Bohous"]
+offset_left = -71.652176
+offset_top = -116.48329
+offset_right = 75.13048
+offset_bottom = 122.40617
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ow7db")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_bviyb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_n87rb")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_go08q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8fkuj")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_bbece")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7d3vc")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ewpev")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ut7ew")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_rx51j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7p3j5")
+script = ExtResource("6_ow7db")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Bohous/Button" to="Bohous/Button" method="_on_pressed"]

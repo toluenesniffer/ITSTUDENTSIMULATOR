@@ -29,3 +29,5 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI DO TŘÍDY A306")
 	elif (Dialogic.VAR.cestina2Played == true and Dialogic.VAR.matika2Played == false):
 		TaskUI.update_task("JDI DO TŘÍDY A307")
+	elif(Dialogic.VAR.fyzika2Played == true and Dialogic.VAR.prg2Played == false):
+		TaskUI.update_task("JDI DO TŘÍDY I")

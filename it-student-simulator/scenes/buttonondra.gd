@@ -10,6 +10,7 @@ func _on_pressed() -> void:
 	elif (GlobalData.current_chapter == 2):
 		if(Dialogic.VAR.grafika1Played == true and Dialogic.VAR.GondraPlayed == false):
 			Dialogic.start("res://dialogicYap/Chapter 2/grafika_ondra1.dtl")
+			TaskUI.update_task("JDI ZPĚT DO TŘÍDY")
 		elif(Dialogic.VAR.grafika2Played == true and Dialogic.VAR.zachranaPlayed == false):
 			Dialogic.start("res://dialogicYap/Chapter 2/zachrana_ondry.dtl")
 		else:

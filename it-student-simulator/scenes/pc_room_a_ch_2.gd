@@ -32,6 +32,10 @@ func _on_timeline_ended():
 		TaskUI.update_task("JDI ZPATKY DO TRIDY")
 	elif (Dialogic.VAR.grafika2Played == true and Dialogic.VAR.zachranaPlayed == false):
 		TaskUI.update_task("JDI ZPET ZA ONDROU")
+	elif(Dialogic.VAR.grafika3Played == true and Dialogic.VAR.mikroelkPlayed == false):
+		TaskUI.update_task("JDI DO TŘÍDY I")
+	elif(Dialogic.VAR.inf2Played == true and Dialogic.VAR.elk1Played == false):
+		TaskUI.update_task("JDI DO LABORATOŘE L")
 	else:
 		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 		SFXManager.change_music("res://music/normalnihudba.mp3")
