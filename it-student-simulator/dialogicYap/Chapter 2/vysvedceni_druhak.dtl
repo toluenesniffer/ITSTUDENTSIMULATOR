@@ -1,0 +1,20 @@
+join yapper1 (Spooky) center
+yapper1 (Spooky): Gratuluji všem, kteří to dotáhli až sem.
+yapper1 (Spooky): Věřím, že tohle byl náročný rok.
+yapper1 (Spooky): Vrhněme se rovnou na vaše vysvědčení, ať vás nezdržuju.
+yapper1: Takže Pepo..z Webových technologií máš {Znamky.webisky2Znamka}
+yapper1: Z Kybernetické bezpečnosti máš {Znamky.kybisky2Znamka}
+yapper1: Z Českého jazyka máš {Znamky.cestina2Znamka}
+yapper1: Z Matematiky máš {Znamky.matika2Znamka}
+yapper1: Z Hardwaru máš {Znamky.hardwareZnamka}
+yapper1: Z Aplikačního softwaru máš {Znamky.grafikaZnamka}
+yapper1: Z Fyziky máš {Znamky.fyzika2Znamka}
+yapper1: Z Programování máš {Znamky.prg2Znamka}
+yapper1: Z Elektrotechniky máš {Znamky.elk2Znamka}
+yapper1: Z Infomačních technologií máš {Znamky.inf2Znamka}
+yapper1: Z Mikroelektroniky máš {Znamky.mikroelkZnamka}
+yapper1: Z Tělesné výchovy máš {Znamky.telak2Znamka}
+yapper1: A to je vše. Gratuluji za zvládnutí druhého ročníku!
+set {vysvedceni2Played} = true
+[signal arg="konec_vyza"]
+[end_timeline]

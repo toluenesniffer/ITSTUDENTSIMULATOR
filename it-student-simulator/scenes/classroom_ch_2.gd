@@ -3,6 +3,7 @@ extends Control
 var signals_connected = false
 
 func _on_ready() -> void:
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 	if !signals_connected:
 		Dialogic.timeline_started.connect(_on_timeline_started)
 		Dialogic.timeline_ended.connect(_on_timeline_ended)
@@ -31,3 +32,6 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI DO TŘÍDY A307")
 	elif(Dialogic.VAR.fyzika2Played == true and Dialogic.VAR.prg2Played == false):
 		TaskUI.update_task("JDI DO TŘÍDY I")
+func _on_dialogic_signal(argument: String):
+	if argument == "konec_vyza":
+		get_tree().change_scene_to_file("res://scenes/endscreen.tscn")

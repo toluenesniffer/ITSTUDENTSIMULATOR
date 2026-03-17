@@ -17,7 +17,7 @@ func _on_dialogic_signal(argument: String):
 	if argument == "start_telocvik":
 		zacni_cvicit()
 	elif argument == "konec":
-		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
+		TaskUI.show_task("JDI VEN DO TŘÍDY B209")
 	if argument == "spust_sipky":
 		print("HALÓ! SIGNÁL DORAZIL A MINIHRU VYTVÁŘÍM!")
 		var nova_minihra = MINIHRA_SCENA.instantiate()
