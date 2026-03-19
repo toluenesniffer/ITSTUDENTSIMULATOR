@@ -26,6 +26,7 @@ func _on_ready() -> void:
 func _on_timeline_started():
 	SFXManager.change_music("res://music/ukolhudba.mp3")
 func _on_timeline_ended():
+	SFXManager.change_music("res://music/normalnihudba.mp3")
 	if (Dialogic.VAR.grafika1Played == true and Dialogic.VAR.GondraPlayed == false):
 		TaskUI.update_task("JDI NA CHODBU VYFOTIT ONDRU")
 	elif (Dialogic.VAR.GondraPlayed == true and Dialogic.VAR.grafika2Played == false):
@@ -38,7 +39,7 @@ func _on_timeline_ended():
 		TaskUI.update_task("JDI DO LABORATOŘE L")
 	else:
 		TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
-		SFXManager.change_music("res://music/normalnihudba.mp3")
+		
 
 
 func _on_button_pressed() -> void:

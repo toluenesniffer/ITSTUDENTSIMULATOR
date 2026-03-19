@@ -11,14 +11,14 @@ func _on_ready() -> void:
 		signals_connected = true
 	update_ondra_appearance()
 func update_ondra_appearance():
-	if Dialogic.VAR.get("jezmrzly") == true:
-		var ondra_sprite = $Postavy/Ondra
-		if ondra_sprite:
-			if Dialogic.VAR.get("jezmrzly") == true:
-				ondra_sprite.texture = ONDRA_FROZEN_TEX
+	var ondra_sprite = $Postavy/Ondra
+	if ondra_sprite:
+		if Dialogic.VAR.jezmrzly == true:
+			print("DEBUG: Měním texturu na ZMRZLOU.")
+			ondra_sprite.texture = ONDRA_FROZEN_TEX
 		else:
+			print("DEBUG: Měním texturu na NORMÁLNÍ.")
 			ondra_sprite.texture = ONDRA_NORMAL_TEX
-			pass
 func _on_timeline_ended():
 	print("TEST: Dialogic právě skončil!")
 	SFXManager.change_music("res://music/normalnihudba.mp3")
@@ -48,6 +48,7 @@ func _on_fire_success():
 	Dialogic.VAR.skolaHori = false
 	Dialogic.VAR.minihraHotova = true
 	Dialogic.VAR.jezmrzly = false
+	print("DEBUG: Proměnná jezmrzly nastavena na: ", Dialogic.VAR.jezmrzly)
 	update_ondra_appearance()
 	Dialogic.start("res://dialogicYap/Chapter 2/zachrana_vyhra.dtl")
 	TaskUI.update_task("VRAT SE DO TRIDY")

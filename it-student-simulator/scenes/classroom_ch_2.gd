@@ -17,6 +17,7 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/Chapter 2/fyzika_druhak.dtl")
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNAMKU")
 	elif(Dialogic.VAR.telak2Played == true and Dialogic.VAR.vysvedceni2Played == false):
+		GlobalData.fixgrades()
 		Dialogic.start("res://dialogicYap/Chapter 2/vysvedceni_druhak.dtl")
 		TaskUI.update_task("ZÍSKEJ VYSVĎČENÍ")
 	else:

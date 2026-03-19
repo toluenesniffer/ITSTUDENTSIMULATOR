@@ -11,6 +11,7 @@ func _on_ready() -> void:
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 2/elk_success.dtl")
 func _on_timeline_ended():
+	SFXManager.change_music("res://music/normalnihudba.mp3")
 	if Dialogic.VAR.elk1Played == true and Dialogic.VAR.lednickaHotova == false:
 		var minihra_scena = preload("res://scenes/FridgeMinigame.tscn")
 		var minihra_instance = minihra_scena.instantiate()
