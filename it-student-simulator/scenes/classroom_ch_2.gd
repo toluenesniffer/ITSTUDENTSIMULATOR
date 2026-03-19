@@ -16,6 +16,9 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.elk2Played == true and Dialogic.VAR.fyzika2Played == false):
 		Dialogic.start("res://dialogicYap/Chapter 2/fyzika_druhak.dtl")
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNAMKU")
+	elif(Dialogic.VAR.telak2Played == true and Dialogic.VAR.vysvedceni2Played == false):
+		Dialogic.start("res://dialogicYap/Chapter 2/vysvedceni_druhak.dtl")
+		TaskUI.update_task("ZÍSKEJ VYSVĎČENÍ")
 	else:
 		pass
 		
@@ -34,4 +37,4 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI DO TŘÍDY I")
 func _on_dialogic_signal(argument: String):
 	if argument == "konec_vyza":
-		get_tree().change_scene_to_file("res://scenes/endscreen.tscn")
+		get_tree().change_scene_to_file("res://scenes/continuetretak.tscn")

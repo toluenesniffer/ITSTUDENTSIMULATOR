@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://r6ooi57mk5qe"]
+[gd_scene load_steps=46 format=3 uid="uid://r6ooi57mk5qe"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_n0vjy"]
 [ext_resource type="Texture2D" uid="uid://d0dfv2xvm6jol" path="res://scenes/hallway_icko.png" id="2_ad3b5"]
@@ -9,6 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://dxiqvbdxxg2a1" path="res://scenes/dvere1_UP.png" id="6_170xb"]
 [ext_resource type="Script" uid="uid://b47jtf3auli2c" path="res://scenes/dvere_vychod.gd" id="7_ehjv4"]
 [ext_resource type="Texture2D" uid="uid://j3lb1c5fnaak" path="res://buttons/vychod.png" id="8_kkgbv"]
+[ext_resource type="Texture2D" uid="uid://uabae5k08vof" path="res://dialogicYap/yapperi/aldagstein.png" id="10_2m3b1"]
+[ext_resource type="Script" uid="uid://cr7ckl8na41q6" path="res://scenes/aldagstein.gd" id="11_7cd52"]
+[ext_resource type="Texture2D" uid="uid://cwd60ij6c8y0s" path="res://dialogicYap/yapperi/milan.png" id="12_7cd52"]
+[ext_resource type="Script" uid="uid://b7t588foap18a" path="res://scenes/milan.gd" id="13_wc5me"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vunph"]
 size = Vector2(93.125046, 1175.5266)
@@ -39,6 +43,50 @@ texture = ExtResource("6_170xb")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6rfx0"]
 texture = ExtResource("6_170xb")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wc5me"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6rfx0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m337u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ll7si"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8n1vs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vpru5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssadv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_npck6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_totv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgs6b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y0i68"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u022k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5sapg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4knjt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8vjny"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5c2ow"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fq7xl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pjbuh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pxyds"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ychxm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4lp06"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ray7"]
 
 [node name="HallwayIcko" type="Node2D"]
 
@@ -84,13 +132,61 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_wc5me")
 theme_override_styles/focus = SubResource("StyleBoxTexture_6rfx0")
 script = ExtResource("7_ehjv4")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("4_vunph")]
-position = Vector2(869.0005, 538.00037)
-scale = Vector2(0.9216, 0.9024995)
-
 [node name="Vychod" type="Sprite2D" parent="."]
 position = Vector2(846, 196)
 texture = ExtResource("8_kkgbv")
 
+[node name="Aldagstein" type="Sprite2D" parent="."]
+position = Vector2(306.00003, 451.00003)
+scale = Vector2(1.3398439, 1.3632814)
+texture = ExtResource("10_2m3b1")
+
+[node name="Button" type="Button" parent="Aldagstein"]
+offset_left = -63.44023
+offset_top = -111.495705
+offset_right = 63.4402
+offset_bottom = 123.96557
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wc5me")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6rfx0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m337u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ll7si")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8n1vs")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_vpru5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ssadv")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_npck6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_totv1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_qgs6b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y0i68")
+script = ExtResource("11_7cd52")
+
+[node name="Milan" type="Sprite2D" parent="."]
+position = Vector2(1091, 474)
+scale = Vector2(1.4179685, 1.4316405)
+texture = ExtResource("12_7cd52")
+
+[node name="Button" type="Button" parent="Milan"]
+offset_left = -68.40772
+offset_top = -110.36289
+offset_right = 64.881584
+offset_bottom = 118.046394
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u022k")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_5sapg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4knjt")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8vjny")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5c2ow")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_fq7xl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_pjbuh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_pxyds")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ychxm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4lp06")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3ray7")
+script = ExtResource("13_wc5me")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("4_vunph")]
+position = Vector2(869.0005, 538.00037)
+scale = Vector2(0.92159986, 0.90249944)
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Nouze" to="Nouze" method="_on_pressed"]
+[connection signal="pressed" from="Aldagstein/Button" to="Aldagstein/Button" method="_on_pressed"]
+[connection signal="pressed" from="Milan/Button" to="Milan/Button" method="_on_pressed"]

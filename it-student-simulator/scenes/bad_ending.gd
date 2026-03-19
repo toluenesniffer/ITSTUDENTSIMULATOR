@@ -3,6 +3,8 @@ extends Node2D
 @onready var exit_button = $Exit
 
 func _on_ready() -> void:
+	FireSystem.stop_fire()
+	SFXManager.change_music("res://music/sad ost.mp3")
 	exit_button.visible = false
 	
 	TaskUI.hide_task()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cvojt3jodycuf"]
+[gd_scene load_steps=28 format=3 uid="uid://cvojt3jodycuf"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_1ngl2"]
 [ext_resource type="Texture2D" uid="uid://cj1nqvetm77xx" path="res://scenes/chodbicka.png" id="2_chyk5"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://btb0wfemyqs7c" path="res://scenes/dvere_koridor.png" id="5_efjwl"]
 [ext_resource type="PackedScene" uid="uid://bdhhaaycsdpn0" path="res://Player.tscn" id="5_q5svy"]
 [ext_resource type="Script" uid="uid://bkpy8a0k2wjnc" path="res://scenes/button_koridor.gd" id="6_pwjrg"]
+[ext_resource type="Texture2D" uid="uid://cw2dxjup872js" path="res://dialogicYap/yapperi/marie.png" id="8_6cu1l"]
+[ext_resource type="Script" uid="uid://b7ay8i5sd3wcd" path="res://scenes/marie.gd" id="9_yea3j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5svy"]
 size = Vector2(144.58359, 1146.8423)
@@ -28,6 +30,28 @@ texture = ExtResource("5_efjwl")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qb6kq"]
 texture = ExtResource("5_efjwl")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6cu1l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yea3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12mjq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvtm0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qb6kq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_br6oc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_esgn4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8cdfh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_55vfo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cfgdu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fw068"]
 
 [node name="Chodbicka" type="Node2D"]
 
@@ -71,9 +95,33 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_yvtm0")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_qb6kq")
 script = ExtResource("6_pwjrg")
 
+[node name="Marie" type="Sprite2D" parent="."]
+position = Vector2(1232, 477)
+scale = Vector2(1.3515625, 1.3320313)
+texture = ExtResource("8_6cu1l")
+
+[node name="Button" type="Button" parent="Marie"]
+offset_left = -69.54913
+offset_top = -108.105576
+offset_right = 68.0694
+offset_bottom = 122.36949
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6cu1l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yea3j")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_12mjq")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_yvtm0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qb6kq")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_br6oc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_esgn4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_8cdfh")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_55vfo")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_cfgdu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fw068")
+script = ExtResource("9_yea3j")
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("5_q5svy")]
 position = Vector2(710.2397, 539.6752)
-scale = Vector2(0.96, 0.9499995)
+scale = Vector2(0.96000004, 0.9499995)
 
 [connection signal="ready" from="ExitLeft" to="ExitLeft" method="_on_ready"]
 [connection signal="pressed" from="koridor" to="koridor" method="_on_pressed"]
+[connection signal="pressed" from="Marie/Button" to="Marie/Button" method="_on_pressed"]

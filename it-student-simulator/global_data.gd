@@ -38,6 +38,19 @@ func fixgrades():
 	Dialogic.VAR.Znamky.obnZnamka = int(Dialogic.VAR.Znamky.obnZnamka)
 	Dialogic.VAR.Znamky.dejZnamka = int(Dialogic.VAR.Znamky.dejZnamka)
 	Dialogic.VAR.Znamky.telocvikZnamka = int(Dialogic.VAR.Znamky.telocvikZnamka)
+	##################################################xx
+	Dialogic.VAR.Znamky.webisky2Znamka = int(Dialogic.VAR.Znamky.webisky2Znamka)
+	Dialogic.VAR.Znamky.kybisky2Znamka = int(Dialogic.VAR.Znamky.kybisky2Znamka)
+	Dialogic.VAR.Znamky.cestina2Znamka = int(Dialogic.VAR.Znamky.cestina2Znamka)
+	Dialogic.VAR.Znamky.matika2Znamka = int(Dialogic.VAR.Znamky.matika2Znamka)
+	Dialogic.VAR.Znamky.hardwareZnamka = int(Dialogic.VAR.Znamky.hardwareZnamka)
+	Dialogic.VAR.Znamky.grafikaZnamka = int(Dialogic.VAR.Znamky.grafikaZnamka)
+	Dialogic.VAR.Znamky.fyzika2Znamka = int(Dialogic.VAR.Znamky.fyzika2Znamka)
+	Dialogic.VAR.Znamky.prg2Znamka = int(Dialogic.VAR.Znamky.prg2Znamka)
+	Dialogic.VAR.Znamky.elk2Znamka = int(Dialogic.VAR.Znamky.elk2Znamka)
+	Dialogic.VAR.Znamky.inf2Znamka = int(Dialogic.VAR.Znamky.inf2Znamka)
+	Dialogic.VAR.Znamky.mikroelkZnamka = int(Dialogic.VAR.Znamky.mikroelkZnamka)
+	Dialogic.VAR.Znamky.telak2Znamka = int(Dialogic.VAR.Znamky.telak2Znamka)
 func _on_dialog_started():
 	is_dialog_active = true
 func _on_dialog_ended():

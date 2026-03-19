@@ -1,6 +1,7 @@
 extends Node2D
 
 const ONDRA_FROZEN_TEX = preload("res://scenes/chudak.png")
+const ONDRA_NORMAL_TEX = preload("res://dialogicYap/yapperi/ondra.png")
 const MINIGAME_SCENE = preload("res://scenes/TopeniMinigame.tscn")
 var signals_connected = false
 
@@ -13,8 +14,10 @@ func update_ondra_appearance():
 	if Dialogic.VAR.get("jezmrzly") == true:
 		var ondra_sprite = $Postavy/Ondra
 		if ondra_sprite:
-			ondra_sprite.texture = ONDRA_FROZEN_TEX
+			if Dialogic.VAR.get("jezmrzly") == true:
+				ondra_sprite.texture = ONDRA_FROZEN_TEX
 		else:
+			ondra_sprite.texture = ONDRA_NORMAL_TEX
 			pass
 func _on_timeline_ended():
 	print("TEST: Dialogic právě skončil!")
@@ -24,6 +27,11 @@ func _on_timeline_ended():
 		if Dialogic.VAR.minihraHotova == false:
 			print("TEST: minihraHotova je false, spouštím minihru!")
 			start_fire_minigame()
+	if Dialogic.VAR.get("zachranaprohraPlayed") == true:
+		print("TEST: Dialog o prohře skončil, spouštím oheň!")
+		FireSystem.start_fire(60.0)
+		Dialogic.VAR.zachranaprohraPlayed = false
+		Dialogic.VAR.dohorelo = true
 func start_fire_minigame():
 	print("TEST: Funkce start_fire_minigame se rozjela!")
 	TaskUI.update_task("MACKEJ MEZERNIK A UDRZ SE V ZELENE ZONE")
@@ -31,7 +39,7 @@ func start_fire_minigame():
 	var platno = CanvasLayer.new()
 	add_child(platno)
 	platno.add_child(minigame)
-	add_child(minigame)
+#add_child(minigame)
 	minigame.minigame_success.connect(_on_fire_success)
 	minigame.minigame_failed.connect(_on_fire_fail)
 	minigame.start_game()
@@ -39,6 +47,8 @@ func _on_fire_success():
 	print("Uhašeno!")
 	Dialogic.VAR.skolaHori = false
 	Dialogic.VAR.minihraHotova = true
+	Dialogic.VAR.jezmrzly = false
+	update_ondra_appearance()
 	Dialogic.start("res://dialogicYap/Chapter 2/zachrana_vyhra.dtl")
 	TaskUI.update_task("VRAT SE DO TRIDY")
 	#tady pak spustit dialog (uff to bylo tesne)
@@ -48,5 +58,3 @@ func _on_fire_fail():
 	Dialogic.VAR.minihraHotova = true
 	Dialogic.start("res://dialogicYap/Chapter 2/zachrana_prohra.dtl")
 	TaskUI.update_task("NAJDI NOUZOVY VYCHOD.")
-	if (Dialogic.VAR.zachranaprohraPlayed == true):
-		FireSystem.start_fire(60.0)
