@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://ijf80givxunf"]
+
+[ext_resource type="PackedScene" uid="uid://dqgwkdqawio4j" path="res://scenes/ITroom_ch2.tscn" id="1_6r7ao"]
+[ext_resource type="Script" uid="uid://thiqbotp6kak" path="res://scenes/i_troom_ch_3.gd" id="2_8km4t"]
+
+[node name="ITroomCh2" instance=ExtResource("1_6r7ao")]
+script = ExtResource("2_8km4t")

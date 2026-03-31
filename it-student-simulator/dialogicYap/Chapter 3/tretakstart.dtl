@@ -1,0 +1,8 @@
+join yapper1 center
+yapper1: Dobrý den, jsem rád, že vás tolik ještě prošlo do 3. ročníku.
+yapper1: Teď ale opravdu půjde do tuhého...
+yapper1: Budete muset dělat projekty, nově budete mít počítačové sítě, operační systémy a taky.. se můžete těšit na nového učitele na tělesnou výchovu.
+yapper1: Je mladý a plný energie.
+yapper1: Hodně štěstí!
+set {tstartPlayed} = true
+[end_timeline]

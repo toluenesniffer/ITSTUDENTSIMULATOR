@@ -1,0 +1,37 @@
+join ucitel_kybisku center
+ucitel_kybisku: Tak se opět vidíme, doufám, že už mi nebudete stahovat viry na..
+*někomu bliká PC*
+ucitel_kybisku: ...školní počítače.
+ucitel_kybisku: Budu dělat, že jsem tohle neviděl.
+ucitel_kybisku: Každopádně, dnes budeme dělat síťovou bezpečnost. Otevřete si prosím packet tracer.
+Udělám umělecké dílo.
+join ddos_objekt center [animation="Bounce In"]
+ucitel_kybisku: Pepo to je zajímavé. Co je to?
+Kávovary utočí na zvlhčovač vzduchu tím, že na něj posílají evil packet, to je ta zamračená obálka.
+Větrák, lampička a ostatní spotřebiče se mohou jen dívat jak zvlhčovač vybuchuje.
+ucitel_kybisku: Ok, to je... něco.
+ucitel_kybisku: Dám ti otázku.
+ucitel_kybisku: Co přesně je to DDOS útok?
+- Vysvětlit příklad na kávovarech
+	Koukejte na ten botnet kávovarů. Je jich tu spousta a všechny posílají milion požadavků na tento rozprašovač. Rozprašovač to čím dál více nezvládá a brzy přestane být dostupný.
+	leave ddos_objekt
+	ucitel_kybisku: Výborně. Líbí se mi že to dokážes vysvětlit i na tvém schématu.
+	ucitel_kybisku: Dávám ti jedničku.
+	set {Znamky.kybisky3Znamka} = 1.0
+	set {kybisky3Played} = true
+- Spustit DDOS útok ve škole
+	leave ddos_objekt
+	*Všem přijde zvláštní email od Pepy*
+	"Ahoj! Pokud si chceš předběžně zahrát GTA VI, kliněte zde!"
+	ucitel_kybisku: ..No, tak co to teda je, neví někdo?
+	milan: Pane učiteli, mně nefunguje internet.
+	marie: Mně taky ne.. ono to asi vypadlo?
+	ucitel_kybisku: Nikomu teď nejde internet.. co se stalo?
+	ucitel_kybisku: Počkat... PEPO???? CO JSI TO POSLAL ZA EMAIL A CO TEĎ DĚLÁŠ.
+	No ptal jste se co je to DDOS útok, tak jsem to chtěl ukázat.. prakticky..
+	ucitel_kybisku: Chceš mi říct, že teď útočíš na školní server? To je proti školnímu řádu! 
+	ucitel_kybisku: Ale docela mě udivuje, že něco takového umíš udělat.
+	ucitel_kybisku: Prosím dej to zpátky do pořádku. Dám ti 4 s poznámkou, už tohle nikdy nedělej jinak bude problém..
+	set {Znamky.kybisky3Znamka} = 4.0
+	set {kybisky3Played} = true
+[end_timeline]

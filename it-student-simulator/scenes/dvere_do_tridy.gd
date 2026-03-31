@@ -8,3 +8,6 @@ func _on_pressed() -> void:
 	elif (GlobalData.current_chapter == 2):
 		SFXManager.play("res://music/dvereotevreni.mp3")
 		get_tree().change_scene_to_file("res://scenes/Classroom_ch2.tscn")
+	elif(GlobalData.current_chapter == 3):
+		SFXManager.play("res://music/dvereotevreni.mp3")
+		get_tree().change_scene_to_file("res://scenes/Classroom_ch3.tscn")
