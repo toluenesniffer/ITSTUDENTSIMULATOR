@@ -1,0 +1,35 @@
+join anglictinarka center
+anglictinarka: Dobrý den, tento rok budete mít opravdu spoustu hodin Anglického jazyka, je to důležité, aby jste se připravili na maturitu.
+anglictinarka: Bude to už za rok!!!
+anglictinarka: Tak začneme hned slovíčkama
+[text_input text="Česnek" var="cesnek"]
+if {cesnek} == "garlic":
+	anglictinarka: Správně! Další slovíčko je\: chřest
+	[text_input var="chrest"]
+	if {chrest} == "asparagus":
+		anglictinarka: Výborně! Další slovíčko je\: smažit
+		[text_input var="smazit"]
+		if {smazit} == "fry":
+			anglictinarka: Správně. A teď otázka.
+			anglictinarka: Co to znamená "chopped"?
+			- Že je něco nakrájeno
+				anglictinarka: Správně, máš za 1!
+				set {Znamky.aj3Znamka} = 1.0
+				set {aj3Played} = true
+			- Že by se někdo měl reinkarnovat
+				anglictinarka: Cože, jak to myslíš?
+				Když je někdo chopped tak je na tom vzhledově tak špatně, že by se měl radši reinkarnovat.
+				Třeba Horymír..
+				anglictinarka: No Pepo teda fuj! To od tebe opravdu není hezké.
+				anglictinarka: Dávám ti za 3.
+				set {Znamky.aj3Znamka} = 3.0
+				set {aj3Played} = true
+		else:
+			anglictinarka: Noo.. to nezní správně, zkus to znovu.
+			anglictinarka: Vyjdi ze třídy a vrať se.
+	else:
+		anglictinarka: Noo.. to nezní správně, zkus to znovu.
+		anglictinarka: Vyjdi ze třídy a vrať se.
+else:
+	anglictinarka: Noo.. to nezní správně, zkus to znovu.
+	anglictinarka: Vyjdi ze třídy a vrať se.

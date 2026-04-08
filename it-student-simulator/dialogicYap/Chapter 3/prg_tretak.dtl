@@ -1,0 +1,37 @@
+join programator center
+programator: Víte co? Začneme hned s objektově orientovaném programování.
+programator: Jedná se o filozofii a způsob myšlení, designu a implementace, kde klademe důraz na znovupoužitelnost.
+programator: Základní jednotkou je objekt, který odpovídá nějakému objektu z reálného světa (např. objekt člověk nebo databáze).
+programator: Uděláme si třídu "Osoba", dáme mu jméno, příjmení, věk...
+programator: A také můžeme přidat nějaké metody! Máte někdo nápad co napsat za metodu?
+- StatSeZidem()
+	programator: To je dobrý nápad, nastavíme mu náboženství = "žid"
+	programator: Mohli by jsme ještě přidat, že má hodně peněz a vždy to inkrementovat.
+	programator: A v této metodě budeme kontrolovat, zda "jídlo == košer"
+	programator: Jako práci mu přiřadíme "banka"
+	programator: Tohle je perfektní metoda na procvičení OOP, máš jedničku!
+	set {Znamky.prg3Znamka} = 1.0
+	set {prg3Played} = true
+- TahniDoPrace()
+	programator: Tak jo, to by šlo.. takže když půjde do práce, budeme inkrementovat peníze..
+	programator: Vždycky když se spustí metoda, počet peněz se zvýší.
+	programator: Uděláme ještě metodu Utrácej(), kde se počet peněz bude snižovat.
+	programator: Tak jo, to je dobrá metoda. Máš jedničku.
+	set {Znamky.prg3Znamka} = 1.0
+	set {prg3Played} = true
+- JePedofil()
+	programator: No.. to teda není vhodné. Za trest mi teď naprogramuj algoritmus na prvočíslo.
+	programator: O ou
+	- Udělat to sám
+		Sakra, já si nepamatuju jak se to dělá. Jedinej algoritmus co si nedokážu zapamatovat..
+		programator: Tak co, máš to už?
+		No.. moc toho nemám
+		programator: Tak se nedá nic dělat, tohle musíš umět. Dám ti za 4
+		set {Znamky.prg3Znamka} = 4.0
+		set {prg3Played} = true
+	- AI.
+		programator: Tak co, ukaž mi tvůj kód.
+		programator: Vypadá to, že vše funguje tak jak má.. a dokonce jsi použil ten nejrychlejší algoritmus!
+		programator: Máš za 1
+		set {Znamky.prg3Znamka} = 1.0
+		set {prg3Played} = true
