@@ -1,0 +1,19 @@
+join ekonomicka center
+ekonomicka: Dobrý den, tento rok máte nově se mnou Ekonomiku. Víte, je rozdíl mezi Ekonomikou a Ekonomií.
+ekonomicka: Ekonomie je věda, která se zabývá určitými ději spojenými s využíváním omezených zdrojů v předem stanoveném prostředí
+ekonomicka: Naproti tomu Ekonomika zjednodušeně pracuje s čísly (většinou nějakou měnou). Jejím úkolem je zpracovávat, analyzovat a vyhodnocovat data hospodaření subjektů 
+ekonomicka: Takže Ekonomie je ta praktická část a Ekonomika je ta věda.. jen ať víte co se učíte.
+ekonomicka: Začneme probírat peníze. Která z těchto bankovek je česká?
+join bankovky_objekt center
+Hmmmmm
+- Vlevo
+	Ta nalevo je česká.
+	ekonomicka: Prosimtě a kde jsi tuhle tady viděl? Ty jsi snad s ní platil? Tohle je bankovka z Podněstří..
+	JÁ S TÍM ALE FAKT PLATIL TADY
+	ekonomicka: Ten stát ani neexistuje.. kde ti to prošlo?
+	Noo ve večerce mi to vzali..
+	ekonomicka: Tak.. tak dobře. Ale i tak ti budu muset dát za 4.
+	set {Znamky.ekonomikaZnamka} = 4.0
+	set {ekonomikaPlayed} = true
+- Vpravo
+- Dole
