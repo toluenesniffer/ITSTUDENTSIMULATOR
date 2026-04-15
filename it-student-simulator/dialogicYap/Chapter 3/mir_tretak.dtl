@@ -1,0 +1,30 @@
+join mikroelektronik center
+mikroelektronik: Tento rok budeme dělat vlastně velmi podobné věci jako minule, ale dnes si uděláme něco speciálního. Dálkový ovladač.
+mikroelektronik: Pokud chcete, tohle můžete i udělat jako maturitní projekt.
+mikroelektronik: Otevřete si tedy Atmel Studio a začněte programovat.
+mikroelektronik: Co mám s tím zase dělat..
+- Prozkoumat jak ten ovladač funguje a opsat od chytrého kamaráda
+	Ok takže když zmáčknu "1" tak to vypíše tohle.. a toto má udělat něco jiného..
+	Ale jak to udělat.. hmmmm
+	Milane nemáš ten kód?
+	milan: Jj pošlu ti to
+	Díky
+	mikroelektronik: Tak pojďte to někdo zkusit.. třeba ty Pepo
+	mikroelektronik: Když zmáčkneš 1 tak se to vypíše.. když dáš 2 tak se to vymaže.. když dáš 3 tak se spustí stopky..
+	mikroelektronik: Všechno vypadá tak, jak má!
+	mikroelektronik: ..Ale nemáš náhodou stejný kód jako Milan?
+	Nn já to dělal sám opravdu
+	mikroelektronik: Tak dobře.. dám ti jedničku
+	set {Znamky.mir3Znamka} = 1.0
+	set {mir3Played} = true
+- AI
+	mikroelektronik: Tak Pepo.. pojď zkusit jak to funguje
+	mikroelektronik: Když zmáčknu "1" tak..
+	join ovladac_vybuch center
+	mikroelektronik: PANE BOŽE
+	mikroelektronik: CO JSI TO PROVEDL TEN OVLADAČ SE PŘEHŘÁL A VYBOUCHL!!!!
+	Já.. já nevím..
+	leave ovladac_vybuch
+	mikroelektronik: Tohle se mi tu ještě nikdy nestalo.. máš za 5.
+	set {Znamky.mir3Znamka} = 5.0
+	set {mir3Played} = true

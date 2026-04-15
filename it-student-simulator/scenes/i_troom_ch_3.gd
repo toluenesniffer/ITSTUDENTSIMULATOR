@@ -10,7 +10,10 @@ func _on_ready() -> void:
 		signals_connected = true
 	if(Dialogic.VAR.tstartPlayed == true and Dialogic.VAR.kybisky3Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
-		Dialogic.start("res://dialogicYap/Chapter 2/kybisky_druhak.dtl")
+		Dialogic.start("res://dialogicYap/Chapter 3/kybisky_tretak.dtl")
+	if(Dialogic.VAR.ekonomikaPlayed == true and Dialogic.VAR.mir3Played == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 3/mir_tretak.dtl")
 	else:
 		pass
 func _on_timeline_started():
@@ -21,5 +24,6 @@ func _on_timeline_ended():
 
 
 func _on_button_hallway_pressed() -> void:
-	#if (Dialogic.VAR.kybisky3Played == true and Dialogic.VAR.horymir2Played == false):
-	#	TaskUI.update_task("JDI ZA HORYMIREM")
+	if (Dialogic.VAR.kybisky3Played == true and Dialogic.VAR.aj3Played == false):
+		TaskUI.update_task("JDI DO TRIDY B209")
+	#elif(Dialogic.VAR.mir3Played == true and Dialogic.VAR)

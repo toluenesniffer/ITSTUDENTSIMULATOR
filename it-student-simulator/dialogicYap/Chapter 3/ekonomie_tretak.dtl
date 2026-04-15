@@ -1,7 +1,7 @@
 join ekonomicka center
 ekonomicka: Dobrý den, tento rok máte nově se mnou Ekonomiku. Víte, je rozdíl mezi Ekonomikou a Ekonomií.
 ekonomicka: Ekonomie je věda, která se zabývá určitými ději spojenými s využíváním omezených zdrojů v předem stanoveném prostředí
-ekonomicka: Naproti tomu Ekonomika zjednodušeně pracuje s čísly (většinou nějakou měnou). Jejím úkolem je zpracovávat, analyzovat a vyhodnocovat data hospodaření subjektů 
+ekonomicka: Naproti tomu Ekonomika zjednodušeně pracuje s čísly (většinou nějakou měnou). Jejím úkolem je zpracovávat, analyzovat a vyhodnocovat data hospodaření subjektů
 ekonomicka: Takže Ekonomie je ta praktická část a Ekonomika je ta věda.. jen ať víte co se učíte.
 ekonomicka: Začneme probírat peníze. Která z těchto bankovek je česká?
 join bankovky_objekt center
@@ -16,4 +16,27 @@ Hmmmmm
 	set {Znamky.ekonomikaZnamka} = 4.0
 	set {ekonomikaPlayed} = true
 - Vpravo
+	ekonomicka: Pepo však je tam čitelně napsáno "Australia".....
+	No ale když ji budu mít v česku jako čech tak by to mohlo být český..
+	ekonomicka: Co tím myslíš..?
+	Že si to jako přivlastním a bude to česká bankovka!
+	ekonomicka: Prosím už se to nesnaž okecat, budu ti muset dát 4..
+	set {Znamky.ekonomikaZnamka} = 4.0
+	set {ekonomikaPlayed} = true
 - Dole
+	ekonomicka: Správně! Tohle byla 50Kč, ale už se nepoužívá. Pamatujete si ji někdo?
+	Spíš ne
+	ekonomicka: A víte jaká bankovka kdysi ještě byla?
+	- 20Kč
+		ekonomicka: Správně! Máš za 1
+		set {Znamky.ekonomikaZnamka} = 1.0
+		set {ekonomikaPlayed} = true
+	- 5Kč
+		ekonomicka: To ne, to by byla hloupost.. Tak ti dám za 2
+		set {Znamky.ekonomikaZnamka} = 2.0
+		set {ekonomikaPlayed} = true
+	- 69Kč
+		ekonomicka: To je velmi specifické číslo a bylo by to vtipné, ale bohužel ne.
+		ekonomicka: Dám ti za 2
+		set {Znamky.ekonomikaZnamka} = 2.0
+		set {ekonomikaPlayed} = true
