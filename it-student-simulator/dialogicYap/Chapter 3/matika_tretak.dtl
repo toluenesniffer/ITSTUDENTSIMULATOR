@@ -1,0 +1,29 @@
+join matikarka center
+matikarka: Tento rok budeme dělat vysokoškolskou matematiku, aby jste na vysoké škole nebyli zmatení z toho, co na vás vůbec melou.
+matikarka: Vysvětlíme si, co je to limita funkce.
+Definice\:\
+ε-okolím bodu +∞ rozumíme množínu x∈R;1ε<x .
+CO????????
+Proč se tu učíme tohle co to je proč to je.. *listuje v tabulkách*
+matikarka: Pepo ty sis opravdu přinesl tabulky na jedinou hodinu kdy je nepotřebujeme.. Ale to je jedno, to co jsi viděl je jen definice, teď vám to vysvětlím normálně
+matikarka: Limita funkce je matematická konstrukce vyjadřující, že se hodnoty zadané funkce blíží libovolně blízko k nějakému bodu. Právě tento bod je pak označován jako limita.
+Aha...
+matikarka: Tak si dáme pár jednoduchých příkladů!
+join limity_objekt center
+................
+- Simulovat nevolnost
+	Paní učitelko asi se pobleju...
+	leave limity_objekt
+	matikarka: Ok tak běž na wc budeš to mít omluvený když tu nebudeš
+	Děkuji
+	(Tyjo já mám fakt volno.. to je super)
+	set {Znamky.matika3Znamka} = 0.0
+	set {matika3Played} = true
+- Hodit to do PhotoMath
+	leave limity_objekt
+	matikarka: Pepo co tam jen sedíš a koukáš.. ty už to máš hotový?
+	Jo mám
+	matikarka: Tak mi to ukaž prosím
+	matikarka: No fakt máš všechno správně.. Tak ti dám za 1
+	set {Znamky.matika3Znamka} = 1.0
+	set {matika3Played} = true
