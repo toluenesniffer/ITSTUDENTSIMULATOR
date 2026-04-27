@@ -1,8 +1,51 @@
 join cestinarka center
-cestinarka: Vítejte v dalším roce žáci. Maturita se už blíží, měli by jste se už teď učit. 
+cestinarka: Vítejte v dalším roce žáci. Maturita se už blíží, měli by jste se už teď učit.
 cestinarka: Dneska si napíšete test na četbu.
 A safra… já nic nečetl. No nic, to vymyslím! to bude ez B)
 cestinarka: Kdo napsal Stařec a moře?
 - Ernest Hemingway
+	cestinarka: Správně! Tak ti dám ještě jednu otázku.
+	cestinarka: Jaký pocit v tobě zanechala tato kniha?
+	- Stát se Shakespearem
+		join statement_objekt center [animation="Bounce In" length="2.0"]
+		Kniha byla naprosto velkolepá a zanechala ve mně mnoho pocitů, které ani nelze vyjádřit pouhými slovy. Budu si ji pamatovat až do konce svých dnů a doufám, že to tak bude i pro budoucí generace studentů této školy.
+		cestinarka: Páni.. dobře dostaneš za 1
+		Vřele Vám děkuji, moc si toho vážím.
+		leave statement_objekt
+		set {Znamky.cestina3Znamka} = 1.0
+		set {cestina3Played} = true
+	- Vygenerovat pocit přes AI
+		(Um já to nečetl co mám říct..)
+		Do AI\: "Prosím napiš mi jaký pocit bych měl mít ze knihy Stařec a moře"
+		Hluboký respekt a obdiv\: To je asi nejčastější záměr, který lidé v knize čtou. Santiago je starý, fyzicky slabý a má smůlu, ale přesto ten boj nevzdá. Je ztělesněním Hemingwayovy slavné věty z této knihy\: "Člověk není stvořen pro porážku. Člověk může být zničen, ale ne poražen." Můžeš cítit respekt k lidské vůli.
+		Melancholie a pocit marnosti\: Je úplně v pořádku, pokud ve stínu toho boje cítíš spíš smutek. Stařec dokáže nemožné, uloví životní rybu, ale pak o ni po kouskách přijde, když mu ji sežerou žraloci. Zbyde jen ohlodaná kostra. Může to působit jako metafora toho, že i přes největší snahu nám někdy život to nejcennější sebere.
+		Klid a smíření s přírodou\: Santiago se na moře nezlobí, ani na žraloky, ani na tu rybu, kterou vlastně miluje a respektuje. Bere to jako koloběh přírody. Závěr, kdy se vrátí vyčerpaný do chatrče a prostě usne (a zdají se mu sny o lvech na pláži), nepřináší vztek, ale spíš takové tiché smíření se svým údělem.
+		cestinarka: ..Nerozumím co teď říkáš. Dám ti za 3...
+		set {Znamky.cestina3Znamka} = 3.0
+		set {cestina3Played} = true
 - E. A. Poe
+	cestinarka: Vedle jak ta jedle. Toho jsme brali minulý rok..
+	cestinarka: Zkus ještě si vzpomenout..
+	- Vladimír Vančura
+		cestinarka: Ne, toho teprve budeme brát... tak bohužel dostaneš za 5
+		set {Znamky.cestina3Znamka} = 5.0
+		set {cestina3Played} = true
+	- Ernest Hemingway
+		cestinarka: Správně, tak sis nakonec vzpomněl!
+		cestinarka: Ale i tak ti budu muset dát za 2, měl jsi to vědět hned.
+		set {Znamky.cestina3Znamka} = 2.0
+		set {cestina3Played} = true
 - Stařec
+	cestinarka: Já ti dám stařec! To je postava z té knihy..
+	Ne ale já to myslel tak že jako ten člověk co to napsal je stařec
+	cestinarka: No ten daný člověk je už dávno mrtvý.. Tak o koho se tedy jedná?
+	- Luboš Bailador
+		cestinarka: ..A to je kdo?
+		Velmi chytrý pán který to napsal. Je to můj oblíbený řečník a poslouchám jeho podcasty kde říká že produkty se zelenou žábou jsou jedovaté.
+		cestinarka: Jde vidět že jsi úplně mimo, dám ti za 5..
+		set {Znamky.cestina3Znamka} = 5.0
+		set {cestina3Played} = true
+	- Ernest Hemingway
+		cestinarka: No vidíš že to nakonec víš. Tak ti dám tedy za 1
+		set {Znamky.cestina3Znamka} = 1.0
+		set {cestina3Played} = true

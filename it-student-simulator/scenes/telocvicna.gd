@@ -12,7 +12,7 @@ func _on_ready() -> void:
 	if (Dialogic.VAR.elk2Played == true and Dialogic.VAR.telocvik_d1Played == false):
 		Dialogic.start("res://dialogicYap/Chapter 2/telocvik_druhak.dtl")
 	elif(Dialogic.VAR.prg3Played == true and Dialogic.VAR.telak3_1Played == false):
-		Dialogic.start("res://dialogicYap/Chapter 3/telsk3_1.dtl")
+		Dialogic.start("res://dialogicYap/Chapter 3/telak3_1.dtl")
 	$ProgressBar.visible = false
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 func _on_dialogic_signal(argument: String):
