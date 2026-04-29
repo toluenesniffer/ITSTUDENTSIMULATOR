@@ -1,0 +1,45 @@
+join ucitel_kybisku center
+ucitel_kybisku: Mám vás i na operační systémy jak tak koukám.. tak jo, začneme s virtualizací.
+ucitel_kybisku: Víte co to je? Jedná se o to, že na svém počítači, neboli na hostovém zařízení virtualizujete další počítač.
+ucitel_kybisku:  A ano zde můžete i stahovat na ně viry, jen to prosím neukládejte… 
+ucitel_kybisku: Matěji, ty sis to uložil, viď?
+ucitel_kybisku: Tak co už.. zapněte prosím VirtualBox
+join server_objekt center [animation="Fade In"]
+ucitel_kybisku: Teď si nakonfigurujeme DHCP server, prosím postupujte podle zadání
+(Mně to nějak nefunguje.. co mám udělat?)
+- Restartovat počítač
+	leave server_objekt
+	join restart_objekt center
+	Uhh.. proč se to restartuje už 20 minut..? Ono se to na chvíli vypne a zase se to začne restartovat..
+	Pane učiteli já to rozbil.
+	ucitel_kybisku: A jéje, co jsi tu provedl? Tys to dostal do reboot loopu.. Tak musíš se vrátit k poslednímu snímku
+	Ale já nemám snímek...
+	ucitel_kybisku: Tak musíš odznovu... Aspoň máš postup na classroomu.
+	ucitel_kybisku: Dám ti ještě otázku k virtualizaci. 
+	ucitel_kybisku: Co to je a k čemu primárně slouží tzv. „virtuální stroj“ (Virtual Machine)?
+	- K bezpečnému infikování počítačů
+		ucitel_kybisku: Co prosím? To sice je pravda, ale není to hlavní účel..
+		ucitel_kybisku: Tak ti dám za 2, máš z části pravdu
+		set {Znamky.osy3Znamka} = 2.0
+		set {osy3Played} = true
+	- K virtualizaci počítače v počítači
+		ucitel_kybisku: Správně, máš za 1
+		set {Znamky.osy3Znamka} = 1.0
+		set {osy3Played} = true
+- Poprosit o pomoc učitele
+	Pane učiteli ono se nic s tím neděje
+	ucitel_kybisku: Tak já se na to kouknu.. jejda, co se tam pokazilo?
+	ucitel_kybisku: Tohle tam máš.. toto je nastavený správně.. Je tu ještě někdo komu to nefunguje?
+	*přihlásí se celá třída*
+	ucitel_kybisku: Sakra.. tak musím se zeptat chytrolína co s tím je za problém.
+	ucitel_kybisku: Pepo, dám ti ještě otázku.
+	ucitel_kybisku: Co to je a k čemu primárně slouží tzv. „virtuální stroj“ (Virtual Machine)?
+	- K bezpečnému infikování počítačů
+		Co prosím? To sice je pravda, ale není to hlavní účel..
+		Tak ti dám za 2, máš z části pravdu
+		set {Znamky.osy3Znamka} = 2.0
+		set {osy3Played} = true
+	- K virtualizaci počítače v počítači
+		ucitel_kybisku: Správně, máš za 1
+		set {Znamky.osy3Znamka} = 1.0
+		set {osy3Played} = true
