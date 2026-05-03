@@ -15,6 +15,9 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.telak3_1Played == true and Dialogic.VAR.ekonomikaPlayed == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 3/ekonomie_tretak.dtl")
+	elif(Dialogic.VAR.osy3Played == true and Dialogic.VAR.cestina3Played == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 3/cestina_tretak.dtl")
 	else:
 		pass
 func _on_timeline_started():
@@ -28,3 +31,5 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI DO UČEBNY NA I")
 	elif(Dialogic.VAR.aj3Played == true and Dialogic.VAR.prg3Played == false):
 		TaskUI.update_task("JDI DO UCEBNY A306")
+	elif(Dialogic.VAR.ekonomikaPlayed == true and Dialogic.VAR.mir3Played == false):
+		TaskUI.update_task("JDI DO UCEBNY NA I")
