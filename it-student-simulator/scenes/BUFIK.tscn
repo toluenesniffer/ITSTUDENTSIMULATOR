@@ -1,0 +1,163 @@
+[gd_scene load_steps=40 format=3 uid="uid://cuid888v3xgdb"]
+
+[ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_71ohp"]
+[ext_resource type="Texture2D" uid="uid://c7ey7lqnt85q" path="res://scenes/BUFICEK.png" id="2_gdvef"]
+[ext_resource type="Texture2D" uid="uid://djbe6emp7iax1" path="res://buttons/TOUSTY.png" id="3_vvnoj"]
+[ext_resource type="Texture2D" uid="uid://vgliicoqw1qr" path="res://buttons/TORTILLA.png" id="4_g21j4"]
+[ext_resource type="Texture2D" uid="uid://sihada70p0bi" path="res://buttons/TOUSTY_hover.png" id="4_vvnoj"]
+[ext_resource type="Texture2D" uid="uid://bofacb5dsw642" path="res://buttons/GURT.png" id="5_gdvef"]
+[ext_resource type="Script" uid="uid://d0enjynxqwfo2" path="res://scenes/jidloodpoved.gd" id="5_hgvvw"]
+[ext_resource type="Texture2D" uid="uid://bowfk63wsu18g" path="res://buttons/TORTILLA_hover.png" id="6_g21j4"]
+[ext_resource type="Texture2D" uid="uid://bnulrkqpuk75o" path="res://buttons/GURT_hover.png" id="8_cgk4k"]
+[ext_resource type="Script" uid="uid://fihyci75dj55" path="res://scenes/vychod_z_bufetu.gd" id="9_7631e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cgk4k"]
+texture = ExtResource("3_vvnoj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7631e"]
+texture = ExtResource("4_vvnoj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hgvvw"]
+texture = ExtResource("4_vvnoj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qmvht"]
+texture = ExtResource("4_vvnoj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xnkvf"]
+texture = ExtResource("3_vvnoj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hnf6c"]
+texture = ExtResource("3_vvnoj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kd26d"]
+texture = ExtResource("4_g21j4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0w341"]
+texture = ExtResource("6_g21j4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gs8k7"]
+texture = ExtResource("6_g21j4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_abny6"]
+texture = ExtResource("6_g21j4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dsxxb"]
+texture = ExtResource("4_g21j4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r8d0b"]
+texture = ExtResource("4_g21j4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vvnoj"]
+texture = ExtResource("5_gdvef")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wryt2"]
+texture = ExtResource("8_cgk4k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btqob"]
+texture = ExtResource("8_cgk4k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cnwjs"]
+texture = ExtResource("8_cgk4k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6j1ht"]
+texture = ExtResource("5_gdvef")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1n8ss"]
+texture = ExtResource("5_gdvef")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgk4k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7631e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hgvvw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0lnhp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ln4bc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2af0n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ksdni"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u5i1v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5ohn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wltb2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ne16b"]
+
+[node name="Bufik" type="Node2D"]
+
+[node name="Cernybg" type="Sprite2D" parent="."]
+position = Vector2(965, 552)
+scale = Vector2(1.0427083, 1.0814815)
+texture = ExtResource("1_71ohp")
+
+[node name="Buficek" type="Sprite2D" parent="."]
+position = Vector2(961.5, 540.00006)
+scale = Vector2(1.4697428, 1.4693333)
+texture = ExtResource("2_gdvef")
+
+[node name="TOUSTY" type="Button" parent="."]
+offset_left = 62.0
+offset_top = 270.0
+offset_right = 687.0
+offset_bottom = 803.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_cgk4k")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7631e")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hgvvw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_qmvht")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_xnkvf")
+theme_override_styles/focus = SubResource("StyleBoxTexture_hnf6c")
+script = ExtResource("5_hgvvw")
+
+[node name="TORTILLA" type="Button" parent="."]
+offset_left = -244.0
+offset_top = -55.0
+offset_right = 2121.0
+offset_bottom = 354.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_kd26d")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0w341")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gs8k7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_abny6")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_dsxxb")
+theme_override_styles/focus = SubResource("StyleBoxTexture_r8d0b")
+script = ExtResource("5_hgvvw")
+
+[node name="GURT" type="Button" parent="."]
+offset_left = 734.0
+offset_top = 371.0
+offset_right = 1438.0
+offset_bottom = 982.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_vvnoj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wryt2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btqob")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_cnwjs")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_6j1ht")
+theme_override_styles/focus = SubResource("StyleBoxTexture_1n8ss")
+script = ExtResource("5_hgvvw")
+
+[node name="Vychod" type="Button" parent="."]
+offset_left = 1528.0
+offset_top = 355.0
+offset_right = 1932.0
+offset_bottom = 689.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cgk4k")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7631e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hgvvw")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_0lnhp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ln4bc")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2af0n")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ksdni")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_u5i1v")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_j5ohn")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_wltb2")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ne16b")
+script = ExtResource("9_7631e")
+
+[connection signal="pressed" from="TOUSTY" to="TOUSTY" method="_on_pressed"]
+[connection signal="pressed" from="TORTILLA" to="TOUSTY" method="_on_tortilla_pressed"]
+[connection signal="pressed" from="TORTILLA" to="TORTILLA" method="_on_pressed"]
+[connection signal="pressed" from="GURT" to="TOUSTY" method="_on_gurt_pressed"]
+[connection signal="pressed" from="Vychod" to="Vychod" method="_on_pressed"]
