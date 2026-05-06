@@ -9,7 +9,7 @@ func _on_ready() -> void:
 		signals_connected = true
 	if(Dialogic.VAR.milan3Played == true and Dialogic.VAR.matika3Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
-		Dialogic.start("res://dialogicYap/Chapter 2/matika_tretak.dtl")
+		Dialogic.start("res://dialogicYap/Chapter 3/matika_tretak.dtl")
 	else:
 		pass
 func _on_timeline_started():

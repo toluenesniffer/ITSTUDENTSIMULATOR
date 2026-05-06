@@ -1,2 +1,5 @@
+if {40kc} == true:
+	Získal jsi tortillu!
+	Sice s ní nic nemůžeš udělat, ale aspoň máš jídlo.
 Jsi příliš chudý na to, aby sis koupil předraženou tortillu.
 [end_timeline]

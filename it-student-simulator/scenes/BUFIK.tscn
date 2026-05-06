@@ -1,6 +1,7 @@
-[gd_scene load_steps=42 format=3 uid="uid://cuid888v3xgdb"]
+[gd_scene load_steps=43 format=3 uid="uid://cuid888v3xgdb"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_71ohp"]
+[ext_resource type="Script" uid="uid://c1a625g6fxq53" path="res://scenes/bufik.gd" id="1_hnf6c"]
 [ext_resource type="Texture2D" uid="uid://c7ey7lqnt85q" path="res://scenes/BUFICEK.png" id="2_gdvef"]
 [ext_resource type="Texture2D" uid="uid://beailftde74y4" path="res://buttons/zakaznik2.png" id="3_qmvht"]
 [ext_resource type="Texture2D" uid="uid://djbe6emp7iax1" path="res://buttons/TOUSTY.png" id="3_vvnoj"]
@@ -90,6 +91,7 @@ texture = ExtResource("5_gdvef")
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ne16b"]
 
 [node name="Bufik" type="Node2D"]
+script = ExtResource("1_hnf6c")
 
 [node name="Cernybg" type="Sprite2D" parent="."]
 position = Vector2(965, 552)
@@ -168,6 +170,7 @@ position = Vector2(855.25, 587.25)
 scale = Vector2(0.88461536, 0.81984586)
 texture = ExtResource("12_xnkvf")
 
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="TOUSTY" to="TOUSTY" method="_on_pressed"]
 [connection signal="pressed" from="TORTILLA" to="TOUSTY" method="_on_tortilla_pressed"]
 [connection signal="pressed" from="TORTILLA" to="TORTILLA" method="_on_pressed"]

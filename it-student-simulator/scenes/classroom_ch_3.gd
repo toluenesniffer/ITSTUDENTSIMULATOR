@@ -33,3 +33,5 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI DO UCEBNY A306")
 	elif(Dialogic.VAR.ekonomikaPlayed == true and Dialogic.VAR.mir3Played == false):
 		TaskUI.update_task("JDI DO UCEBNY NA I")
+	elif(Dialogic.VAR.cestina3Played == true and Dialogic.VAR.bohousbufetPlayed == false):
+		TaskUI.update_task("NAPSAL TI BOHOUS ZE CHCE S TEBOU DO BUFIKU. NAJDI HO.")

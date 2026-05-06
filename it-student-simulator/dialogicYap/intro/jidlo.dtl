@@ -1,2 +1,6 @@
-Jsi příliš chudý na to, aby sis koupil předražený toust.
+if {40kc} == true:
+	Získal jsi premium toust! 
+	Sice s ním nic dělat nemůžes ale aspoň máš jídlo.
+else:
+	Jsi příliš chudý na to, aby sis koupil předražený toust.
 [end_timeline]
