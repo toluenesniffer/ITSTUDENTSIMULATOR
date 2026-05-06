@@ -1,7 +1,8 @@
-[gd_scene load_steps=40 format=3 uid="uid://cuid888v3xgdb"]
+[gd_scene load_steps=42 format=3 uid="uid://cuid888v3xgdb"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_71ohp"]
 [ext_resource type="Texture2D" uid="uid://c7ey7lqnt85q" path="res://scenes/BUFICEK.png" id="2_gdvef"]
+[ext_resource type="Texture2D" uid="uid://beailftde74y4" path="res://buttons/zakaznik2.png" id="3_qmvht"]
 [ext_resource type="Texture2D" uid="uid://djbe6emp7iax1" path="res://buttons/TOUSTY.png" id="3_vvnoj"]
 [ext_resource type="Texture2D" uid="uid://vgliicoqw1qr" path="res://buttons/TORTILLA.png" id="4_g21j4"]
 [ext_resource type="Texture2D" uid="uid://sihada70p0bi" path="res://buttons/TOUSTY_hover.png" id="4_vvnoj"]
@@ -10,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bowfk63wsu18g" path="res://buttons/TORTILLA_hover.png" id="6_g21j4"]
 [ext_resource type="Texture2D" uid="uid://bnulrkqpuk75o" path="res://buttons/GURT_hover.png" id="8_cgk4k"]
 [ext_resource type="Script" uid="uid://fihyci75dj55" path="res://scenes/vychod_z_bufetu.gd" id="9_7631e"]
+[ext_resource type="Texture2D" uid="uid://be1pns1vbh0f" path="res://buttons/zakaznik3.png" id="12_xnkvf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cgk4k"]
 texture = ExtResource("3_vvnoj")
@@ -99,6 +101,11 @@ position = Vector2(961.5, 540.00006)
 scale = Vector2(1.4697428, 1.4693333)
 texture = ExtResource("2_gdvef")
 
+[node name="Zakaznik2" type="Sprite2D" parent="."]
+position = Vector2(665, 514)
+scale = Vector2(0.18622848, 0.15090252)
+texture = ExtResource("3_qmvht")
+
 [node name="TOUSTY" type="Button" parent="."]
 offset_left = 62.0
 offset_top = 270.0
@@ -126,10 +133,10 @@ theme_override_styles/focus = SubResource("StyleBoxTexture_r8d0b")
 script = ExtResource("5_hgvvw")
 
 [node name="GURT" type="Button" parent="."]
-offset_left = 734.0
-offset_top = 371.0
-offset_right = 1438.0
-offset_bottom = 982.0
+offset_left = 831.0
+offset_top = 454.0
+offset_right = 1535.0
+offset_bottom = 1065.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_vvnoj")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_wryt2")
 theme_override_styles/hover = SubResource("StyleBoxTexture_btqob")
@@ -155,6 +162,11 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_j5ohn")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_wltb2")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ne16b")
 script = ExtResource("9_7631e")
+
+[node name="Zakaznik3" type="Sprite2D" parent="."]
+position = Vector2(855.25, 587.25)
+scale = Vector2(0.88461536, 0.81984586)
+texture = ExtResource("12_xnkvf")
 
 [connection signal="pressed" from="TOUSTY" to="TOUSTY" method="_on_pressed"]
 [connection signal="pressed" from="TORTILLA" to="TOUSTY" method="_on_tortilla_pressed"]

@@ -1,0 +1,130 @@
+join yapper1 center
+yapper1: Tentokrát budeme probírat PHP, přežili jste JavaScript, ale můžu vás ujistit, že to lepší rozhodně nebude.
+yapper1: Probereme i databáze a SQL, to by jste snad mohli zvládnout.
+yapper1: Prosím zapněte si Xampp a otevřete PHPMyAdmin. 
+join phpmyadmin_objekt center
+(Na co se to koukám...)
+yapper1: Teď si vytvoříme databázi, v ní tabulku a naplníme ji datama
+yapper1: Když máme v tabulce data, vyzkoušíme si nějaké dotazy.
+yapper1: Jak vyberete všechny data z tabulky?
+- SELECT * FROM tabulka
+	yapper1: Správně, to bylo ještě velmi jednoduché. Teď vám zadám jednoduchý úkol, to všichni zvládnete.
+	Vypište e-mailové adresy všech zákazníků, kteří si v úterý koupili červené tričko. Výsledek seřaďte abecedně podle příjmení.
+	- Hodit všechny data do AI (bezpečné) a vygenerovat
+		yapper1: Pepo.. tys to hodil do AI..?
+		yapper1: To bys neměl dělat až budeš mít práci, nemůžes tam hodit celou databázi se soukromými daty..
+		No já s tímto rozhodně pracovat nechci.
+		yapper1: Tak fajn no, jen abys vědel. Tak mi aspoň zkus vysvětlit ten kód.
+		Noo tak select vybere nějaký věci a umm noo jo a udělá to toto
+		yapper1: ..A co je třeba ten left join?
+		Že jako.. no.. odešel join...
+		yapper1: Jak jako odešel? To znamená že se propojí tabulky a z té levé se vezmou všechny data
+		No to přesně jsem myslel
+		Budu ti muset dát za 4, zkus se doučit ty dotazy
+		set {Znamky.web3Znamka} = 4.0
+		set {web3Played} = true
+	- Vytvořit něco sám...
+		SELECT DISTINCT \
+    LOWER(SUBSTRING(c.email, 1, INSTR(c.email, '@') - 1)) || '@' || UPPER(SUBSTRING(c.email, INSTR(c.email, '@') + 1)) AS Zbesily_Email,\
+    (SELECT COUNT(*) FROM DUAL WHERE 1=1 AND 2=2) AS Useless_Math_Check\
+FROM Customers c\
+CROSS JOIN (SELECT * FROM Orders WHERE 1=1) fake_orders\
+INNER JOIN Orders o ON c.customer_id = (o.customer_id * 1) / 1\
+LEFT JOIN (\
+    SELECT order_id, MAX(product_id) as wtf_id \
+    FROM Order_Details \
+    GROUP BY order_id \
+    HAVING COUNT(*) % 2 != 0 OR COUNT(*) % 2 == 0 -- Pro jistotu\
+) weird_join ON o.order_id = weird_join.order_id
+		WHERE o.order_date IN (\
+    SELECT order_date \
+    FROM Orders \
+    WHERE TO_CHAR(order_date, 'DY') = 'TUE' \
+    OR TO_CHAR(order_date, 'DAY') LIKE '%TUESDAY%'\
+    OR DAYOFWEEK(order_date) = 3\
+)
+		AND EXISTS (\
+    SELECT 1 FROM Products p\
+    INNER JOIN Order_Details od ON p.product_id = od.product_id\
+    WHERE od.order_id = o.order_id\
+    AND UPPER(p.color) LIKE '%R%E%D%' \
+    AND (p.name LIKE '%Tričko%' OR p.name LIKE '%tricko%' OR p.name = 'Tr1ck0')\
+)
+		AND c.customer_id NOT IN (\
+    SELECT customer_id FROM Customers WHERE email IS NULL -- Tohle nedává smysl, ale bojím se to smazat\
+)\
+GROUP BY c.email, c.last_name, fake_orders.order_id, o.order_date\
+HAVING SUM(CASE WHEN o.total_amount > -1 THEN 1 ELSE 0 END) >= 1\
+ORDER BY ASCII(SUBSTR(c.last_name, 1, 1)) ASC, ASCII(SUBSTR(c.last_name, 2, 1)) ASC;
+		yapper1: Proboha co jsi to stvořil?
+		yapper1: Jak jako "tohle nedává smysl, ale bojím se to smazat"???????
+		yapper1: A proč jsi tam dal CROSS JOIN s falešnou tabulkou objednávek? Vždyť to znásobí všechny záznamy milionkrát..
+		To je ochrana proti hackerům. Když se nám nabourají do databáze, ten dotaz jim upeče procesor dřív, než něco najdou.
+		yapper1: No nevím co na tohle říct... obdivuji, že znáš tolik dotazů, tak ti dám teda za 3
+		Děkuju!!!
+		set {Znamky.web3Znamka} = 3.0
+		set {web3Played} = true
+- rozkliknu si ji
+	yapper1: No.. jako ano, ale já bych chtěl slyšet ten dotaz. Zkus si vzpomenout
+	- SELECT * FROM tabulka
+		yapper1: Správně! Tak teď vám zadám jednoduchý úkol
+		Vypište e-mailové adresy všech zákazníků, kteří si v úterý koupili červené tričko. Výsledek seřaďte abecedně podle příjmení.
+		- Hodit všechny data do AI (bezpečné) a vygenerovat
+			yapper1: Pepo.. tys to hodil do AI..?
+			yapper1: To bys neměl dělat až budeš mít práci, nemůžes tam hodit celou databázi se soukromými daty..
+			No já s tímto rozhodně pracovat nechci.
+			yapper1: Tak fajn no, jen abys vědel. Tak mi aspoň zkus vysvětlit ten kód.
+			Noo tak select vybere nějaký věci a umm noo jo a udělá to toto
+			yapper1: ..A co je třeba ten left join?
+			Že jako.. no.. odešel join...
+			yapper1: Jak jako odešel? To znamená že se propojí tabulky a z té levé se vezmou všechny data
+			No to přesně jsem myslel
+			yapper1: Budu ti muset dát za 4, zkus se doučit ty dotazy.
+			set {Znamky.web3Znamka} = 4.0
+			set {web3Played} = true
+		- Vytvořit něco sám...
+			SELECT DISTINCT \
+    LOWER(SUBSTRING(c.email, 1, INSTR(c.email, '@') - 1)) || '@' || UPPER(SUBSTRING(c.email, INSTR(c.email, '@') + 1)) AS Zbesily_Email,\
+    (SELECT COUNT(*) FROM DUAL WHERE 1=1 AND 2=2) AS Useless_Math_Check\
+FROM Customers c\
+CROSS JOIN (SELECT * FROM Orders WHERE 1=1) fake_orders\
+INNER JOIN Orders o ON c.customer_id = (o.customer_id * 1) / 1\
+LEFT JOIN (\
+    SELECT order_id, MAX(product_id) as wtf_id \
+    FROM Order_Details \
+    GROUP BY order_id \
+    HAVING COUNT(*) % 2 != 0 OR COUNT(*) % 2 == 0 -- Pro jistotu\
+) weird_join ON o.order_id = weird_join.order_id
+			WHERE o.order_date IN (\
+    SELECT order_date \
+    FROM Orders \
+    WHERE TO_CHAR(order_date, 'DY') = 'TUE' \
+    OR TO_CHAR(order_date, 'DAY') LIKE '%TUESDAY%'\
+    OR DAYOFWEEK(order_date) = 3\
+)
+			AND EXISTS (\
+    SELECT 1 FROM Products p\
+    INNER JOIN Order_Details od ON p.product_id = od.product_id\
+    WHERE od.order_id = o.order_id\
+    AND UPPER(p.color) LIKE '%R%E%D%' \
+    AND (p.name LIKE '%Tričko%' OR p.name LIKE '%tricko%' OR p.name = 'Tr1ck0')\
+)
+			AND c.customer_id NOT IN (\
+    SELECT customer_id FROM Customers WHERE email IS NULL -- Tohle nedává smysl, ale bojím se to smazat\
+)\
+GROUP BY c.email, c.last_name, fake_orders.order_id, o.order_date\
+HAVING SUM(CASE WHEN o.total_amount > -1 THEN 1 ELSE 0 END) >= 1\
+ORDER BY ASCII(SUBSTR(c.last_name, 1, 1)) ASC, ASCII(SUBSTR(c.last_name, 2, 1)) ASC;
+			yapper1: Proboha co jsi to stvořil?
+			yapper1: Jak jako "tohle nedává smysl, ale bojím se to smazat"???????
+			yapper1: A proč jsi tam dal CROSS JOIN s falešnou tabulkou objednávek? Vždyť to znásobí všechny záznamy milionkrát..
+			To je ochrana proti hackerům. Když se nám nabourají do databáze, ten dotaz jim upeče procesor dřív, než něco najdou.
+			yapper1: No nevím co na tohle říct... obdivuji, že znáš tolik dotazů, tak ti dám teda za 3
+			Děkuju!!!!
+			set {Znamky.web3Znamka} = 3.0
+			set {web3Played} = true
+	- TRUNCATE tabulka
+		yapper1: To.. přesně ne. Tohle ti okamžitě vymaže všechny data z tabulky
+		yapper1: Prosím zkus se to doučit, budu ti muset dát za 5..
+		set {Znamky.web3Znamka} = 5.0
+		set {web3Played} = true
