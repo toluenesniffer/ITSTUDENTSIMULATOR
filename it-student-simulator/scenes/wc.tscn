@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dcnbn7g13rpj0"]
+[gd_scene load_steps=24 format=3 uid="uid://dcnbn7g13rpj0"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_vgrre"]
 [ext_resource type="Texture2D" uid="uid://dm0mrik7chsme" path="res://scenes/hajzliky2.png" id="2_lp1ao"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://degriplm6xnrm" path="res://dialogicYap/yapperi/bohous.png" id="4_swvxr"]
 [ext_resource type="Script" uid="uid://bgjmueej63gqm" path="res://scenes/button_hallway.gd" id="4_w1pd6"]
 [ext_resource type="Script" uid="uid://bk3dhp2yxp5rk" path="res://scenes/bohous.gd" id="6_ow7db"]
+[ext_resource type="Script" uid="uid://gu525b27vqml" path="res://scenes/smazat.gd" id="7_bviyb"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_swvxr"]
 texture = ExtResource("3_lp1ao")
@@ -91,5 +92,13 @@ theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_rx51j")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7p3j5")
 script = ExtResource("6_ow7db")
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 521.0
+offset_top = 982.0
+offset_right = 793.0
+offset_bottom = 1053.0
+script = ExtResource("7_bviyb")
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Bohous/Button" to="Bohous/Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

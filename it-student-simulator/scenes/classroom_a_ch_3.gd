@@ -10,6 +10,9 @@ func _on_ready() -> void:
 	if(Dialogic.VAR.milan3Played == true and Dialogic.VAR.matika3Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 3/matika_tretak.dtl")
+	elif(Dialogic.VAR.vbufetuPlayed == true and Dialogic.VAR.obcanka3Played == false):
+		TaskUI.update_task("KONVERTUJ NA ŽIDOVSTVÍ")
+		Dialogic.start("res://dialogicYap/Chapter 3/obcanka_tretak.dtl")
 	else:
 		pass
 func _on_timeline_started():

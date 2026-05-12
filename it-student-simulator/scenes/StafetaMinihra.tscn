@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://cpq1uo85gngya"]
+
+[ext_resource type="Script" uid="uid://dy7a16hq7ri73" path="res://scenes/stafeta_minihra.gd" id="1_icd56"]
+[ext_resource type="Texture2D" uid="uid://n3i3vyl0y3ig" path="res://scenes/kuzelybg.png" id="2_r6t2q"]
+[ext_resource type="Texture2D" uid="uid://cv5a2m4pu85l1" path="res://dialogicYap/yapperi/CERVENYpepa.png" id="3_70cma"]
+[ext_resource type="Texture2D" uid="uid://dx85htvapdxef" path="res://dialogicYap/yapperi/petra.png" id="3_vscrc"]
+[ext_resource type="Texture2D" uid="uid://cwd60ij6c8y0s" path="res://dialogicYap/yapperi/milan.png" id="4_i2s7t"]
+[ext_resource type="Texture2D" uid="uid://cljj4uxfuaavc" path="res://scenes/chudak.png" id="4_vscrc"]
+[ext_resource type="Texture2D" uid="uid://0btkndtisvnf" path="res://dialogicYap/yapperi/horymir.png" id="5_c1has"]
+
+[node name="StafetaMinihra" type="Node2D"]
+script = ExtResource("1_icd56")
+
+[node name="Pozadi" type="Sprite2D" parent="."]
+position = Vector2(958.99994, 545)
+scale = Vector2(0.9541015, 0.9809028)
+texture = ExtResource("2_r6t2q")
+
+[node name="Bezec5" type="Sprite2D" parent="."]
+position = Vector2(1839, 534)
+texture = ExtResource("3_vscrc")
+
+[node name="Bezec4" type="Sprite2D" parent="."]
+position = Vector2(1839, 536)
+scale = Vector2(1.3320313, 1.2695313)
+texture = ExtResource("4_i2s7t")
+
+[node name="Bezec3" type="Sprite2D" parent="."]
+position = Vector2(1839, 565)
+texture = ExtResource("5_c1has")
+
+[node name="Bezec2" type="Sprite2D" parent="."]
+position = Vector2(1834.9999, 557)
+scale = Vector2(1.4296875, 1.453125)
+texture = ExtResource("4_vscrc")
+
+[node name="Bezec1" type="Sprite2D" parent="."]
+position = Vector2(1836, 555)
+texture = ExtResource("3_70cma")
+
+[node name="Casomira" type="Label" parent="."]
+offset_left = 775.0
+offset_top = 94.0
+offset_right = 1239.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 30
