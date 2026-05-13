@@ -14,7 +14,7 @@ var posledni_klavesa : String = ""
 
 var smer : int = -1
 var bod_otocky : float = 150.0
-var bod_predavky : float = 900.0
+var bod_predavky : float = 1750.0
 
 var zbyvajici_cas : float = 60.0
 var hra_bezi : bool = true
