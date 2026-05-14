@@ -1,11 +1,15 @@
-[gd_scene load_steps=31 format=3 uid="uid://c5kj7v4f15oe8"]
+[gd_scene load_steps=35 format=3 uid="uid://c5kj7v4f15oe8"]
 
+[ext_resource type="Script" uid="uid://c7o3e4m32h2v3" path="res://scenes/switchscene.gd" id="1_fdsch"]
 [ext_resource type="Texture2D" uid="uid://dk0k6o7guvl1f" path="res://scenes/switchik.jpg" id="1_tfla7"]
 [ext_resource type="Texture2D" uid="uid://d3ahcd57d2jan" path="res://buttons/rollover.jpg" id="2_7ft5t"]
 [ext_resource type="Texture2D" uid="uid://0ree6dexkmty" path="res://buttons/crossover.png" id="3_7ft5t"]
 [ext_resource type="Script" uid="uid://f4twdxgptjqh" path="res://scenes/button_rollover.gd" id="3_f3323"]
 [ext_resource type="Texture2D" uid="uid://ne2rwbols2u7" path="res://buttons/optika.jpg" id="4_2ou82"]
+[ext_resource type="Script" uid="uid://cotqns8q12yut" path="res://scenes/button_crossover.gd" id="5_f2skv"]
 [ext_resource type="Texture2D" uid="uid://c8ljvvitmj837" path="res://buttons/keylogger.jpg" id="5_iro4l"]
+[ext_resource type="Script" uid="uid://dx31ts535v5py" path="res://scenes/button_optic.gd" id="7_skfoh"]
+[ext_resource type="Script" uid="uid://dbwubqli3eyod" path="res://scenes/button_keylogger.gd" id="9_j6gx0"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ou82"]
 
@@ -73,7 +77,8 @@ texture = ExtResource("5_iro4l")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x4gsn"]
 texture = ExtResource("5_iro4l")
 
-[node name="Switchscene" type="Node2D"]
+[node name="Switchscene" type="CanvasLayer"]
+script = ExtResource("1_fdsch")
 
 [node name="Switchik" type="Sprite2D" parent="."]
 position = Vector2(959, 538.5)
@@ -150,6 +155,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_bncll")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_tm3ji")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_sgg6i")
 theme_override_styles/focus = SubResource("StyleBoxTexture_krten")
+script = ExtResource("5_f2skv")
 
 [node name="ButtonOptic" type="Button" parent="."]
 offset_left = 904.0
@@ -162,6 +168,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_vj2wm")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_u43rh")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_hqof5")
 theme_override_styles/focus = SubResource("StyleBoxTexture_f6ktp")
+script = ExtResource("7_skfoh")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 1478.0
@@ -174,5 +181,9 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_3na7w")
 theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_n1wj2")
 theme_override_styles/disabled = SubResource("StyleBoxTexture_l5xu0")
 theme_override_styles/focus = SubResource("StyleBoxTexture_x4gsn")
+script = ExtResource("9_j6gx0")
 
 [connection signal="pressed" from="ButtonRollover" to="ButtonRollover" method="_on_pressed"]
+[connection signal="pressed" from="ButtonCrossover" to="ButtonCrossover" method="_on_pressed"]
+[connection signal="pressed" from="ButtonOptic" to="ButtonOptic" method="_on_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
