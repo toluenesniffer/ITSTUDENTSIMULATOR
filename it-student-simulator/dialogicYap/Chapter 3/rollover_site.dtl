@@ -1,25 +1,25 @@
-Správně! Vybral jsi ten správný kabel, teď to zapojíme do počítače..
-V terminálu prosím nekonfiguruj tento switch
+panmanwanlan: Správně! Vybral jsi ten správný kabel, teď to zapojíme do počítače..
+panmanwanlan: V terminálu prosím nekonfiguruj tento switch
 - configure terminal
-	Správně, teď nastav jméno a IP adresu switche
+	panmanwanlan: Správně, teď nastav jméno a IP adresu switche
 	- hostname R1, ip address 192.168.1.0
-		Výborně, máš za 1!
+		panmanwanlan: Výborně, máš za 1!
 		set {Znamky.site3Znamka} = 1.0
 		set {site3Played} = true
 	- route all_traffic -> /dev/null
-		Pepo co jsi to tam napsal..? Ty směřuješ všechen školní internet do prázdna!!
+		panmanwanlan: Pepo co jsi to tam napsal..? Ty směřuješ všechen školní internet do prázdna!!
 		horymir: PANE UČITELI NEJDE INTERNET POMOC
-		Prosím uklidněte se. Vyřeším to.
-		..Jak jsi na tento příkaz vůbec přišel? Prosím už ho tady ve škole nikdy napoužívej.
-		Máš za 4.
+		panmanwanlan: Prosím uklidněte se. Vyřeším to.
+		panmanwanlan: ..Jak jsi na tento příkaz vůbec přišel? Prosím už ho tady ve škole nikdy napoužívej.
+		panmanwanlan: Máš za 4.
 		set {Znamky.site3Znamka} = 4.0
 		set {site3Played} = true
 - poe_overload 230V
 	horymir: CO SE TO DĚJE??? MŮJ POČÍTAČ SE PŘEHŘÍVÁ
 	Jejda...
-	PEPO CO JSI TAM PROBOHA NAPSAL VŠEM SE PŘEHŘÍVAJÍ POČÍTAČE!!!!
+	panmanwanlan: PEPO CO JSI TAM PROBOHA NAPSAL VŠEM SE PŘEHŘÍVAJÍ POČÍTAČE!!!!
 	join vybuchpc_objekt center
 	PANE UČITELI MNĚ VYBOUCHL POČÍTAČ
 	marie: HOŘÍ!!!
-	VŠICHNI SE JDĚTE EVAKUOVAT
+	panmanwanlan: VŠICHNI SE JDĚTE EVAKUOVAT
 	set {site3Played} = true

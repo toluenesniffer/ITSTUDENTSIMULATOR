@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://byxhbj4j8vsvj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e72yv"]
+size = Vector2(100, 307.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y7gfh"]
+size = Vector2(79, 416)
+
+[node name="Prekazka" type="Area2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2015, 142)
+shape = SubResource("RectangleShape2D_e72yv")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(2015, 892)
+shape = SubResource("RectangleShape2D_y7gfh")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(2015, 486)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

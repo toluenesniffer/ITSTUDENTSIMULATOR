@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxstq58qg183m"]
+
+[ext_resource type="Script" uid="uid://cgfpxh0glg7xl" path="res://scenes/bezec_flappy.gd" id="1_gmj10"]
+[ext_resource type="Texture2D" uid="uid://cv5a2m4pu85l1" path="res://dialogicYap/yapperi/CERVENYpepa.png" id="1_jf5uw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmj10"]
+size = Vector2(107, 183)
+
+[node name="FlappyDeadline" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bezec" type="CharacterBody2D" parent="."]
+script = ExtResource("1_gmj10")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bezec"]
+position = Vector2(63, 386)
+scale = Vector2(0.71428573, 0.62285715)
+texture = ExtResource("1_jf5uw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bezec"]
+position = Vector2(62.5, 382.5)
+shape = SubResource("RectangleShape2D_gmj10")
+
+[node name="CasovacPrekazek" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="Prekazky" type="Node2D" parent="."]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SkoreLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 725.0
+offset_top = 40.0
+offset_right = 1126.0
+offset_bottom = 126.0
+
+[node name="ZpravaLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 383.0
+offset_right = 1226.0
+offset_bottom = 509.0

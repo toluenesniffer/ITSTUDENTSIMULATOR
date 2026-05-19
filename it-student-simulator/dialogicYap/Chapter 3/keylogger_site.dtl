@@ -1,12 +1,12 @@
-Pepo, co to máš v ruce?
+panmanwanlan: Pepo, co to máš v ruce?
 Noo jen flash disk mám na něm nahraný cisco packet tracer
-Víš, že nesmíš zapojovat jen tak věci do školních počítačů..?
+panmanwanlan: Víš, že nesmíš zapojovat jen tak věci do školních počítačů..?
 Aha to nevím to se omlouvám
-Můžeš mi to tedy prosím podat? Radši to zabavím a zkontroluju, jestli tam není něco nebezpečného.
-Proč by sis vůbec stahoval na flash disk cisco packet tracer když je stažený všude na počítačích..?
+panmanwanlan: Můžeš mi to tedy prosím podat? Radši to zabavím a zkontroluju, jestli tam není něco nebezpečného.
+panmanwanlan: Proč by sis vůbec stahoval na flash disk cisco packet tracer když je stažený všude na počítačích..?
 Já jen mám.. speciální verzi..
-PEPO TO JE KEYLOGGER!!!! Tohle je hrubé porušení školního řádu.
-Budeš si muset hezky promluvit s ředitelkou. A máš za 5.
+panmanwanlan: PEPO TO JE KEYLOGGER!!!! Tohle je hrubé porušení školního řádu.
+panmanwanlan: Budeš si muset hezky promluvit s ředitelkou. A máš za 5.
 set {Znamky.site3Znamka} = 5.0
 set {site3Played} = true
 [end_timeline]

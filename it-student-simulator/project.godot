@@ -64,6 +64,7 @@ directories/dch_directory={
 "odpory_objekt": "res://dialogicYap/yapperi/odpory_objekt.dch",
 "omalovanka": "res://dialogicYap/yapperi/omalovanka.dch",
 "ovladac_vybuch": "res://dialogicYap/yapperi/ovladac_vybuch.dch",
+"panmanwanlan": "res://dialogicYap/yapperi/panmanwanlan.dch",
 "pepa": "res://dialogicYap/yapperi/pepa.dch",
 "pergamen_objekt": "res://dialogicYap/yapperi/pergamen_objekt.dch",
 "petra": "res://dialogicYap/yapperi/petra.dch",
@@ -85,6 +86,7 @@ directories/dch_directory={
 "trojuhelnik_objekt": "res://dialogicYap/yapperi/trojuhelnik_objekt.dch",
 "ucitel_kybisku": "res://dialogicYap/yapperi/ucitel_kybisku.dch",
 "ucitelhw": "res://dialogicYap/yapperi/ucitelhw.dch",
+"ucitelrpr": "res://dialogicYap/yapperi/ucitelrpr.dch",
 "vybuchpc_objekt": "res://dialogicYap/yapperi/vybuchpc_objekt.dch",
 "yapper1": "res://dialogicYap/yapperi/yapper1.dch",
 "zrcadlo_objekt": "res://dialogicYap/yapperi/zrcadlo_objekt.dch"
@@ -153,6 +155,7 @@ directories/dtl_directory={
 "prg_tretak": "res://dialogicYap/Chapter 3/prg_tretak.dtl",
 "programovani": "res://dialogicYap/intro/programovani.dtl",
 "rollover_site": "res://dialogicYap/Chapter 3/rollover_site.dtl",
+"rpr_tretak": "res://dialogicYap/Chapter 3/rpr_tretak.dtl",
 "site_tretak": "res://dialogicYap/Chapter 3/site_tretak.dtl",
 "telak3_1": "res://dialogicYap/Chapter 3/telak3_1.dtl",
 "telakProhra": "res://dialogicYap/Chapter 2/telakProhra.dtl",
