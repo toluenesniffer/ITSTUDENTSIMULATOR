@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxstq58qg183m"]
+[gd_scene load_steps=6 format=3 uid="uid://cxstq58qg183m"]
 
+[ext_resource type="Script" uid="uid://ckh3tpbmungch" path="res://scenes/flappy_deadline.gd" id="1_5ac66"]
 [ext_resource type="Script" uid="uid://cgfpxh0glg7xl" path="res://scenes/bezec_flappy.gd" id="1_gmj10"]
 [ext_resource type="Texture2D" uid="uid://cv5a2m4pu85l1" path="res://dialogicYap/yapperi/CERVENYpepa.png" id="1_jf5uw"]
+[ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="4_rvihk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmj10"]
 size = Vector2(107, 183)
 
 [node name="FlappyDeadline" type="CanvasLayer"]
+script = ExtResource("1_5ac66")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -44,6 +47,9 @@ offset_left = 725.0
 offset_top = 40.0
 offset_right = 1126.0
 offset_bottom = 126.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_rvihk")
+theme_override_font_sizes/font_size = 25
 
 [node name="ZpravaLabel" type="Label" parent="Control"]
 layout_mode = 0
@@ -51,3 +57,9 @@ offset_left = 609.0
 offset_top = 383.0
 offset_right = 1226.0
 offset_bottom = 509.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_rvihk")
+theme_override_font_sizes/font_size = 30
+
+[connection signal="ready" from="." to="." method="_ready"]
+[connection signal="timeout" from="CasovacPrekazek" to="." method="_on_casovac_prekazek_timeout"]

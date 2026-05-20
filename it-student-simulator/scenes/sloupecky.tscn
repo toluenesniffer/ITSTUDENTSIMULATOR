@@ -1,30 +1,44 @@
-[gd_scene load_steps=3 format=3 uid="uid://byxhbj4j8vsvj"]
+[gd_scene load_steps=6 format=3 uid="uid://byxhbj4j8vsvj"]
+
+[ext_resource type="Script" uid="uid://b1xsthpcchr4e" path="res://scenes/prekazka.gd" id="1_y7gfh"]
+[ext_resource type="Texture2D" uid="uid://dimaigbalufeq" path="res://buttons/laravelflipped.png" id="2_fulih"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e72yv"]
-size = Vector2(100, 307.5)
+size = Vector2(100, 406.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y7gfh"]
-size = Vector2(79, 416)
+size = Vector2(79, 576)
 
-[node name="Prekazka" type="Area2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fulih"]
+size = Vector2(104, 379.5)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Prekazka" type="Node2D"]
+script = ExtResource("1_y7gfh")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Horni" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(2015, 142)
+[node name="Sprite2D" type="Sprite2D" parent="Horni"]
+position = Vector2(0, -390.00006)
+scale = Vector2(0.17413794, 0.40382653)
+texture = ExtResource("2_fulih")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horni"]
+position = Vector2(0, -390)
 shape = SubResource("RectangleShape2D_e72yv")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="Dolni" type="Area2D" parent="."]
+position = Vector2(0, -9)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+[node name="Sprite2D" type="Sprite2D" parent="Dolni"]
+position = Vector2(3.0517578e-05, 488.99994)
+scale = Vector2(0.13448283, 0.5744899)
+texture = ExtResource("2_fulih")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(2015, 892)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dolni"]
+position = Vector2(0, 489)
 shape = SubResource("RectangleShape2D_y7gfh")
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(2015, 486)
+[node name="Bodovani" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodovani"]
+shape = SubResource("RectangleShape2D_fulih")

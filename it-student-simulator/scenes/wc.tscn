@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dcnbn7g13rpj0"]
+[gd_scene load_steps=25 format=3 uid="uid://dcnbn7g13rpj0"]
 
 [ext_resource type="Texture2D" uid="uid://dcsrl410x38ne" path="res://scenes/cernybg.jpg" id="1_vgrre"]
 [ext_resource type="Texture2D" uid="uid://dm0mrik7chsme" path="res://scenes/hajzliky2.png" id="2_lp1ao"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://bgjmueej63gqm" path="res://scenes/button_hallway.gd" id="4_w1pd6"]
 [ext_resource type="Script" uid="uid://bk3dhp2yxp5rk" path="res://scenes/bohous.gd" id="6_ow7db"]
 [ext_resource type="Script" uid="uid://gu525b27vqml" path="res://scenes/smazat.gd" id="7_bviyb"]
+[ext_resource type="Script" uid="uid://c2xqemocu2v4f" path="res://scenes/smazat2.gd" id="8_n87rb"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_swvxr"]
 texture = ExtResource("3_lp1ao")
@@ -99,6 +100,14 @@ offset_right = 793.0
 offset_bottom = 1053.0
 script = ExtResource("7_bviyb")
 
+[node name="Button3" type="Button" parent="."]
+offset_left = 866.0
+offset_top = 976.0
+offset_right = 1216.0
+offset_bottom = 1053.0
+script = ExtResource("8_n87rb")
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Bohous/Button" to="Bohous/Button" method="_on_pressed"]
 [connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

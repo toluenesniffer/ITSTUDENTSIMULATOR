@@ -1,6 +1,7 @@
 extends Node2D
 
 const MINIHRA_SCENA = preload("res://scenes/switchscene.tscn")
+const MINIHRA_FLAPPY = preload("res://scenes/FlappyDeadline.tscn")
 
 var signals_connected = false
 
@@ -45,7 +46,12 @@ func _on_button_hallway_pressed() -> void:
 func _on_dialogic_signal(argument: String):
 	if argument == "start_switch":
 		spust_minihru()
+	if argument == "start_hodina_rizeni":
+		spust_minihru_flappy()
 func spust_minihru():
 	var instance_minihry = MINIHRA_SCENA.instantiate()
+	add_child(instance_minihry)
+func spust_minihru_flappy():
+	var instance_minihry = MINIHRA_FLAPPY.instantiate()
 	add_child(instance_minihry)
 	
