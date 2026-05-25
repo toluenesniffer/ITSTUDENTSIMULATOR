@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://cvs8dc3poun1n"]
+
+[ext_resource type="Texture2D" uid="uid://b3knnutp76u61" path="res://scenes/deportace.png" id="1_grq5l"]
+[ext_resource type="Script" uid="uid://c4cq1wijly746" path="res://scenes/deportace.gd" id="1_tboht"]
+[ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="3_3nscx"]
+[ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="4_64pcb"]
+[ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="5_24b26"]
+[ext_resource type="AudioStream" uid="uid://dsaotordbvat3" path="res://music/sad ost.mp3" id="6_xsswn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ic46"]
+texture = ExtResource("3_3nscx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f840m"]
+texture = ExtResource("4_64pcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_560sp"]
+texture = ExtResource("5_24b26")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_frm0k"]
+texture = ExtResource("3_3nscx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pcr25"]
+texture = ExtResource("5_24b26")
+
+[node name="Deportace" type="Node2D"]
+script = ExtResource("1_tboht")
+
+[node name="Deportace" type="Sprite2D" parent="."]
+position = Vector2(964.0001, 544)
+scale = Vector2(1.2050002, 1.22)
+texture = ExtResource("1_grq5l")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 714.0
+offset_top = 716.0
+offset_right = 1218.0
+offset_bottom = 1035.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0ic46")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_f840m")
+theme_override_styles/hover = SubResource("StyleBoxTexture_560sp")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_frm0k")
+theme_override_styles/focus = SubResource("StyleBoxTexture_pcr25")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1821.9602, 1045.42)
+stream = ExtResource("6_xsswn")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

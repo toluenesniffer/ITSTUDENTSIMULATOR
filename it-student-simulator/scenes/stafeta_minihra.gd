@@ -7,15 +7,12 @@ var aktualni_rychlost : float = 0.0
 var zpomaleni : float = 150.0
 var zrychleni : float = 50.0
 var max_rychlost : float = 400.0
-
 var aktualni_index : int = 0
 var ceka_na_predavku : bool = false
 var posledni_klavesa : String = ""
-
 var smer : int = -1
 var bod_otocky : float = 150.0
 var bod_predavky : float = 1750.0
-
 var zbyvajici_cas : float = 60.0
 var hra_bezi : bool = true
 
@@ -26,13 +23,22 @@ func _process(delta: float) -> void:
 			zbyvajici_cas = 0
 			hra_bezi = false
 			cas_label.text = "Konec času! Prohráls!"
+			
+			await get_tree().create_timer(2.0).timeout
+			
+			
+			get_tree().change_scene_to_file("res://scenes/letadlo.tscn")
+			
 			return
+			
 		cas_label.text = "Čas: " + str(snapped(zbyvajici_cas, 0.01)) + " s"
 	else:
 		return
+		
 	aktualni_rychlost -= zpomaleni * delta
 	if aktualni_rychlost < 0:
 		aktualni_rychlost = 0
+		
 	if not ceka_na_predavku:
 		if Input.is_action_just_pressed("mash_left") and posledni_klavesa != "left":
 			aktualni_rychlost += zrychleni
@@ -40,7 +46,9 @@ func _process(delta: float) -> void:
 		elif Input.is_action_just_pressed("mash_right") and posledni_klavesa != "right":
 			aktualni_rychlost += zrychleni
 			posledni_klavesa = "right"
+			
 	aktualni_rychlost = clamp(aktualni_rychlost, 0, max_rychlost)
+	
 	var aktivni_bezec = bezci[aktualni_index]
 	if not ceka_na_predavku:
 		aktivni_bezec.position.x += aktualni_rychlost * delta * smer
@@ -59,6 +67,7 @@ func _process(delta: float) -> void:
 			else:
 				ceka_na_predavku = true
 				smer = -1
+				
 	if ceka_na_predavku and Input.is_action_just_pressed("handoff"):
 		ceka_na_predavku = false
 		posledni_klavesa = " "

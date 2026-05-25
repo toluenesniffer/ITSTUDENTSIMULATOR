@@ -68,3 +68,15 @@ func _on_pridat_skore(body):
 		skore_label.text = "Skóre: " + str(skore)
 		if skore >= cilove_skore:
 			konec_hry(true)
+
+
+func _on_restart_pressed() -> void:
+		skore = 0
+		bezec.position = Vector2(200, 300)
+		for p in $Prekazky.get_children(): p.queue_free()
+		start_hry()
+
+
+func _on_pokracovat_pressed() -> void:
+	get_parent().minihra_skoncila()
+	queue_free() 

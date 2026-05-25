@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdrtx41ftcomc"]
+
+[ext_resource type="Texture2D" uid="uid://bmeu1e4v38khb" path="res://scenes/letadlo.png" id="1_2y1lp"]
+[ext_resource type="Script" uid="uid://bb2eayhhapmw2" path="res://scenes/letadlo.gd" id="1_x7ks2"]
+
+[node name="Letadlo" type="Node2D"]
+script = ExtResource("1_x7ks2")
+
+[node name="Letadlo" type="Sprite2D" parent="."]
+position = Vector2(968.00006, 548.5)
+scale = Vector2(1.0083334, 1.0157408)
+texture = ExtResource("1_2y1lp")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

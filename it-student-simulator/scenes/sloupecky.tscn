@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://dimaigbalufeq" path="res://buttons/laravelflipped.png" id="2_fulih"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e72yv"]
-size = Vector2(100, 406.75)
+size = Vector2(100, 1341.375)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y7gfh"]
-size = Vector2(79, 576)
+size = Vector2(79, 1182)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fulih"]
 size = Vector2(104, 379.5)
@@ -18,24 +18,24 @@ script = ExtResource("1_y7gfh")
 [node name="Horni" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Horni"]
-position = Vector2(0, -390.00006)
-scale = Vector2(0.17413794, 0.40382653)
+position = Vector2(0, -864.0626)
+scale = Vector2(0.17413794, 1.371301)
 texture = ExtResource("2_fulih")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horni"]
-position = Vector2(0, -390)
+position = Vector2(0, -857.3125)
 shape = SubResource("RectangleShape2D_e72yv")
 
 [node name="Dolni" type="Area2D" parent="."]
 position = Vector2(0, -9)
 
 [node name="Sprite2D" type="Sprite2D" parent="Dolni"]
-position = Vector2(3.0517578e-05, 488.99994)
-scale = Vector2(0.13448283, 0.5744899)
+position = Vector2(3.0517578e-05, 801.2499)
+scale = Vector2(0.13448283, 1.2117348)
 texture = ExtResource("2_fulih")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dolni"]
-position = Vector2(0, 489)
+position = Vector2(0, 792)
 shape = SubResource("RectangleShape2D_y7gfh")
 
 [node name="Bodovani" type="Area2D" parent="."]

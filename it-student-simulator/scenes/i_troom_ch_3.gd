@@ -46,7 +46,7 @@ func _on_button_hallway_pressed() -> void:
 func _on_dialogic_signal(argument: String):
 	if argument == "start_switch":
 		spust_minihru()
-	if argument == "start_hodina_rizeni":
+	if argument == "start_flappy":
 		spust_minihru_flappy()
 func spust_minihru():
 	var instance_minihry = MINIHRA_SCENA.instantiate()

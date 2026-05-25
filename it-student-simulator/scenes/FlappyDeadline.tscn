@@ -1,12 +1,49 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxstq58qg183m"]
+[gd_scene load_steps=21 format=3 uid="uid://cxstq58qg183m"]
 
 [ext_resource type="Script" uid="uid://ckh3tpbmungch" path="res://scenes/flappy_deadline.gd" id="1_5ac66"]
 [ext_resource type="Script" uid="uid://cgfpxh0glg7xl" path="res://scenes/bezec_flappy.gd" id="1_gmj10"]
 [ext_resource type="Texture2D" uid="uid://cv5a2m4pu85l1" path="res://dialogicYap/yapperi/CERVENYpepa.png" id="1_jf5uw"]
 [ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="4_rvihk"]
+[ext_resource type="Texture2D" uid="uid://erc0a8jc5naj" path="res://buttons/newgame.png" id="5_5c7wl"]
+[ext_resource type="Texture2D" uid="uid://lp01c2qoruue" path="res://buttons/newgame_clicked.png" id="6_6aybe"]
+[ext_resource type="Texture2D" uid="uid://dcldq6s8buo3g" path="res://buttons/newgame_focus.png" id="7_0p3pw"]
+[ext_resource type="Texture2D" uid="uid://chvf2co6u4hy3" path="res://buttons/button_continue.png" id="8_xnpxo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmj10"]
 size = Vector2(107, 183)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qlurq"]
+texture = ExtResource("5_5c7wl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7622q"]
+texture = ExtResource("6_6aybe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_htqly"]
+texture = ExtResource("7_0p3pw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7nybw"]
+texture = ExtResource("6_6aybe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l78qi"]
+texture = ExtResource("7_0p3pw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pgxhd"]
+texture = ExtResource("8_xnpxo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4mvc5"]
+texture = ExtResource("8_xnpxo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gcgdt"]
+texture = ExtResource("8_xnpxo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7fc7q"]
+texture = ExtResource("8_xnpxo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fw0dy"]
+texture = ExtResource("8_xnpxo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_atmle"]
+texture = ExtResource("8_xnpxo")
 
 [node name="FlappyDeadline" type="CanvasLayer"]
 script = ExtResource("1_5ac66")
@@ -53,13 +90,48 @@ theme_override_font_sizes/font_size = 25
 
 [node name="ZpravaLabel" type="Label" parent="Control"]
 layout_mode = 0
-offset_left = 609.0
+offset_left = 725.0
 offset_top = 383.0
-offset_right = 1226.0
+offset_right = 1342.0
 offset_bottom = 509.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_rvihk")
 theme_override_font_sizes/font_size = 30
 
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 725.0
+offset_top = 40.0
+offset_right = 765.0
+offset_bottom = 80.0
+
+[node name="Restart" type="Button" parent="Control2"]
+layout_mode = 0
+offset_left = -471.0
+offset_top = 634.0
+offset_right = 40.0
+offset_bottom = 902.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_qlurq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7622q")
+theme_override_styles/hover = SubResource("StyleBoxTexture_htqly")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_7nybw")
+theme_override_styles/focus = SubResource("StyleBoxTexture_l78qi")
+
+[node name="Pokracovat" type="Button" parent="Control2"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 634.0
+offset_right = 912.0
+offset_bottom = 902.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_pgxhd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4mvc5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gcgdt")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_7fc7q")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_fw0dy")
+theme_override_styles/focus = SubResource("StyleBoxTexture_atmle")
+
 [connection signal="ready" from="." to="." method="_ready"]
 [connection signal="timeout" from="CasovacPrekazek" to="." method="_on_casovac_prekazek_timeout"]
+[connection signal="pressed" from="Control2/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Control2/Pokracovat" to="." method="_on_pokracovat_pressed"]

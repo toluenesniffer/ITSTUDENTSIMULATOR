@@ -1,7 +1,30 @@
-Dobrý den, za tento rok uděláte 3 různé projekty a hned začneme s tím prvním. 
-Budete používat vodopádovou metodiku. Vytvořte si týmy a vymyslete něco skvělého.
-- Být s Milanem a Horymírem
-	Horymíre.. můžu za váma?
-	Jo pojď, něco vymyslíme
-	<Empty Text Event>
-- Být s Petrou a Marií
+ucitelrpr: Dobrý den, za tento rok uděláte 3 různé projekty a hned začneme s tím prvním.
+ucitelrpr: Budete používat vodopádovou metodiku. Vytvořte si týmy a vymyslete něco skvělého.
+Horymíre.. můžu za váma?
+horymir: Jo pojď, něco vymyslíme
+Ten učitel furt mluví o Laravelu.. co když to nějak dáme do hry?
+milan: Velmi dobrý nápad!! Uděláme něco, kde se budeš vyhýbat Laravelu.
+*o 3 měsíce později.. opět v této učebně*
+ucitelrpr: Těším se na vaše projekty, pojďte si je tedy odprezentovat!
+ucitelrpr: Zapneme kolo štěstí... a první jdou... Reptiliáni! (název skupiny Pepy atd)
+horymir: No jasně že jdem první
+join rpr1 center [animation="Fade In"]
+horymir: Vítejte u naší prezentace na naši hru Flappy Pepa.
+leave rpr1
+join rpr2 center [animation="Fade In"]
+milan: Naše hra spočívá v tom, že mačkáte mezerník a vyhýbáte se Laravelu.
+ucitelrpr: Počkat počkat, proč zrovna Laravel? Však to je úžasný framework..
+No je spíš děsivý
+leave rpr2
+join rpr3 center [animation="Fade In"]
+Používali jsme Godot Engine a jazyk GD script, Google obrázky a FL studio
+leave rpr3
+join rpr4 center [animation="Fade In"]
+milan: Tady je náš tým a kdo co dělal
+ucitelrpr: Co znamená že Pepa dělal psychickou podporu?
+horymir: Dával nám jídlo
+leave rpr4
+join rpr5 center [animation="Fade In"]
+Tak jo, pojďme si zahrát naši hru
+[signal arg="start_flappy"]
+set {rprIntro} = true
