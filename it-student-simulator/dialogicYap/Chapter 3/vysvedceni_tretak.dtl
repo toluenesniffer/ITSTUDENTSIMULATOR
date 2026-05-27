@@ -1,0 +1,19 @@
+join yapper1 (Spooky) center
+yapper1 (Spooky): Tak už máte i po 3. ročníku.. brzy vás bude čekat maturita.
+yapper1 (Spooky): Ale vy to zvládnete, jste moc šikovní.
+yapper1 (Spooky): Tak si pojďte pro vysvědčení.. první půjde Pepa.
+yapper1 (Spooky): Z Kybernetické bezpečnosti máš {Znamky.kybisky3Znamka}
+yapper1 (Spooky): Z Anglického jazyka máš {Znamky.aj3Znamka}
+yapper1 (Spooky): Z Programování máš {Znamky.prg3Znamka}
+yapper1 (Spooky): Z Ekonomiky máš {Znamky.ekonomikaZnamka}
+yapper1 (Spooky): Z Mikroelektroniky a řízení máš {Znamky.mir3Znamka}
+yapper1 (Spooky): Z Operačních systémů máš {Znamky.osy3Znamka}
+yapper1 (Spooky): Z Českého jazyka máš {Znamky.cestina3Znamka}
+yapper1 (Spooky): Z Webových technologií máš {Znamky.web3Znamka}
+yapper1 (Spooky): Z Počítačových sítí máš {Znamky.site3Znamka}
+yapper1 (Spooky): Z Řízení projektů máš {Znamky.rprZnamka}
+yapper1 (Spooky): A nakonec z Tělesné výchovy máš {Znamky.telak3Znamka}
+yapper1 (Spooky): Gratuluji, že jsi to zvládl.
+[signal arg="vyzo"]
+set {vyzo3Played} = true
+[end_timeline]

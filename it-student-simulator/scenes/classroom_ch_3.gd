@@ -18,6 +18,10 @@ func _on_ready() -> void:
 	elif(Dialogic.VAR.osy3Played == true and Dialogic.VAR.cestina3Played == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 3/cestina_tretak.dtl")
+	elif (Dialogic.VAR.boss2 == true and Dialogic.VAR.vyzo3Played == false):
+		GlobalData.fixgrades()
+		TaskUI.update_task("ZÍSKEJ VYSVĚDČENÍ")
+		Dialogic.start("res://dialogicYap/Chapter 3/vysvedceni_tretak.dtl")
 	else:
 		pass
 func _on_timeline_started():
@@ -35,3 +39,6 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI DO UCEBNY NA I")
 	elif(Dialogic.VAR.cestina3Played == true and Dialogic.VAR.bohousbufetPlayed == false):
 		TaskUI.update_task("NAPSAL TI BOHOUS ZE CHCE S TEBOU DO BUFIKU. NAJDI HO.")
+func _on_dialogic_signal(argument: String):
+	if argument == "vyzo":
+		get_tree().change_scene_to_file("res://scenes/continuetretak.tscn")

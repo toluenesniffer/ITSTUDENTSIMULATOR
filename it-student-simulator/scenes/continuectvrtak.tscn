@@ -1,0 +1,39 @@
+[gd_scene load_steps=10 format=3 uid="uid://t7vuk7gtncag"]
+
+[ext_resource type="Texture2D" uid="uid://dsux266so17a0" path="res://scenes/continuectvrtak.png" id="1_ocfx8"]
+[ext_resource type="Texture2D" uid="uid://dasxhs0o4tqir" path="res://buttons/exit.png" id="2_u5o63"]
+[ext_resource type="Texture2D" uid="uid://dda66c471enw" path="res://buttons/exit_clicked.png" id="3_jaugx"]
+[ext_resource type="Texture2D" uid="uid://o5l4osml71h4" path="res://buttons/exit_focus.png" id="4_g5a3w"]
+[ext_resource type="Script" uid="uid://drdwl0jsblfcy" path="res://scenes/buttonExit.gd" id="5_v3ksx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nux8n"]
+texture = ExtResource("2_u5o63")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nv7hk"]
+texture = ExtResource("3_jaugx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wybtg"]
+texture = ExtResource("4_g5a3w")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rp28w"]
+texture = ExtResource("3_jaugx")
+
+[node name="Continuectvrtak" type="Node2D"]
+
+[node name="Continuectvrtak" type="Sprite2D" parent="."]
+position = Vector2(953, 544)
+scale = Vector2(1, 1.0148149)
+texture = ExtResource("1_ocfx8")
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 741.0
+offset_top = 528.0
+offset_right = 1209.0
+offset_bottom = 804.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_nux8n")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nv7hk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wybtg")
+theme_override_styles/focus = SubResource("StyleBoxTexture_rp28w")
+script = ExtResource("5_v3ksx")
+
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

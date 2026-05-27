@@ -26,6 +26,9 @@ func _on_ready() -> void:
 	if(Dialogic.VAR.obcanka3Played == true and Dialogic.VAR.siteIntro == false):
 		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
 		Dialogic.start("res://dialogicYap/Chapter 3/site_tretak.dtl")
+	if(Dialogic.VAR.site3Played == true and Dialogic.VAR.rprIntro == false):
+		TaskUI.update_task("SNAŽ SE ZÍSKAT DOBROU ZNÁMKU")
+		Dialogic.start("res://dialogicYap/Chapter 3/rpr_tretak.dtl")
 	else:
 		pass
 func _on_timeline_started():
@@ -43,6 +46,7 @@ func _on_button_hallway_pressed() -> void:
 	elif(Dialogic.VAR.osy3Played == true and Dialogic.VAR.cestina3Played == false):
 		TaskUI.update_task("JDI DO TRIDY B209")
 		
+		
 func _on_dialogic_signal(argument: String):
 	if argument == "start_switch":
 		spust_minihru()
@@ -54,4 +58,6 @@ func spust_minihru():
 func spust_minihru_flappy():
 	var instance_minihry = MINIHRA_FLAPPY.instantiate()
 	add_child(instance_minihry)
+func minihra_skoncila():
+	Dialogic.start("res://dialogicYap/Chapter 3/postrpr.dtl")
 	

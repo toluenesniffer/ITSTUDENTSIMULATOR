@@ -8,3 +8,5 @@ telocvikar: Ano, dvacetkrát!
 To ne... JÁ UTÍKÁM ODSUD!!!!
 milan: Nikam nejdeš, musíš to udělat. My taky budeme trpět tak nás v tom nenechávej.
 POMOOOOOOOOOOOOOOOOCCCCCCCCCC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[signal arg="start_stafeta"]
+set {boss1} = true

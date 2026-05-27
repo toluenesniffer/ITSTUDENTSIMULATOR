@@ -5,6 +5,7 @@ var je_konec_hry = false
 var cilove_skore = 50
 
 const MINIHRA_SCENA = preload("res://scenes/TelocvikSipky.tscn")
+const MINIHRA_STAFETA = preload("res://scenes/StafetaMinihra.tscn")
 
 func _on_ready() -> void:
 	if (Dialogic.VAR.dejepisPlayed == true and Dialogic.VAR.Znamky.telocvikPlayed == false):
@@ -13,7 +14,8 @@ func _on_ready() -> void:
 		Dialogic.start("res://dialogicYap/Chapter 2/telocvik_druhak.dtl")
 	elif(Dialogic.VAR.prg3Played == true and Dialogic.VAR.telak3_1Played == false):
 		Dialogic.start("res://dialogicYap/Chapter 3/telak3_1.dtl")
-	
+	elif(Dialogic.VAR.rprPlayed == true and Dialogic.VAR.boss1 == false):
+		Dialogic.start("res://dialogicYap/Chapter 3/telak_FINALBOSS.dtl")
 	$ProgressBar.visible = false
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 func _on_dialogic_signal(argument: String):
@@ -27,6 +29,13 @@ func _on_dialogic_signal(argument: String):
 		add_child(nova_minihra)
 		nova_minihra.vygeneruj_sekvenci()
 		nova_minihra.casovac.start()
+	if argument == "start_stafeta":
+		spust_stafetu()
+func spust_stafetu():
+	var instance_stafety = MINIHRA_STAFETA.instantiate()
+	add_child(instance_stafety)
+func stafeta_skoncila():
+	Dialogic.start("res://dialogicYap/Chapter 3/boss_vyhra.dtl")
 func zacni_cvicit():
 	TaskUI.show_task("MAČKEJ MEZERNÍK CO NEJRYCHLEJI 50X (MÁŠ 15 SEKUND)")
 	skore = 0

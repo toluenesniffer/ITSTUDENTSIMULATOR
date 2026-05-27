@@ -1,0 +1,7 @@
+join ucitelrpr center
+ucitelrpr: Páni.. to je naprosto úžasná minihra.. tohle je geniální.
+ucitelrpr: Zasloužíte si obraz na chodbě s touto hrou, už dlouho jsem tu neměl tak úžasný projekt.
+ucitelrpr: Dám vám 2 jedničky, ať je to fér. Jste moc šikovní!
+Omg díky moc
+set {Znamky.rprZnamka} = 1.0
+set {rprPlayed} = true
