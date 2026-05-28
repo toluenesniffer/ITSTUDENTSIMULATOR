@@ -72,7 +72,7 @@ func _process(delta: float) -> void:
 			if aktualni_index == 4:
 				hra_bezi = false
 				info_label.hide()
-				cas_label.text = "VÍTĚZSTVÍ! Zbývá: " + str(snapped(zbyvajici_cas, 0.01)) + "s"
+				cas_label.text = "VÍTĚZSTVÍ! Zbyva: " + str(snapped(zbyvajici_cas, 0.01)) + "s"
 				await get_tree().create_timer(2.0).timeout
 				if get_parent().has_method("stafeta_skoncila"):
 					get_parent().stafeta_skoncila()

@@ -23,6 +23,7 @@ SFXManager="*res://sfx_manager.tscn"
 TaskUI="*res://scenes/task_ui.tscn"
 GlobalData="*res://global_data.gd"
 FireSystem="*res://scenes/FireOverlay.tscn"
+BlackoutSystem="*res://scenes/blackout_overlay.gd"
 
 [dialogic]
 
@@ -187,7 +188,6 @@ directories/dtl_directory={
 "zachrana_vyhra": "res://dialogicYap/Chapter 2/zachrana_vyhra.dtl"
 }
 variables={
-"40kc": false,
 "GondraPlayed": false,
 "HorymiryapPlayed": false,
 "Var": "",
@@ -231,6 +231,7 @@ variables={
 "aj3Played": false,
 "anglictinaPlayed": false,
 "badendingPlayed": false,
+"blackout": false,
 "bohousbufetPlayed": false,
 "boss1": false,
 "boss2": false,
@@ -262,6 +263,7 @@ variables={
 "kamos": false,
 "kamos2": false,
 "kamoska": false,
+"kc40": false,
 "kybisky2Played": false,
 "kybisky3Played": false,
 "lednickaHotova": false,
@@ -288,6 +290,7 @@ variables={
 "sipkyVyhra": false,
 "site3Played": false,
 "siteIntro": false,
+"siteevakuace": false,
 "skolaHori": false,
 "smazit": "",
 "telak2Played": false,

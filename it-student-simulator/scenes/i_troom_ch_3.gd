@@ -36,6 +36,17 @@ func _on_timeline_started():
 func _on_timeline_ended():
 	TaskUI.show_task("JDI VEN (KLIKNI NA DVEŘE)")
 	SFXManager.change_music("res://music/normalnihudba.mp3")
+	if Dialogic.VAR.siteevakuace == true:
+		print("TEST: Počítač vybouchl, spouštím evakuaci!")
+		FireSystem.start_fire(60.0)
+		Dialogic.VAR.dohorelo = true
+		TaskUI.update_task("NAJDI NOUZOVY VYCHOD")
+		Dialogic.VAR.siteevakuace = false
+		if has_node("Switchscene"):
+			$Switchscene.queue_free()
+		if Dialogic.VAR.zpusobil_blackout == true:
+			BlackoutSystem.start_blackout()
+			Dialogic.VAR.blackout = false
 
 
 func _on_button_hallway_pressed() -> void:
@@ -45,6 +56,12 @@ func _on_button_hallway_pressed() -> void:
 		TaskUI.update_task("JDI ZA MILANEM")
 	elif(Dialogic.VAR.osy3Played == true and Dialogic.VAR.cestina3Played == false):
 		TaskUI.update_task("JDI DO TRIDY B209")
+	elif(Dialogic.VAR.web3Played == true and Dialogic.VAR.obcanka3Played == false):
+		TaskUI.update_task("JDI NA A307")
+	elif(Dialogic.VAR.site3Played == true and Dialogic.VAR.rprPlayed == false):
+		TaskUI.update_task("JDI ZASE NA I")
+	elif(Dialogic.VAR.rprPlayed == true and Dialogic.VAR.boss1 == false):
+		TaskUI.update_task("JDI DO TĚLOCVIČNY.")
 		
 		
 func _on_dialogic_signal(argument: String):

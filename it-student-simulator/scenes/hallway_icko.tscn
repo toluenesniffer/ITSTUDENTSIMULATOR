@@ -190,3 +190,4 @@ scale = Vector2(0.92159986, 0.90249944)
 [connection signal="pressed" from="Nouze" to="Nouze" method="_on_pressed"]
 [connection signal="pressed" from="Aldagstein/Button" to="Aldagstein/Button" method="_on_pressed"]
 [connection signal="pressed" from="Milan/Button" to="Milan/Button" method="_on_pressed"]
+[connection signal="ready" from="Milan/Button" to="Milan/Button" method="_ready"]

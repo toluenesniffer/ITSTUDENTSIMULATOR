@@ -3,5 +3,5 @@ Já tam nikdy nebyl, protože nemám peníze..
 bohous: Tak já ti dám pár korun na něco, na vem si 40kč za to můžeš koupit cokoliv z výběru.
 bohous: Pojď jdem spolu
 OKk
-set {40kc} = true
+set {kc40} = true
 set {bohousbufetPlayed} = true

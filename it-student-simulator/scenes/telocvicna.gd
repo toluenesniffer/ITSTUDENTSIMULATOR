@@ -57,6 +57,9 @@ func _process(_delta):
 
 func _on_timeline_started():
 	SFXManager.change_music("res://music/ukolhudba.mp3")
+func _on_timeline_ended():
+	if (Dialogic.VAR.telak3_1Played == true and Dialogic.VAR.ekonomikaPlayed == false):
+		TaskUI.update_task("JDI VEN (KLIKNI NA DVERE)")
 
 func _on_timer_timeout() -> void:
 	ukonci_hru(false)
@@ -81,5 +84,7 @@ func ukonci_hru(vyhral):
 
 func _on_button_pressed() -> void:
 	if (Dialogic.VAR.telak3_1Played == true and Dialogic.VAR.ekonomikaPlayed == false):
+		TaskUI.update_task("JDI DO B209")
+	elif (Dialogic.VAR.boss2 == true and Dialogic.VAR.vyzo3Played == false):
 		TaskUI.update_task("JDI DO B209")
 	SFXManager.play("res://music/dvereotevreni.mp3")

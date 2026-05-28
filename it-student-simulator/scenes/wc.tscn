@@ -109,5 +109,6 @@ script = ExtResource("8_n87rb")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="Bohous/Button" to="Bohous/Button" method="_on_pressed"]
+[connection signal="ready" from="Bohous/Button" to="Bohous/Button" method="_ready"]
 [connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
 [connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]

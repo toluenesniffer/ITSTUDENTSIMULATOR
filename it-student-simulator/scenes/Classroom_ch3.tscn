@@ -5,3 +5,5 @@
 
 [node name="Classroom" instance=ExtResource("1_gqedi")]
 script = ExtResource("2_7bx6k")
+
+[connection signal="ready" from="." to="." method="_ready"]

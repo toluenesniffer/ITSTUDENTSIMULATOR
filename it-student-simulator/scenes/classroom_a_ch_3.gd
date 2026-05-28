@@ -25,4 +25,6 @@ func _on_timeline_ended():
 func _on_button_pressed() -> void:
 	if Dialogic.VAR.matika3Played == true and Dialogic.VAR.osy3Played == false:
 		TaskUI.update_task("JDI DO TŘÍDY NA I")
+	if Dialogic.VAR.obcanka3Played == true and Dialogic.VAR.site3Played == false:
+		TaskUI.update_task("JDI DO UCEBNY NA I")
 	SFXManager.play("res://music/dvereotevreni.mp3")

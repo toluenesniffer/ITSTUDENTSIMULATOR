@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxx4r3vp8knem"]
+
+[ext_resource type="Script" uid="uid://x21nwn3rccra" path="res://scenes/blackout_overlay.gd" id="1_ew1j3"]
+
+[node name="BlackoutOverlay" type="CanvasLayer"]
+layer = 100
+visible = false
+script = ExtResource("1_ew1j3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[connection signal="ready" from="." to="." method="_ready"]

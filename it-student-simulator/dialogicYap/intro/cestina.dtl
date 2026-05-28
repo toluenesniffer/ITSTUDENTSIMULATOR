@@ -1,7 +1,7 @@
-join cestinarka (cestinarka) center [animation="Fade In"]
-cestinarka (cestinarka): Dnes si zopakujete učivo ze základní školy, očekávám, že tohle všechno už umíte.
-cestinarka (cestinarka): Otevřete si pracovní sešity, určete v této větě větné členy, slovní druhy, ke každému slovu napište číslo, rod, pád, druh, třídu..
-cestinarka (cestinarka): Doplňte interpunkci, napište ke každému slovu synonymum, napište i antonyma, určete větu hlavní a vedlejší, určete jejich poměry a druhy vět vedlejších….
+join cestinarka (Češtinářka) center [animation="Fade In"]
+cestinarka (Češtinářka): Dnes si zopakujete učivo ze základní školy, očekávám, že tohle všechno už umíte.
+cestinarka (Češtinářka): Otevřete si pracovní sešity, určete v této větě větné členy, slovní druhy, ke každému slovu napište číslo, rod, pád, druh, třídu..
+cestinarka (Češtinářka): Doplňte interpunkci, napište ke každému slovu synonymum, napište i antonyma, určete větu hlavní a vedlejší, určete jejich poměry a druhy vět vedlejších….
 COŽE?????????????????????????
 Klikni na přísudek. Věta\: Nechtějte mě rozzlobit.
 - Nechtějte
@@ -15,6 +15,6 @@ Klikni na přísudek. Věta\: Nechtějte mě rozzlobit.
 	set {cestinaPlayed} = true
 	[end_timeline]
 - rozzlobit
-	cestinarka (cestinarka): Dám ti jedna a fous, zítra si připrav kulturní aktuality.
+	cestinarka (Češtinářka): Dám ti jedna a fous, zítra si připrav kulturní aktuality.
 	set {Znamky.cestinaZnamka} = 1.0
 	set {cestinaPlayed} = true

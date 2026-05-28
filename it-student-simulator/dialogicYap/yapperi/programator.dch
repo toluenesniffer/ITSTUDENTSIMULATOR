@@ -20,7 +20,7 @@
 "image": "\"res://dialogicYap/yapperi/programator.png\""
 },
 "mirror": false,
-"offset": Vector2(-10, -640),
+"offset": Vector2(150, -640),
 "scale": 0.25,
 "scene": ""
 }
