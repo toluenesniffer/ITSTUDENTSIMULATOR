@@ -44,7 +44,7 @@ func _on_timeline_ended():
 		Dialogic.VAR.siteevakuace = false
 		if has_node("Switchscene"):
 			$Switchscene.queue_free()
-		if Dialogic.VAR.zpusobil_blackout == true:
+		if Dialogic.VAR.blackout == true:
 			BlackoutSystem.start_blackout()
 			Dialogic.VAR.blackout = false
 

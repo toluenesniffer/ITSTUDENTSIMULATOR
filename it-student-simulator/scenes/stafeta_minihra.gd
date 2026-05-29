@@ -4,6 +4,8 @@ extends Node2D
 @onready var cas_label = $Casomira
 @onready var info_label = $InfoLabel
 
+const EXPLOSION_SCENE = preload("res://scenes/exploze_castice.tscn")
+
 var aktualni_rychlost : float = 0.0
 var zpomaleni : float = 150.0
 var zrychleni : float = 50.0
@@ -17,6 +19,12 @@ var bod_predavky : float = 1750.0
 var zbyvajici_cas : float = 60.0
 var hra_bezi : bool = false
 var odstartovano : bool = false
+
+func vybuchni():
+	var exploze = EXPLOSION_SCENE.instantiate()
+	get_tree().current_scene.add_child(exploze)
+	exploze.global_position = global_position
+	queue_free()
 
 func _process(delta: float) -> void:
 	if not odstartovano and (Input.is_action_just_pressed("mash_left") or Input.is_action_just_pressed("mash_right")):

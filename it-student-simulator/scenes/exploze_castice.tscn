@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctouw32qui2ae"]
+
+[ext_resource type="Script" uid="uid://bphcwd0o615ci" path="res://scenes/exploze_castice.gd" id="1_pq85v"]
+
+[sub_resource type="Gradient" id="Gradient_yxnbn"]
+colors = PackedColorArray(1, 0, 0, 1, 0.9852511, 0.52860767, 0.0050506485, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nu8f2"]
+gradient = SubResource("Gradient_yxnbn")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jjxv3"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 150.0
+initial_velocity_max = 300.0
+gravity = Vector3(0, 98, 0)
+scale_min = 3.0
+scale_max = 5.0
+color_ramp = SubResource("GradientTexture1D_nu8f2")
+
+[node name="ExplozeCastice" type="GPUParticles2D"]
+emitting = false
+amount = 80
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_jjxv3")
+script = ExtResource("1_pq85v")
+
+[connection signal="ready" from="." to="." method="_ready"]
