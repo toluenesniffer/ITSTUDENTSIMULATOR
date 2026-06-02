@@ -22,10 +22,10 @@ var odstartovano : bool = false
 
 func vybuchni():
 	var exploze = EXPLOSION_SCENE.instantiate()
-	get_tree().current_scene.add_child(exploze)
-	exploze.global_position = global_position
-	queue_free()
-
+	add_child(exploze)
+	var aktivni_bezec = bezci[aktualni_index]
+	exploze.position = aktivni_bezec.position
+	aktivni_bezec.hide()
 func _process(delta: float) -> void:
 	if not odstartovano and (Input.is_action_just_pressed("mash_left") or Input.is_action_just_pressed("mash_right")):
 		odstartovano = true
@@ -39,7 +39,7 @@ func _process(delta: float) -> void:
 			hra_bezi = false
 			cas_label.text = "Konec času! Prohráls!"
 			info_label.hide()
-			
+			vybuchni()
 			await get_tree().create_timer(2.0).timeout
 			get_tree().change_scene_to_file("res://scenes/letadlo.tscn")
 			return

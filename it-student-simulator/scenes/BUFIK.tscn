@@ -171,8 +171,11 @@ scale = Vector2(0.88461536, 0.81984586)
 texture = ExtResource("12_xnkvf")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="TOUSTY" to="." method="_on_tousty_pressed"]
 [connection signal="pressed" from="TOUSTY" to="TOUSTY" method="_on_pressed"]
+[connection signal="pressed" from="TORTILLA" to="." method="_on_tortilla_pressed"]
 [connection signal="pressed" from="TORTILLA" to="TOUSTY" method="_on_tortilla_pressed"]
 [connection signal="pressed" from="TORTILLA" to="TORTILLA" method="_on_pressed"]
+[connection signal="pressed" from="GURT" to="." method="_on_gurt_pressed"]
 [connection signal="pressed" from="GURT" to="TOUSTY" method="_on_gurt_pressed"]
 [connection signal="pressed" from="Vychod" to="Vychod" method="_on_pressed"]

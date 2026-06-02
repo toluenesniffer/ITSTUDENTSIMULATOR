@@ -1,6 +1,7 @@
 if {kc40} == true:
-	Získal jsi premium toust! 
+	Získal jsi premium toust!
 	Sice s ním nic dělat nemůžes ale aspoň máš jídlo.
+	set {kc40} = false
 else:
 	Jsi příliš chudý na to, aby sis koupil předražený toust.
 [end_timeline]

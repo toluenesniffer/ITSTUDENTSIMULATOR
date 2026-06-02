@@ -1,6 +1,7 @@
 if {kc40} == true:
 	Získal jsi jogurt!
 	Sice s ním nic nemůžes udělat, ale aspoň máš jídlo.
+	set {kc40} = false
 else:
 	Jsi příliš chudý na to, aby sis koupil předražený jogurt.
 [end_timeline]
