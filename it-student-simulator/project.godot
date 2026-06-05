@@ -23,7 +23,7 @@ SFXManager="*res://sfx_manager.tscn"
 TaskUI="*res://scenes/task_ui.tscn"
 GlobalData="*res://global_data.gd"
 FireSystem="*res://scenes/FireOverlay.tscn"
-BlackoutSystem="*res://scenes/blackout_overlay.gd"
+BlackoutSystem="*res://scenes/BlackoutOverlay.tscn"
 
 [dialogic]
 

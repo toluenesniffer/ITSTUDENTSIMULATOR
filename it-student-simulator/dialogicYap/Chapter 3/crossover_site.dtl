@@ -16,6 +16,7 @@ panmanwanlan: Po zapojení nakonfigurujeme switch. Jaký příkaz použiješ?
 		panmanwanlan: Super, tak tu budeme zase bůh ví jak dlouho v úplné tmě.
 		panmanwanlan: Máš za 4.
 		(způsobil jsi blackout!)
+		[signal arg="start_blackout"]
 		set {blackout} = true
 		set {Znamky.site3Znamka} = 4.0
 		set {site3Played} = true

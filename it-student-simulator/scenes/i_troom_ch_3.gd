@@ -44,9 +44,9 @@ func _on_timeline_ended():
 		Dialogic.VAR.siteevakuace = false
 		if has_node("Switchscene"):
 			$Switchscene.queue_free()
-		if Dialogic.VAR.blackout == true:
-			BlackoutSystem.start_blackout()
-			Dialogic.VAR.blackout = false
+	if Dialogic.VAR.blackout == true:
+		BlackoutSystem.start_blackout()
+		Dialogic.VAR.blackout = false
 
 
 func _on_button_hallway_pressed() -> void:
@@ -67,8 +67,10 @@ func _on_button_hallway_pressed() -> void:
 func _on_dialogic_signal(argument: String):
 	if argument == "start_switch":
 		spust_minihru()
-	if argument == "start_flappy":
+	elif argument == "start_flappy":
 		spust_minihru_flappy()
+	elif argument == "start_blackout":
+		BlackoutSystem.start_blackout()
 func spust_minihru():
 	var instance_minihry = MINIHRA_SCENA.instantiate()
 	add_child(instance_minihry)

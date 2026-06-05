@@ -15,6 +15,7 @@ panmanwanlan: V terminálu prosím nekonfiguruj tento switch
 		panmanwanlan: Ach jo, zase tu budeme bůh ví jak dlouho po tmě.
 		(způsobil jsi blackout!)
 		panmanwanlan: Máš za 4.
+		[signal arg="start_blackout"]
 		set {blackout} = true
 		set {Znamky.site3Znamka} = 4.0
 		set {site3Played} = true
