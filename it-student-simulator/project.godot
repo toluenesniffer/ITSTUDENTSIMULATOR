@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="IT student simulator"
-run/main_scene="uid://dw2f25f71teqv"
+run/main_scene="uid://04ywtxmncx8f"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://04ywtxmncx8f"]
+
+[ext_resource type="FontFile" uid="uid://c0bb7qi4ggt0c" path="res://music/ByteBounce.ttf" id="1_hvw5j"]
+[ext_resource type="Script" uid="uid://bxck8owbvh2eb" path="res://scenes/disclaimer_screen.gd" id="1_l7bbf"]
+[ext_resource type="Texture2D" uid="uid://chvf2co6u4hy3" path="res://buttons/button_continue.png" id="2_l7bbf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_goryo"]
+texture = ExtResource("2_l7bbf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l7bbf"]
+texture = ExtResource("2_l7bbf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ehil"]
+texture = ExtResource("2_l7bbf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y34dd"]
+texture = ExtResource("2_l7bbf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3oylw"]
+texture = ExtResource("2_l7bbf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gt5fd"]
+texture = ExtResource("2_l7bbf")
+
+[node name="DisclaimerScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l7bbf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -113.0
+offset_top = -63.0
+offset_right = 198.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 38.0
+offset_right = 1537.0
+offset_bottom = 149.0
+theme_override_fonts/font = ExtResource("1_hvw5j")
+theme_override_font_sizes/font_size = 105
+text = "DISCLAIMER:"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 198.0
+offset_right = 1657.0
+offset_bottom = 635.0
+theme_override_fonts/font = ExtResource("1_hvw5j")
+theme_override_font_sizes/font_size = 66
+text = "Všechny podobnosti jsou čistě náhodné. Konverzace jsou plně smyšlené a některé možná až přehnané. Je to pouze pro humor, tak si to prosím neberte osobně. Nic není podle skutečnosti a vše je jen pro to, aby to bylo humorné. Nejde o to, aby kdokoliv byl zesměšňován. Všechny vás máme rádi."
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 622.0
+offset_right = 1382.0
+offset_bottom = 982.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_goryo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l7bbf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1ehil")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_y34dd")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_3oylw")
+theme_override_styles/focus = SubResource("StyleBoxTexture_gt5fd")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
