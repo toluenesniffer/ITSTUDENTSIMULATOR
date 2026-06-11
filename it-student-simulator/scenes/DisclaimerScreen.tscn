@@ -68,10 +68,10 @@ autowrap_mode = 2
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 615.0
-offset_top = 622.0
-offset_right = 1382.0
-offset_bottom = 982.0
+offset_left = 571.0
+offset_top = 635.0
+offset_right = 1338.0
+offset_bottom = 995.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_goryo")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_l7bbf")
 theme_override_styles/hover = SubResource("StyleBoxTexture_1ehil")
